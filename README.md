@@ -32,6 +32,21 @@ re-specification.
 Output: a preprint, a documented public dataset (with a datasheet), and
 reproducible code.
 
+## Documentation
+
+The foundational design, method, and governance documents live in [`docs/`](docs/):
+
+| Document | What it covers |
+| --- | --- |
+| [docs/RESEARCH_DESIGN.md](docs/RESEARCH_DESIGN.md) | Purpose, research questions (as measurement/validity questions), contribution, scope, target venue, and fit with the computational-communication-science validity agenda. |
+| [docs/METHODOLOGY.md](docs/METHODOLOGY.md) | The operational core: every metric (source/outlet, content/topic, cross-outlet divergence, syndication) with formula, inputs, parameters; plus the validity analyses that are the study's contribution. |
+| [docs/RELATED_WORK.md](docs/RELATED_WORK.md) | A structured literature map across four clusters, with sources to verify. |
+| [docs/DATA_MANAGEMENT_AND_ETHICS.md](docs/DATA_MANAGEMENT_AND_ETHICS.md) | Data-management plan: collection, legal posture, polite-crawling conduct, the rehydration-only release model, personal-data minimisation, licensing, and the pre-publication check. |
+| [docs/DATASHEET.md](docs/DATASHEET.md) | A *Datasheets for Datasets* template for the eventual release (pre-filled where known, `TODO` otherwise). |
+
+> These are working drafts; choices still open are marked inline with `[DECIDE: …]`
+> and citations to confirm with `[VERIFY]`.
+
 ## Roadmap
 
 1. **Corpus** *(current)* — a clean, deduplicated snapshot across the outlet set
@@ -48,8 +63,9 @@ reproducible code.
 
 > **Status:** Phase 1 complete — 16 outlets spanning all 5 structural types in
 > `outlets.yaml`, collected into an accumulating corpus (all robots-compliance
-> checked). Phase 2 starting: embedding-based near-duplicate (same-story)
-> clustering. (Lao Động deferred — bot-gated; Baomoi excluded as an aggregator.)
+> checked). Phase 2 underway: embedding-based near-duplicate (same-story)
+> clustering is implemented (`src/dedupe/near_dup.py`). (Lao Động deferred —
+> bot-gated; Baomoi excluded as an aggregator.)
 
 ## Pipeline
 
