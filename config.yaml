@@ -28,7 +28,10 @@ dedupe:
   # Near-duplicate (same-story, incl. across outlets) clustering — a separate
   # on-demand pass (`python -m src.dedupe.near_dup`), not run on every collect.
   embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-  near_dup_threshold: 0.82          # cosine; calibrate against known cases
+  # Calibrated on the 16-outlet snapshot: below ~0.92 the multilingual encoder
+  # over-merges same-TOPIC articles (gold-price, World Cup) into cross-outlet
+  # blobs; >=0.94 isolates genuine same-STORY syndication (near-identical text).
+  near_dup_threshold: 0.94          # cosine
   embed_body_chars: 600             # headline + leading body chars (model truncates)
 
 collect:

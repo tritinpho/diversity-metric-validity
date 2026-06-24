@@ -19,12 +19,17 @@ from __future__ import annotations
 
 import argparse
 import logging
+import os
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
 from src.config import load_config, resolve_path, setup_logging
+
+# Fail fast on a stalled model download instead of hanging indefinitely (the
+# huggingface_hub default has no read timeout). A cached model is unaffected.
+os.environ.setdefault("HF_HUB_DOWNLOAD_TIMEOUT", "30")
 
 _LOG = logging.getLogger("vnnews.neardup")
 

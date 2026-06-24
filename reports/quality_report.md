@@ -2,7 +2,7 @@
 
 *Supply-side snapshot. Descriptive completeness check on the published cross-section; no exposure or substantive-coverage claims.*
 
-- **Generated:** 2026-06-24T14:26:13.813129+07:00
+- **Generated:** 2026-06-24T15:51:48.894951+07:00
 - **Window:** 2026-06-03 → 2026-06-24 (Asia/Ho_Chi_Minh)
 - **Articles:** 1706  |  **Outlets:** 16  |  **Sections observed:** 457
 - **Segmentation:** {'underthesea': 1695} (token counts)
@@ -669,5 +669,7 @@ _Non-`vi` (flagged): 0._
 - Exact-duplicate rate: **0.5%**
 - Distinct content clusters: **1686**
 - Cross-outlet verbatim clusters (syndication signal): **3** (6 articles)
-- Near-duplicate (same-story) clustering: _deferred to Phase 2 (embedding-based)._
+
+- Near-duplicate (same-story) copies: **57** (3.4%), in **49** multi-article clusters
+- **Cross-outlet** same-story clusters: **44** (92 articles) — the syndication/overlap signal that exact-hash misses
 
