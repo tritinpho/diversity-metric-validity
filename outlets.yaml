@@ -1,0 +1,214 @@
+# Outlet registry for the Vietnamese news-diversity snapshot.
+#
+# `outlet_type` is NEUTRAL structural metadata — a covariate for the measurement
+# analysis, not a judgement. Controlled vocabulary below.
+#
+# Discovery preference: per-section RSS (clean url + section + publish date) >
+# sitemap > listing scrape. Each RSS feed carries the `section` it represents so
+# section labels are reliable even when the article page omits a category.
+#
+# This is the 3-outlet starter set (spanning three structural types) used to
+# prove the pipeline end-to-end before scaling to the full ~15-outlet list.
+# All feed/sitemap URLs below were verified live during setup.
+
+outlet_types:
+  party_official:   State / party official organ
+  union_mass_daily: Union or mass-organization affiliated daily
+  semi_commercial:  Large general / semi-commercial daily
+  popular_lifestyle: Popular / lifestyle / entertainment
+  sector_business:  Sector (business / finance)
+  aggregator:       News aggregator (non-original; flagged, excluded from corpus)
+
+# Canonical, human-readable labels for the section slugs used in the RSS feeds.
+section_labels:
+  thoi-su:     Current affairs / domestic
+  the-gioi:    World
+  kinh-doanh:  Business / economy
+  phap-luat:   Law
+  giao-duc:    Education
+  suc-khoe:    Health
+
+outlets:
+  - slug: vnexpress
+    name: VnExpress
+    homepage: https://vnexpress.net
+    outlet_type: semi_commercial
+    # Rich per-section RSS (≈60 items/feed). Primary discovery source.
+    rss:
+      - { url: "https://vnexpress.net/rss/thoi-su.rss",    section: thoi-su }
+      - { url: "https://vnexpress.net/rss/the-gioi.rss",   section: the-gioi }
+      - { url: "https://vnexpress.net/rss/kinh-doanh.rss", section: kinh-doanh }
+      - { url: "https://vnexpress.net/rss/phap-luat.rss",  section: phap-luat }
+      - { url: "https://vnexpress.net/rss/giao-duc.rss",   section: giao-duc }
+      - { url: "https://vnexpress.net/rss/suc-khoe.rss",   section: suc-khoe }
+    sitemaps:
+      - https://vnexpress.net/sitemap.xml          # sitemap index (fallback)
+
+  - slug: tuoitre
+    name: Tuổi Trẻ
+    homepage: https://tuoitre.vn
+    outlet_type: union_mass_daily
+    # Rich per-section RSS (≈50 items/feed). RSS items include <author>.
+    # Note: pubDate uses US-style M/D/YYYY h:MM AM/PM (handled by dateutil).
+    rss:
+      - { url: "https://tuoitre.vn/rss/thoi-su.rss",    section: thoi-su }
+      - { url: "https://tuoitre.vn/rss/the-gioi.rss",   section: the-gioi }
+      - { url: "https://tuoitre.vn/rss/kinh-doanh.rss", section: kinh-doanh }
+      - { url: "https://tuoitre.vn/rss/phap-luat.rss",  section: phap-luat }
+      - { url: "https://tuoitre.vn/rss/giao-duc.rss",   section: giao-duc }
+      - { url: "https://tuoitre.vn/rss/suc-khoe.rss",   section: suc-khoe }
+    sitemaps:
+      - https://tuoitre.vn/sitemaps/index.rss        # RSS-format sitemap (fallback)
+
+  - slug: nhandan
+    name: Nhân Dân
+    homepage: https://nhandan.vn
+    outlet_type: party_official
+    # MEASUREMENT NOTE: nhandan.vn returns the SAME 'home' feed for any /rss/<slug>
+    # path — there are no reliable per-section RSS feeds — and article URLs are flat
+    # (/<slug>-post<id>.html) with no section segment. Section metadata is therefore
+    # largely unavailable for this outlet from feeds/URLs. We discover primarily via
+    # the Google-News sitemap (clean URLs + ISO publish dates) and record section as
+    # null where the article page exposes no category. This metadata asymmetry across
+    # outlet types is itself an observation for the Phase-4 validity analysis.
+    rss:
+      - { url: "https://nhandan.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://nhandan.vn/sitemaps/google-news.xml   # ~380 recent URLs + pub dates
+      - https://nhandan.vn/sitemaps/daily-news.xml
+    # The Google-News sitemap includes non-article entries (video pages and
+    # print/PDF-edition listings) that have no extractable body. Skip them.
+    exclude_patterns:
+      - "/video-"
+      - "bao-nhan-dan-so-\\d"
+      - "bao-thoi-nay-so-\\d"
+
+  # ===================================================================
+  # Expansion outlets — added after the 3-outlet pipeline was proven.
+  # All verified robots-permitted for our UA and discovery-live via
+  # `python -m src.collect.precheck` (no Crawl-delay declared by any).
+  # New outlets discover via the single home feed + the news/Google-News
+  # sitemap (section is page-derived, as for nhandan); byte-distinct
+  # per-section RSS can be added later where a CMS supports it.
+  #
+  # DEFERRED: laodong (laodong.vn) — serves an identical ~177-byte stub to
+  #   static requests (bot-gated / JS-required); revisit with Playwright.
+  # EXCLUDED: baomoi (aggregator; non-original).
+  # ===================================================================
+
+  - slug: vietnamplus
+    name: VietnamPlus (TTXVN/VNA)
+    homepage: https://www.vietnamplus.vn
+    outlet_type: party_official
+    rss:
+      - { url: "https://www.vietnamplus.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://www.vietnamplus.vn/sitemaps/google-news.xml
+
+  - slug: baochinhphu
+    name: Báo Chính phủ
+    homepage: https://baochinhphu.vn
+    outlet_type: party_official
+    rss:
+      - { url: "https://baochinhphu.vn/home.rss", section: null }
+    sitemaps:
+      - https://baochinhphu.vn/sitemaps/google-news.xml
+
+  - slug: qdnd
+    name: Quân đội Nhân dân
+    homepage: https://www.qdnd.vn
+    outlet_type: party_official
+    # No homepage-advertised RSS; discover via the top-300-articles sitemap.
+    sitemaps:
+      - https://www.qdnd.vn/sitemaps/0/top300article.xml
+
+  - slug: thanhnien
+    name: Thanh Niên
+    homepage: https://thanhnien.vn
+    outlet_type: union_mass_daily
+    rss:
+      - { url: "https://thanhnien.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://thanhnien.vn/google-news-sitemap.xml
+
+  - slug: tienphong
+    name: Tiền Phong
+    homepage: https://tienphong.vn
+    outlet_type: union_mass_daily
+    rss:
+      - { url: "https://tienphong.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://tienphong.vn/sitemaps/google-news.xml
+
+  - slug: vietnamnet
+    name: VietnamNet
+    homepage: https://vietnamnet.vn
+    outlet_type: semi_commercial
+    # No homepage RSS link; the news sitemap carries ~1k recent URLs.
+    sitemaps:
+      - https://vietnamnet.vn/sitemap-news.xml
+
+  - slug: dantri
+    name: Dân Trí
+    homepage: https://dantri.com.vn
+    outlet_type: semi_commercial
+    rss:
+      - { url: "https://dantri.com.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://dantri.com.vn/google-news-sitemap.xml
+    # /dt360/ are photo/video gallery pages with no extractable article body.
+    exclude_patterns:
+      - "/dt360/"
+
+  - slug: kenh14
+    name: Kenh14
+    homepage: https://kenh14.vn
+    outlet_type: popular_lifestyle
+    rss:
+      - { url: "https://kenh14.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://kenh14.vn/google-news-sitemap.xml
+
+  - slug: "24h"
+    name: 24h
+    homepage: https://www.24h.com.vn
+    outlet_type: popular_lifestyle
+    rss:
+      - { url: "https://www.24h.com.vn/upload/rss/tintuctrongngay.rss", section: null }
+    sitemaps:
+      - https://www.24h.com.vn/sitemap-article-daily.xml
+
+  - slug: soha
+    name: Soha
+    homepage: https://soha.vn
+    outlet_type: popular_lifestyle
+    rss:
+      - { url: "https://soha.vn/rss/home.rss", section: null }
+    sitemaps:
+      - https://soha.vn/google-news-sitemap.xml
+
+  - slug: saostar
+    name: Saostar
+    homepage: https://www.saostar.vn
+    outlet_type: popular_lifestyle
+    rss:
+      - { url: "https://www.saostar.vn/rss-feed/tin-moi.rss", section: null }
+    sitemaps:
+      - https://www.saostar.vn/sitemap-news.xml
+
+  - slug: cafef
+    name: CafeF
+    homepage: https://cafef.vn
+    outlet_type: sector_business
+    rss:
+      - { url: "https://cafef.vn/home.rss", section: null }
+    sitemaps:
+      - https://cafef.vn/google-news-sitemap.xml
+
+  - slug: vneconomy
+    name: VnEconomy
+    homepage: https://vneconomy.vn
+    outlet_type: sector_business
+    # No homepage RSS link; discover via the Google-News sitemap.
+    sitemaps:
+      - https://vneconomy.vn/sitemap/google-news.xml

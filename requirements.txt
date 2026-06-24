@@ -1,0 +1,31 @@
+# Vietnamese News Diversity — Phase 1 (data collection) dependencies.
+# Python 3.11+ in an isolated venv. Pinned-ish (lower bounds) for reproducibility;
+# regenerate exact pins with `pip freeze > requirements.lock.txt` before release.
+
+# --- HTTP + discovery ---
+requests>=2.31
+feedparser>=6.0.11          # RSS / Atom parsing
+beautifulsoup4>=4.12
+lxml>=5.1                   # fast XML/HTML backend (sitemaps, trafilatura)
+tenacity>=8.2              # exponential backoff on transient fetch errors
+
+# --- extraction ---
+trafilatura>=1.8           # layout-agnostic main-text + metadata extraction
+
+# --- normalization ---
+python-dateutil>=2.9       # robust parsing of heterogeneous outlet date formats
+tzdata>=2024.1             # IANA tz database (Windows has none; needed by zoneinfo)
+langdetect>=1.0.9          # language flagging (expect vi)
+
+# --- storage / config / reporting ---
+pyyaml>=6.0
+pandas>=2.1
+pyarrow>=15.0              # parquet
+matplotlib>=3.8           # data-quality plots
+
+# --- Vietnamese NLP ---
+underthesea>=6.7           # word segmentation (token counts; Phase 2 metrics)
+
+# --- Phase 2 (wired in next session) ---
+sentence-transformers>=2.6 # multilingual embeddings for near-duplicate clustering
+playwright>=1.42           # only for JS-rendered outlets; not used by default

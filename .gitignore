@@ -1,0 +1,20 @@
+# --- environment ---
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# --- raw cache (re-fetchable) ---
+data/raw/
+
+# --- processed artifacts: keep the schema'd corpus out of git; release via Zenodo ---
+data/processed/*.parquet
+
+# --- generated report figures (regenerated from the corpus) ---
+reports/figures/*.png
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

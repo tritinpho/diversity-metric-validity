@@ -1,0 +1,53 @@
+# Global run configuration. Nothing outlet-specific here — see outlets.yaml.
+# Everything reproducible from (outlets.yaml + this file + a date window).
+
+project:
+  name: vn-news-diversity
+  timezone: Asia/Ho_Chi_Minh   # all publish/scrape datetimes normalized to this
+
+window:
+  # Snapshot window: collect articles published within the last N days.
+  days_back: 21
+  # Optional hard bounds (ISO date, project tz). If both set, they override days_back.
+  start: null
+  end: null
+
+http:
+  user_agent: "VNDiversityResearchBot/0.1 (+mailto:tritin.pho@gmail.com)"
+  timeout_seconds: 30
+  # Politeness: minimum delay between two requests to the SAME domain, plus jitter.
+  rate_limit_seconds: 2.5
+  rate_limit_jitter_seconds: 1.0
+  # Transient-error retry (exponential backoff): wait = base * 2**(attempt-1), capped.
+  max_retries: 4
+  backoff_base_seconds: 2.0
+  backoff_max_seconds: 30.0
+  respect_robots: true
+
+dedupe:
+  # Near-duplicate (same-story, incl. across outlets) clustering — a separate
+  # on-demand pass (`python -m src.dedupe.near_dup`), not run on every collect.
+  embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  near_dup_threshold: 0.82          # cosine; calibrate against known cases
+  embed_body_chars: 600             # headline + leading body chars (model truncates)
+
+collect:
+  # Cap per outlet for trial passes; set to null for the full window.
+  max_articles_per_outlet: 100
+  # Discovery preference order (first that yields URLs wins for de-dup provenance).
+  prefer: [rss, sitemap, listing]
+  # If True, also harvest sitemaps even when RSS produced URLs (used to backfill
+  # outlets whose RSS is thin, e.g. a single 'home' feed).
+  sitemap_backfill: true
+
+paths:
+  raw_html: data/raw/html
+  raw_feeds: data/raw/feeds
+  robots_cache: data/raw/robots
+  processed: data/processed
+  articles_parquet: data/processed/articles.parquet
+  reports_dir: reports
+  figures_dir: reports/figures
+
+logging:
+  level: INFO
