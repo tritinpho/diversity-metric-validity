@@ -153,11 +153,14 @@ headline. Recommendation: corpus = enabling infrastructure, validity = headline.
 
 **Scoping choices to lock:**
 
-- `[DECIDE: snapshot window length and dates. config.yaml currently sets a
-  21-day rolling window; the Phase-1 report covers 2026-06-03 → 2026-06-24 but is
-  dense only on the most recent days because "latest" RSS feeds surface ~1–2 days
-  at a time and the corpus accumulates. Fix a contiguous window (e.g. a clean
-  3–4 calendar weeks) and report it as *the* snapshot.]`
+- **DECIDED 2026-07-13:** snapshot window fixed at **2026-06-24 → 2026-07-21**
+  (28 days / 4 calendar weeks). Dense day-to-day collection actually began
+  2026-06-24 (the first full-volume day; 2026-06-19 → 2026-06-23 has only a
+  handful of stray backfilled articles from deep sitemap sweeps and should be
+  treated as pre-window noise, not part of the reported snapshot). Collection
+  continues on the existing daily/topup cadence through 2026-07-21, then stops;
+  report that contiguous range as *the* snapshot regardless of what
+  `config.yaml`'s rolling `days_back` has accumulated beyond it.
 - `[DECIDE: final outlet set. 16 outlets across all 5 structural types are
   collected; Lao Động is deferred (bot-gated, needs a JS renderer) and Baomoi is
   excluded as an aggregator. Confirm the released set and whether to invest in
