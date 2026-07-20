@@ -2,32 +2,32 @@
 
 *Supply-side snapshot. Descriptive completeness check on the published cross-section; no exposure or substantive-coverage claims.*
 
-- **Generated:** 2026-07-19T09:53:55.769591+07:00
-- **Window:** 2026-06-28 → 2026-07-19 (Asia/Ho_Chi_Minh)
-- **Articles:** 43110  |  **Outlets:** 16  |  **Sections observed:** 4791
-- **Segmentation:** {'underthesea': 42825} (token counts)
+- **Generated:** 2026-07-20T13:52:43.101208+07:00
+- **Window:** 2026-06-29 → 2026-07-20 (Asia/Ho_Chi_Minh)
+- **Articles:** 45061  |  **Outlets:** 16  |  **Sections observed:** 4962
+- **Segmentation:** {'underthesea': 44762} (token counts)
 
 
 ## 1. Articles per outlet
 
 | outlet | outlet_type | articles |
 | --- | --- | --- |
-| dantri | semi_commercial | 4894 |
-| tienphong | union_mass_daily | 4451 |
-| vietnamnet | semi_commercial | 4274 |
-| vietnamplus | party_official | 4204 |
-| nhandan | party_official | 4164 |
-| qdnd | party_official | 3454 |
-| tuoitre | union_mass_daily | 3190 |
-| vnexpress | semi_commercial | 3025 |
-| saostar | popular_lifestyle | 2277 |
-| 24h | popular_lifestyle | 2189 |
-| vneconomy | sector_business | 1609 |
-| soha | popular_lifestyle | 1162 |
-| cafef | sector_business | 1161 |
-| kenh14 | popular_lifestyle | 1159 |
-| thanhnien | union_mass_daily | 1112 |
-| baochinhphu | party_official | 785 |
+| dantri | semi_commercial | 5113 |
+| tienphong | union_mass_daily | 4655 |
+| vietnamnet | semi_commercial | 4475 |
+| vietnamplus | party_official | 4382 |
+| nhandan | party_official | 4307 |
+| qdnd | party_official | 3595 |
+| tuoitre | union_mass_daily | 3310 |
+| vnexpress | semi_commercial | 3142 |
+| saostar | popular_lifestyle | 2427 |
+| 24h | popular_lifestyle | 2339 |
+| vneconomy | sector_business | 1662 |
+| soha | popular_lifestyle | 1222 |
+| cafef | sector_business | 1221 |
+| kenh14 | popular_lifestyle | 1219 |
+| thanhnien | union_mass_daily | 1172 |
+| baochinhphu | party_official | 820 |
 
 ![Articles per outlet](figures/articles_per_outlet.png)
 
@@ -39,44 +39,46 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 
 | outlet | section | articles |
 | --- | --- | --- |
-| 24h | World Cup | 57 |
-| 24h | bóng đá 24h | 36 |
-| 24h | Iran | 32 |
-| 24h | Bóng đá 24h | 26 |
+| 24h | World Cup | 60 |
+| 24h | bóng đá 24h | 44 |
+| 24h | Iran | 34 |
+| 24h | Bóng đá 24h | 27 |
+| 24h | World Cup 2026 | 24 |
 | 24h | Hà Nội | 23 |
 | 24h | Mỹ | 22 |
 | 24h | Ukraine | 19 |
 | 24h | Ronaldo | 16 |
-| 24h | World Cup 2026 | 16 |
-| 24h | Giá vàng hôm nay | 14 |
-| 24h | Messi | 13 |
+| 24h | Giá vàng hôm nay | 15 |
+| 24h | Messi | 14 |
+| 24h | xe may | 14 |
 | 24h | Nga | 13 |
-| 24h | xe may | 13 |
 | 24h | Trung Quốc | 12 |
-| 24h | giá vàng | 11 |
+| 24h | giá vàng | 12 |
+| 24h | Argentina | 11 |
+| 24h | con giáp | 10 |
 | 24h | giá xăng | 10 |
 | 24h | lich thi dau bong da | 10 |
 | 24h | (none) | 9 |
 | 24h | Yamal | 9 |
-| 24h | con giáp | 9 |
 | 24h | giá vàng hôm nay | 9 |
 | 24h | Pháp | 8 |
+| 24h | Thể thao 24h | 8 |
+| 24h | giá xăng dầu | 8 |
 | 24h | kết quả bóng đá | 8 |
 | 24h | thể thao 24h | 8 |
-| 24h | Argentina | 7 |
 | 24h | Na Uy | 7 |
-| 24h | Thể thao 24h | 7 |
+| 24h | Trump | 7 |
 | 24h | Tuyên Quang | 7 |
-| 24h | giá xăng dầu | 7 |
+| 24h | Tây Ban Nha | 7 |
 | 24h | liệt sĩ | 7 |
 | 24h | lừa đảo | 7 |
+| 24h | tai nạn giao thông | 7 |
 | 24h | Haaland | 6 |
-| 24h | Trump | 6 |
-| 24h | Tây Ban Nha | 6 |
 | 24h | Venezuela | 6 |
 | 24h | iPhone 18 Pro | 6 |
+| 24h | mỹ | 6 |
 | 24h | nga | 6 |
-| 24h | tai nạn giao thông | 6 |
+| 24h | vàng | 6 |
 | 24h | điều hòa | 6 |
 | 24h | Anh | 5 |
 | 24h | Anh - Argentina | 5 |
@@ -86,37 +88,42 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | FIFA | 5 |
 | 24h | Mbappe | 5 |
 | 24h | Pháp - Tây Ban Nha | 5 |
+| 24h | Quảng Ninh | 5 |
 | 24h | Taylor Swift | 5 |
 | 24h | Tây Ninh | 5 |
 | 24h | Tăng Thanh Hà | 5 |
 | 24h | Wimbledon | 5 |
+| 24h | djokovic | 5 |
 | 24h | iPhone Ultra | 5 |
 | 24h | kim cương | 5 |
 | 24h | mâm cơm gia đình | 5 |
-| 24h | mỹ | 5 |
-| 24h | vàng | 5 |
 | 24h | ĐT Anh | 5 |
+| 24h | Chung kết World Cup | 4 |
 | 24h | Dương Mịch | 4 |
 | 24h | Kylian Mbappe | 4 |
 | 24h | Putin | 4 |
+| 24h | Tuyển Việt Nam | 4 |
 | 24h | Tổng thống Trump | 4 |
 | 24h | bão số 1 | 4 |
-| 24h | djokovic | 4 |
 | 24h | dự báo thời tiết | 4 |
 | 24h | gian lận thi cử | 4 |
 | 24h | giá bạc | 4 |
 | 24h | hà nội | 4 |
 | 24h | iran | 4 |
 | 24h | thời tiết | 4 |
+| 24h | võ thuật | 4 |
 | 24h | world cup | 4 |
 | 24h | xe máy | 4 |
 | 24h | Điểm chuẩn | 4 |
+| 24h | đại học | 4 |
+| 24h | đột quỵ | 4 |
 | 24h | Ảnh sao | 4 |
 | 24h | Brazil | 3 |
 | 24h | Brooklyn Beckham | 3 |
 | 24h | Cape Verde | 3 |
 | 24h | Chuyển nhượng mùa hè | 3 |
 | 24h | David Beckham | 3 |
+| 24h | Gian lận thi | 3 |
 | 24h | Giá bạc | 3 |
 | 24h | Hà Tĩnh | 3 |
 | 24h | Hàn Quốc | 3 |
@@ -124,13 +131,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Lisa | 3 |
 | 24h | Midu | 3 |
 | 24h | Pháp Thụy Điển | 3 |
-| 24h | Quảng Ninh | 3 |
 | 24h | Thái Lan | 3 |
 | 24h | Trịnh Thăng Bình | 3 |
-| 24h | Tuyển Việt Nam | 3 |
 | 24h | Tây Ban Nha Bỉ | 3 |
 | 24h | Vozinha | 3 |
 | 24h | bé trai | 3 |
+| 24h | căn hộ | 3 |
 | 24h | evn | 3 |
 | 24h | iPhone 18 Pro Max | 3 |
 | 24h | loại rau | 3 |
@@ -142,18 +148,20 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | thời tiết Hà Nội hôm nay | 3 |
 | 24h | thực phẩm | 3 |
 | 24h | tin tuc pickleball | 3 |
+| 24h | tuyển Việt Nam | 3 |
 | 24h | tuyển sinh | 3 |
-| 24h | võ thuật | 3 |
 | 24h | điểm thi | 3 |
 | 24h | điện mặt trời mái nhà | 3 |
-| 24h | đại học | 3 |
 | 24h | AI | 2 |
+| 24h | An Giang | 2 |
 | 24h | BHXH | 2 |
+| 24h | Beckham | 2 |
 | 24h | Becks | 2 |
 | 24h | Bellingham | 2 |
 | 24h | Brazil - Nhật Bản | 2 |
 | 24h | Bùi Thanh Tuấn | 2 |
-| 24h | Chung kết World Cup | 2 |
+| 24h | Bảo Trúc | 2 |
+| 24h | Bệnh viện Bạch Mai | 2 |
 | 24h | Clip tin nóng | 2 |
 | 24h | Cristiano Ronaldo | 2 |
 | 24h | Declan Rice | 2 |
@@ -164,9 +172,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Galaxy Z Fold 8 | 2 |
 | 24h | Game | 2 |
 | 24h | Gia Lai | 2 |
-| 24h | Gian lận thi | 2 |
 | 24h | HLV Deschamps | 2 |
 | 24h | Harry Kane | 2 |
+| 24h | Hoàng hậu cuối cùng | 2 |
 | 24h | Huyền Baby | 2 |
 | 24h | Hyundai Creta | 2 |
 | 24h | Hyundai Elantra | 2 |
@@ -174,6 +182,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Khánh Hòa | 2 |
 | 24h | Kia Sportage | 2 |
 | 24h | Kiev | 2 |
+| 24h | Lai Châu | 2 |
 | 24h | Lamine Yamal | 2 |
 | 24h | Lạng Sơn | 2 |
 | 24h | MU | 2 |
@@ -196,22 +205,26 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Sao Việt | 2 |
 | 24h | Scotland | 2 |
 | 24h | Smart TV | 2 |
+| 24h | Sầu riêng | 2 |
 | 24h | Thủ khoa | 2 |
 | 24h | Toyota Corolla Cross | 2 |
 | 24h | Triều Tiên | 2 |
 | 24h | Triệu Lệ Dĩnh | 2 |
 | 24h | Trái Đất | 2 |
+| 24h | Tây Ban Nha Argentina | 2 |
 | 24h | Tăng Nhật Tuệ | 2 |
 | 24h | Vietnam Airlines | 2 |
 | 24h | VinFast | 2 |
 | 24h | Việt Nam | 2 |
+| 24h | Zelensky | 2 |
 | 24h | ban ket tennis dinh cao | 2 |
+| 24h | bà trùm | 2 |
 | 24h | bóng đá | 2 |
+| 24h | bơ | 2 |
 | 24h | bất động sản | 2 |
 | 24h | bộ xương | 2 |
 | 24h | cá độ bóng đá | 2 |
 | 24h | công an | 2 |
-| 24h | căn hộ | 2 |
 | 24h | cướp giật tài sản | 2 |
 | 24h | diễn viên | 2 |
 | 24h | don nam wimbledon | 2 |
@@ -223,6 +236,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | giảm cân | 2 |
 | 24h | haaland world cup | 2 |
 | 24h | hot girl | 2 |
+| 24h | hàng không | 2 |
 | 24h | hẹn hò | 2 |
 | 24h | học sinh | 2 |
 | 24h | iPhone | 2 |
@@ -233,6 +247,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | lái xe bằng chân | 2 |
 | 24h | lãi suất | 2 |
 | 24h | my nhan tennis | 2 |
+| 24h | món ngon | 2 |
 | 24h | mạng xã hội | 2 |
 | 24h | mỡ lợn | 2 |
 | 24h | mỡ nội tạng | 2 |
@@ -244,15 +259,18 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | phi công | 2 |
 | 24h | quốc hội | 2 |
 | 24h | rau | 2 |
+| 24h | rau dớn | 2 |
 | 24h | robot | 2 |
 | 24h | samsung | 2 |
 | 24h | sao hoa ngữ | 2 |
 | 24h | sinner | 2 |
+| 24h | smartphone | 2 |
 | 24h | suy thận | 2 |
 | 24h | suzuki | 2 |
 | 24h | sách giáo khoa | 2 |
 | 24h | sáp nhập | 2 |
 | 24h | sạt lở | 2 |
+| 24h | sự kiện | 2 |
 | 24h | tai nạn | 2 |
 | 24h | thi thể | 2 |
 | 24h | thi tốt nghiệp | 2 |
@@ -262,15 +280,20 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | trump | 2 |
 | 24h | trên máy bay | 2 |
 | 24h | trẻ em | 2 |
-| 24h | tuyển Việt Nam | 2 |
+| 24h | tây ban nha | 2 |
+| 24h | tìm kiếm cứu nạn | 2 |
 | 24h | tập yoga | 2 |
 | 24h | tỷ giá usd | 2 |
 | 24h | xe khách | 2 |
 | 24h | xét tuyển đại học | 2 |
+| 24h | xử phạt | 2 |
+| 24h | ĐT Tây Ban Nha | 2 |
+| 24h | ĐT Việt Nam | 2 |
 | 24h | Điểm thi | 2 |
 | 24h | Đàm Vĩnh Hưng | 2 |
 | 24h | Đường lên đỉnh Olympia | 2 |
 | 24h | Đắk Lắk | 2 |
+| 24h | Đồng Nai | 2 |
 | 24h | Đội bóng nữ Thiếu Lâm | 2 |
 | 24h | điểm chuẩn | 2 |
 | 24h | điện thoại | 2 |
@@ -279,7 +302,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | đội tuyển Việt Nam | 2 |
 | 24h | động đất | 2 |
 | 24h | động đất Venezuela | 2 |
-| 24h | đột quỵ | 2 |
 | 24h | 1 phút | 1 |
 | 24h | 1.1.1.1 vs 8.8.8.8 | 1 |
 | 24h | 10 điểm đến đẹp nhất nước Mỹ - VnExpress | 1 |
@@ -296,7 +318,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Ai Cập | 1 |
 | 24h | Ai Cập - Iran | 1 |
 | 24h | Album ảnh | 1 |
-| 24h | An Giang | 1 |
 | 24h | Andy Burnham | 1 |
 | 24h | Anh Argentina | 1 |
 | 24h | Anh em ruột | 1 |
@@ -308,12 +329,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Argentina - Ai Cập | 1 |
 | 24h | Argentina - Anh | 1 |
 | 24h | Argentina - Thụy Sĩ | 1 |
+| 24h | Argentina Tây Ban Nha | 1 |
 | 24h | Argentina vs Anh | 1 |
 | 24h | Arsenal | 1 |
 | 24h | BMW X1 | 1 |
 | 24h | BTS | 1 |
 | 24h | BYD | 1 |
-| 24h | Beckham | 1 |
+| 24h | Ba Lan | 1 |
+| 24h | Barron Trump | 1 |
+| 24h | Belgian GP | 1 |
 | 24h | Bi kịch thiếu nữ bị hãm hiếp | 1 |
 | 24h | Biển Đông đón áp thấp nhiệt đới | 1 |
 | 24h | Biệt thự 525 m2 | 1 |
@@ -329,14 +353,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Bạo hành | 1 |
 | 24h | Bảo Anh | 1 |
 | 24h | Bảo Ngọc | 1 |
-| 24h | Bảo Trúc | 1 |
 | 24h | Bảo hiểm xã hội | 1 |
 | 24h | Bất thường điểm thi Toán | 1 |
 | 24h | Bất động sản đắt nhất Việt Nam | 1 |
 | 24h | Bắc Kinh | 1 |
-| 24h | Bệnh viện Bạch Mai | 1 |
 | 24h | Bệnh đau nửa đầu | 1 |
 | 24h | Bỏ việc lương cao | 1 |
+| 24h | Bộ Công an | 1 |
 | 24h | CHDC Congo Colombia | 1 |
 | 24h | CIA | 1 |
 | 24h | Canada | 1 |
@@ -348,6 +371,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Chiến dịch 500 ngày đêm | 1 |
 | 24h | Chiến tranh | 1 |
 | 24h | Chunchun | 1 |
+| 24h | Chung kết World Cup 2026 | 1 |
 | 24h | Cháy tàu cá | 1 |
 | 24h | Châu Tinh Trì | 1 |
 | 24h | Châu Âu | 1 |
@@ -358,6 +382,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Chợ Nhà Xanh | 1 |
 | 24h | Chủ tịch FIFA | 1 |
 | 24h | Con giáp | 1 |
+| 24h | Conor McGregor UFC 329 | 1 |
 | 24h | Croatia | 1 |
 | 24h | Cà phê | 1 |
 | 24h | Cách xác thực khuôn mặt | 1 |
@@ -405,6 +430,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | FIFA World Cup 2026 | 1 |
 | 24h | Fernandes | 1 |
 | 24h | Ferrari | 1 |
+| 24h | Ford Mustang Much-E | 1 |
 | 24h | Ford Ranger | 1 |
 | 24h | Fukushima | 1 |
 | 24h | GPLX | 1 |
@@ -432,6 +458,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Harley-Davidson | 1 |
 | 24h | Harper Beckham | 1 |
 | 24h | Harvard | 1 |
+| 24h | Hieuthuhai xem chung kết World Cup | 1 |
 | 24h | Hoa hậu Kỳ Duyên | 1 |
 | 24h | Hoa hậu Thanh Thảo | 1 |
 | 24h | Hoa hậu Thanh Thủy | 1 |
@@ -448,7 +475,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Hong Myung-bo | 1 |
 | 24h | Hoàng Phi Hồng | 1 |
 | 24h | Hoàng Thị Thanh Nga | 1 |
-| 24h | Hoàng hậu cuối cùng | 1 |
+| 24h | Hoàng Tôn | 1 |
 | 24h | Hoá đơn điện | 1 |
 | 24h | Hoạt động trồng cần sa trái phép | 1 |
 | 24h | Huyền Trang Mù Tạt | 1 |
@@ -472,16 +499,21 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Học phí | 1 |
 | 24h | Học vấn thí sinh Hoa hậu Việt Nam 2026 | 1 |
 | 24h | Hồ Ngọc Hà | 1 |
+| 24h | Hồ Tây | 1 |
 | 24h | Hồng Đăng du lịch | 1 |
 | 24h | Hứa Hồng Hải | 1 |
 | 24h | Indonesia | 1 |
+| 24h | Inés García | 1 |
 | 24h | J.D. Power | 1 |
 | 24h | Jang Dong Gun | 1 |
 | 24h | Jannik Sinner | 1 |
 | 24h | Jennifer Phạm | 1 |
 | 24h | Ji Chang Wook | 1 |
+| 24h | Jisoo | 1 |
 | 24h | Jude Bellingham | 1 |
 | 24h | Justin Bieber | 1 |
+| 24h | KIA Seltos | 1 |
+| 24h | Kai Trump | 1 |
 | 24h | Kane | 1 |
 | 24h | Katie Holmes | 1 |
 | 24h | Kawasaki KLX230 2027 | 1 |
@@ -501,7 +533,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Kylian Mbappé | 1 |
 | 24h | Kỳ Duyên | 1 |
 | 24h | La Roja | 1 |
-| 24h | Lai Châu | 1 |
 | 24h | Lamborghini | 1 |
 | 24h | Lammens World Cup | 1 |
 | 24h | Lan Khuê | 1 |
@@ -516,6 +547,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Lisadự lễ cưới Nadech - Yaya | 1 |
 | 24h | Lisandro Martinez | 1 |
 | 24h | Liên Minh Huyền Thoại | 1 |
+| 24h | Liệu pháp ánh sáng đỏ | 1 |
 | 24h | Logistics | 1 |
 | 24h | Loạt bác sĩ | 1 |
 | 24h | Lukashenko | 1 |
@@ -535,8 +567,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | MC Phí Linh làm MC concert Thanh xuân | 1 |
 | 24h | MC Thanh Thanh Huyền | 1 |
 | 24h | MG G50 | 1 |
+| 24h | MPV 7 chỗ | 1 |
 | 24h | MU Andrey Santos | 1 |
 | 24h | Mai Ngọc | 1 |
+| 24h | Mai Phương | 1 |
 | 24h | Mai Phương Thuý | 1 |
 | 24h | Marc Cucurella | 1 |
 | 24h | Maria Sharapov | 1 |
@@ -552,6 +586,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Mercedes-Maybach GLS 480 | 1 |
 | 24h | Messi - Yamal | 1 |
 | 24h | Messi Argentina | 1 |
+| 24h | Messi Argentina Tây Ban Nha | 1 |
 | 24h | Messi Argentina vào chung kết World Cup 2026 | 1 |
 | 24h | Messi việt vị | 1 |
 | 24h | Mexico | 1 |
@@ -564,6 +599,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Mitsubishi Pajero iO | 1 |
 | 24h | Mitsubishi Xforce | 1 |
 | 24h | Miu Lê | 1 |
+| 24h | Modenas Elegan EX 250 | 1 |
 | 24h | Morocco | 1 |
 | 24h | MotoGP | 1 |
 | 24h | MotoGP - German GP | 1 |
@@ -571,6 +607,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Mourinho | 1 |
 | 24h | Muchova | 1 |
 | 24h | Myanmar | 1 |
+| 24h | Máy hút bụi lau nhà | 1 |
 | 24h | Mâm cỗ quê | 1 |
 | 24h | Mã độc tống tiền | 1 |
 | 24h | Mưa lũ Sơn La | 1 |
@@ -586,6 +623,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | New Zealand - Bỉ | 1 |
 | 24h | Neymar Junior | 1 |
 | 24h | Nghĩa địa Ba Đồn | 1 |
+| 24h | Ngoại trưởng Iran | 1 |
 | 24h | Ngoại trưởng Mỹ | 1 |
 | 24h | Nguyễn Anh Minh | 1 |
 | 24h | Nguyễn Xuân Son | 1 |
@@ -599,6 +637,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Nhận định bóng đá | 1 |
 | 24h | Nhật Bản - Thụy Điển | 1 |
 | 24h | Ninh Bình | 1 |
+| 24h | Nokia | 1 |
 | 24h | Nokia Asha 305 | 1 |
 | 24h | Nord Stream | 1 |
 | 24h | Noskova Kostyuk | 1 |
@@ -624,6 +663,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Phong cách | 1 |
 | 24h | Phu nhân tỷ phú đổ bộ | 1 |
 | 24h | Pháo | 1 |
+| 24h | Phó Tổng thống | 1 |
 | 24h | Phú Quốc | 1 |
 | 24h | Phương Nam | 1 |
 | 24h | Phương Trinh Jolie | 1 |
@@ -644,9 +684,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Quốc khánh Mỹ | 1 |
 | 24h | Quỳnh Anh ở Thụy Sĩ | 1 |
 | 24h | RAM | 1 |
+| 24h | Range Rover Land Rover | 1 |
 | 24h | Realme p4x 4g | 1 |
 | 24h | Rinderknech | 1 |
 | 24h | Robot hút bụi | 1 |
+| 24h | Rodri | 1 |
 | 24h | Ronaldo Bồ Đào Nha | 1 |
 | 24h | Ronaldo Ibrahimovic | 1 |
 | 24h | Royal Enfield | 1 |
@@ -673,7 +715,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Suzuki XL7 | 1 |
 | 24h | Săn bình minh trên đồi chè Phú Thọ | 1 |
 | 24h | Sầm Sơn | 1 |
-| 24h | Sầu riêng | 1 |
 | 24h | Sắc vóc | 1 |
 | 24h | Sở GDĐT Phú Thọ | 1 |
 | 24h | Sở Giáo dục | 1 |
@@ -683,6 +724,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | TV | 1 |
 | 24h | Tai nghe | 1 |
 | 24h | Thanh Duy | 1 |
+| 24h | Thanh Hằng sinh nhật tuổi 43 | 1 |
 | 24h | Thanh Trúc | 1 |
 | 24h | Thanh niên đập phá | 1 |
 | 24h | Thi tốt nghiệp THPT | 1 |
@@ -731,10 +773,14 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Trường công lập | 1 |
 | 24h | Trại hè | 1 |
 | 24h | Trần Quốc Anh | 1 |
+| 24h | Trận đấu Argentina Tây Ban Nha | 1 |
 | 24h | Tuchel | 1 |
 | 24h | Tunisia - Hà Lan | 1 |
+| 24h | Tuyển sinh | 1 |
+| 24h | Tài xế | 1 |
 | 24h | Tây Ban Nha Bỉ Yamal | 1 |
 | 24h | Tây Ban Nha Pháp | 1 |
+| 24h | Tây Ban Nha vô địch World Cup 2026 | 1 |
 | 24h | Tô Hữu Bằng | 1 |
 | 24h | Tôm đồng | 1 |
 | 24h | Tú Oanh | 1 |
@@ -745,6 +791,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Tổng công ty Điện lực TP Hà Nội | 1 |
 | 24h | Tổng thống Donald Trump | 1 |
 | 24h | Tụ điện | 1 |
+| 24h | Từ Hy Viên | 1 |
 | 24h | Tỷ giá USD | 1 |
 | 24h | UAV | 1 |
 | 24h | UAV Iran | 1 |
@@ -799,7 +846,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Yamal Mbappe Tây Ban Nha | 1 |
 | 24h | YouTuber Hàn Quốc | 1 |
 | 24h | Yên Tử | 1 |
-| 24h | Zelensky | 1 |
 | 24h | Zverev | 1 |
 | 24h | android | 1 |
 | 24h | au da hai hung | 1 |
@@ -808,6 +854,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | bang xep hang bong da anh | 1 |
 | 24h | bang xep hang tennis | 1 |
 | 24h | bikini world cup | 1 |
+| 24h | binh sỹ | 1 |
 | 24h | biển báo | 1 |
 | 24h | biển số giả | 1 |
 | 24h | biệt thự | 1 |
@@ -818,7 +865,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | bong chuyen vo dich dong nam a | 1 |
 | 24h | buôn lậu kim cương | 1 |
 | 24h | bà nội U70 | 1 |
-| 24h | bà trùm | 1 |
 | 24h | bài tập 10 phút | 1 |
 | 24h | bàn | 1 |
 | 24h | bàn thờ Thần tài | 1 |
@@ -836,7 +882,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | bí quyết | 1 |
 | 24h | bóng đá world cup | 1 |
 | 24h | bún ốc Hà Nội | 1 |
-| 24h | bơ | 1 |
 | 24h | bản quyền | 1 |
 | 24h | bản quyền âm nhạc | 1 |
 | 24h | bảng xếp hạng World Cup | 1 |
@@ -851,6 +896,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | bố mẹ | 1 |
 | 24h | bồ đào nha | 1 |
 | 24h | bồi thường thiệt hại | 1 |
+| 24h | bổ nhiệm | 1 |
 | 24h | bổ thận | 1 |
 | 24h | bộ phận sinh dục | 1 |
 | 24h | bộ sạc | 1 |
@@ -859,13 +905,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | bữa sáng cho người tiểu đường | 1 |
 | 24h | ca sĩ | 1 |
 | 24h | canh đuôi lợn | 1 |
+| 24h | cao tốc | 1 |
 | 24h | chinh phục Everest | 1 |
 | 24h | chip nhớ | 1 |
 | 24h | chip xử lý não bộ trung quốc | 1 |
 | 24h | chiến dịch không kích | 1 |
 | 24h | chiến lược quân sự | 1 |
 | 24h | chung cư | 1 |
+| 24h | chung kết world cup 2026 | 1 |
 | 24h | chuyển nhượng | 1 |
+| 24h | chuyển nhượng 24h | 1 |
 | 24h | chuyển tiền | 1 |
 | 24h | chàng trai | 1 |
 | 24h | cháu gái | 1 |
@@ -919,7 +968,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | cảnh báo | 1 |
 | 24h | cảnh báo dông lốc | 1 |
 | 24h | cảnh báo mưa dông | 1 |
+| 24h | cảnh nóng | 1 |
 | 24h | cấp cứu | 1 |
+| 24h | cầu thủ | 1 |
 | 24h | cặp vợ chồng | 1 |
 | 24h | cỏ dại | 1 |
 | 24h | cổ phiếu | 1 |
@@ -938,6 +989,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | du lịch hội an | 1 |
 | 24h | duc thien thong tri bi-a | 1 |
 | 24h | duoi nuoc | 1 |
+| 24h | duong cong va trieu view | 1 |
 | 24h | dông lốc | 1 |
 | 24h | dưa chuột | 1 |
 | 24h | dạy thêm | 1 |
@@ -946,11 +998,14 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | em bé | 1 |
 | 24h | eo biển Hormuz | 1 |
 | 24h | f1 | 1 |
+| 24h | gan khỏe hơn | 1 |
 | 24h | ghế an toàn | 1 |
 | 24h | ghế an toàn nhất trên ôtô | 1 |
+| 24h | ghế một triệu út | 1 |
 | 24h | ghế trẻ em | 1 |
 | 24h | gian lận thi cử tuyên quang | 1 |
 | 24h | giao thông | 1 |
+| 24h | giá dầu | 1 |
 | 24h | giá iPhone 14 Pro Max | 1 |
 | 24h | giá mắc cọp | 1 |
 | 24h | giá vàng bạc thế giới | 1 |
@@ -979,17 +1034,19 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | honda click 125 | 1 |
 | 24h | honda click evo 160 | 1 |
 | 24h | honor | 1 |
+| 24h | honor x7e plus 5g | 1 |
 | 24h | hot girl mạng | 1 |
 | 24h | huyen thoai chuyen ay | 1 |
 | 24h | hy hữu | 1 |
+| 24h | hyundai kona | 1 |
 | 24h | hà tăng | 1 |
 | 24h | hàng giả | 1 |
 | 24h | hàng hóa online | 1 |
-| 24h | hàng không | 1 |
 | 24h | hành hung | 1 |
 | 24h | hành tinh áp sát trái đất | 1 |
 | 24h | hãng hàng không | 1 |
 | 24h | hôn nhân hạnh phúc | 1 |
+| 24h | hương phù sa | 1 |
 | 24h | hạt họ đậu | 1 |
 | 24h | hầm dự trữ vàng | 1 |
 | 24h | học bán dẫn ra trường làm gì | 1 |
@@ -999,6 +1056,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | hố đen dải ngân hà | 1 |
 | 24h | hố đen ngủ đông | 1 |
 | 24h | hồi môn | 1 |
+| 24h | hồi sinh | 1 |
 | 24h | hở van tim | 1 |
 | 24h | hợp chất mới mắc khén | 1 |
 | 24h | iPhone 16 | 1 |
@@ -1017,6 +1075,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | không nhường đường cho xe cứu thương | 1 |
 | 24h | khảo cổ học | 1 |
 | 24h | khối băng Ấn Độ | 1 |
+| 24h | khởi tố | 1 |
 | 24h | khử mùi thức ăn lò vi sóng | 1 |
 | 24h | kinh nghiệm | 1 |
 | 24h | kiện tụng | 1 |
@@ -1038,6 +1097,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | làng du lịch cộng đồng | 1 |
 | 24h | lái xe | 1 |
 | 24h | lãi suất tiết kiệm 6 tháng | 1 |
+| 24h | lý thuyết hố đen mới | 1 |
 | 24h | lũ lụt | 1 |
 | 24h | lũ ống | 1 |
 | 24h | lương giáo viên | 1 |
@@ -1056,6 +1116,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | ma túy | 1 |
 | 24h | man utd | 1 |
 | 24h | mang hung khí điều khiển xe mô tô | 1 |
+| 24h | massage cổ | 1 |
 | 24h | may mắn | 1 |
 | 24h | men gan | 1 |
 | 24h | messi | 1 |
@@ -1069,6 +1130,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | my nhan me yoga | 1 |
 | 24h | my nhan qua kho | 1 |
 | 24h | my nhan vo dich tre | 1 |
+| 24h | my nu brazil | 1 |
 | 24h | máy bay chiến đấu | 1 |
 | 24h | máy giặt | 1 |
 | 24h | máy tính bảng | 1 |
@@ -1080,7 +1142,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | mã QR chấm điểm cán bộ | 1 |
 | 24h | mã độc WhatsApp | 1 |
 | 24h | mít ruột đỏ | 1 |
-| 24h | món ngon | 1 |
 | 24h | môi giới | 1 |
 | 24h | mùa bơ | 1 |
 | 24h | mùa hè ăn thịt vịt có tác dụng gì | 1 |
@@ -1089,6 +1150,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | mưa dông | 1 |
 | 24h | mưa dông ở miền Bắc | 1 |
 | 24h | mưa lớn ở Sơn La | 1 |
+| 24h | mưa to | 1 |
 | 24h | mại dâm | 1 |
 | 24h | mất tích | 1 |
 | 24h | mặt nạ | 1 |
@@ -1132,6 +1194,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | nuôi cá | 1 |
 | 24h | nuôi cá trê vàng | 1 |
 | 24h | nước luộc thịt | 1 |
+| 24h | nước lèo | 1 |
 | 24h | nước lũ | 1 |
 | 24h | nước yến giả | 1 |
 | 24h | nấm mốc điều hòa mùa hè | 1 |
@@ -1139,6 +1202,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | nắng nóng ở châu âu | 1 |
 | 24h | nợ lương | 1 |
 | 24h | phi hành gia uống nước | 1 |
+| 24h | phim | 1 |
 | 24h | phim kinh dị | 1 |
 | 24h | phim lịch sử | 1 |
 | 24h | phong cách mùa hè 2026 | 1 |
@@ -1150,6 +1214,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | phẫu thuật cấp cứu | 1 |
 | 24h | phố Tây | 1 |
 | 24h | phổi lợn | 1 |
+| 24h | phụ huynh | 1 |
 | 24h | pickleball | 1 |
 | 24h | pin gold brick geely | 1 |
 | 24h | quan hệ tình dục trẻ vị thành niên | 1 |
@@ -1163,10 +1228,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | quán xôi | 1 |
 | 24h | quân đội Nga | 1 |
 | 24h | quả dại | 1 |
+| 24h | quảng trị | 1 |
 | 24h | quầng mặt trời | 1 |
+| 24h | rang thịt | 1 |
 | 24h | rau bí | 1 |
 | 24h | rau cải xoong | 1 |
-| 24h | rau dớn | 1 |
 | 24h | rau đay | 1 |
 | 24h | redmi k90 ultra | 1 |
 | 24h | redmi note 17 | 1 |
@@ -1179,10 +1245,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | rắn | 1 |
 | 24h | sabalenka | 1 |
 | 24h | sex | 1 |
-| 24h | smartphone | 1 |
 | 24h | so sánh xe | 1 |
 | 24h | sàn tiền số ONUS | 1 |
 | 24h | sáp nhập xã | 1 |
+| 24h | sân bay | 1 |
 | 24h | sân bay Donald Trump | 1 |
 | 24h | sân bay Tân Sơn Nhất | 1 |
 | 24h | sân vận động Akron | 1 |
@@ -1197,7 +1263,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | sức khỏe | 1 |
 | 24h | sử dụng điện thoại | 1 |
 | 24h | sữa giả | 1 |
-| 24h | sự kiện | 1 |
 | 24h | sự thật | 1 |
 | 24h | tai nghe JBL Live 780nc | 1 |
 | 24h | taxi | 1 |
@@ -1224,6 +1289,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | thác Bản Giốc | 1 |
 | 24h | thác nước | 1 |
 | 24h | thí sinh | 1 |
+| 24h | thói quen làm việc gây hại sức khoẻ | 1 |
 | 24h | thói quen trong bếp | 1 |
 | 24h | thói quen ăn uống | 1 |
 | 24h | thông gia | 1 |
@@ -1231,6 +1297,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | thông tin mới về siêu bão Ba Vì | 1 |
 | 24h | thùng rác | 1 |
 | 24h | thạch găng | 1 |
+| 24h | thảm họa | 1 |
 | 24h | thần đồng văn học | 1 |
 | 24h | thị trường kim cương vàng thau lẫn lộn | 1 |
 | 24h | thị trường lao động | 1 |
@@ -1253,13 +1320,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | tin tuc bi-a | 1 |
 | 24h | tiến sĩ | 1 |
 | 24h | tiền lương | 1 |
+| 24h | tiền số | 1 |
 | 24h | tiền vệ Haaland hát rap | 1 |
 | 24h | tiền điện | 1 |
 | 24h | tiền đạo Haaland | 1 |
+| 24h | tom Cruise World Cup 2026 | 1 |
 | 24h | top ghi ban world cup | 1 |
 | 24h | toyota veloz cross | 1 |
 | 24h | toyota vios | 1 |
 | 24h | trung quốc | 1 |
+| 24h | trung ương | 1 |
 | 24h | truy nã | 1 |
 | 24h | trái cây nhập khẩu | 1 |
 | 24h | trúng số | 1 |
@@ -1281,13 +1351,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | tàu dầu nga | 1 |
 | 24h | tàu lật | 1 |
 | 24h | tâm linh | 1 |
-| 24h | tây ban nha | 1 |
 | 24h | tên lửa | 1 |
 | 24h | tên lửa Meteor | 1 |
-| 24h | tìm kiếm cứu nạn | 1 |
 | 24h | tóc bạc | 1 |
 | 24h | tôm khô | 1 |
 | 24h | túi ngậm nicotine | 1 |
+| 24h | tăng giá | 1 |
 | 24h | tăng giá điện | 1 |
 | 24h | tăng nhật tụê | 1 |
 | 24h | tăng nặng mức phạt | 1 |
@@ -1297,10 +1366,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | tố cáo vi phạm thi tốt nghiệp | 1 |
 | 24h | tốt nghiệp THPT | 1 |
 | 24h | tổ dân phố | 1 |
+| 24h | tổng bí thư | 1 |
 | 24h | tội phạm | 1 |
 | 24h | tủ lạnh | 1 |
 | 24h | tủ lạnh thông minh | 1 |
 | 24h | từ thiện | 1 |
+| 24h | tự kiểm tra bản quyền windows | 1 |
 | 24h | tự sát | 1 |
 | 24h | tỷ phú | 1 |
 | 24h | tỷ phú Từ Ba | 1 |
@@ -1318,6 +1389,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | vo gạo trước khi nấu cơm | 1 |
 | 24h | vo messi | 1 |
 | 24h | vo tien minh | 1 |
+| 24h | vua tây ban nha | 1 |
 | 24h | vàng bạc Phương Xuân | 1 |
 | 24h | vàng tây | 1 |
 | 24h | vé điện tử liên thông | 1 |
@@ -1331,13 +1403,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | về quê làm du lịch | 1 |
 | 24h | vịnh Hạ Long | 1 |
 | 24h | vỏ chuối có tác dụng gì | 1 |
+| 24h | vốn cho bất động sản | 1 |
 | 24h | vốn đầu tư | 1 |
 | 24h | vợ Duy Mạnh | 1 |
 | 24h | vụ nổ vũ trụ whippet | 1 |
+| 24h | vụ tai nạn lao động | 1 |
 | 24h | vụ án mạng | 1 |
 | 24h | vụ đánh chết bạn nhậu | 1 |
 | 24h | vừng đen | 1 |
 | 24h | wimbledon | 1 |
+| 24h | world cup 2026 | 1 |
 | 24h | xe ben | 1 |
 | 24h | xe buýt | 1 |
 | 24h | xe bán tải | 1 |
@@ -1348,6 +1423,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | xe mô tô | 1 |
 | 24h | xe tay ga | 1 |
 | 24h | xe đạp máy | 1 |
+| 24h | xem chung kết world cup | 1 |
 | 24h | xforce | 1 |
 | 24h | xung đột | 1 |
 | 24h | xung đột Nga Ukraine | 1 |
@@ -1358,7 +1434,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | xăng E10 | 1 |
 | 24h | xăng dầu | 1 |
 | 24h | xổ số | 1 |
-| 24h | xử phạt | 1 |
 | 24h | yamaha neos | 1 |
 | 24h | yến mạch | 1 |
 | 24h | Á hậu | 1 |
@@ -1371,11 +1446,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | ô tô | 1 |
 | 24h | ăn bán trú | 1 |
 | 24h | ăn hạt mít có tốt không | 1 |
+| 24h | ăn sáng | 1 |
 | 24h | ăn sáng đầy đủ giúp giảm mỡ | 1 |
 | 24h | ăn trứng sai cách | 1 |
 | 24h | ĐT Pháp | 1 |
-| 24h | ĐT Tây Ban Nha | 1 |
-| 24h | ĐT Việt Nam | 1 |
 | 24h | ĐT hàn quốc | 1 |
 | 24h | Đinh Tiến Dũng | 1 |
 | 24h | Đinh Văn Nơi | 1 |
@@ -1392,8 +1466,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | Đại học Quốc gia Hà Nội | 1 |
 | 24h | Đại tướng Nguyễn Trọng Nghĩa | 1 |
 | 24h | Đại tướng Phan Văn Giang | 1 |
+| 24h | Đạo văn | 1 |
+| 24h | Đấu giá đất | 1 |
 | 24h | Đề thi môn Văn | 1 |
-| 24h | Đồng Nai | 1 |
 | 24h | Đồng Tháp | 1 |
 | 24h | Đỗ Mỹ Linh sau sinh | 1 |
 | 24h | Đỗ Thị Hà | 1 |
@@ -1417,6 +1492,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | đuối nước | 1 |
 | 24h | đuối nước ở Lâm Đồng | 1 |
 | 24h | đám cưới | 1 |
+| 24h | đám cưới miền Tây | 1 |
 | 24h | đâm tử vong | 1 |
 | 24h | đô la Mỹ | 1 |
 | 24h | đường | 1 |
@@ -1425,6 +1501,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | đường sắt | 1 |
 | 24h | đạo diễn | 1 |
 | 24h | đạo diễn Victor Vũ | 1 |
+| 24h | đất vàng | 1 |
 | 24h | đấu giá | 1 |
 | 24h | đầu tư | 1 |
 | 24h | đầu tư bất động sản | 1 |
@@ -1444,19 +1521,19 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 24h | ứng phó bão số 1 | 1 |
 | 24h | ‘Em xinh’ Han Sara | 1 |
 | 24h | • khởi tố phần mềm Microsoft lậu | 1 |
-| baochinhphu | (none) | 198 |
+| baochinhphu | (none) | 207 |
 | baochinhphu | Phó Thủ tướng | 26 |
 | baochinhphu | Tổng Bí thư | 16 |
 | baochinhphu | Cần Thơ | 13 |
 | baochinhphu | Phạm Gia Túc | 12 |
 | baochinhphu | thủ tướng | 11 |
+| baochinhphu | Vĩnh Long | 9 |
+| baochinhphu | nhà ở xã hội | 9 |
 | baochinhphu | Đà Nẵng | 9 |
-| baochinhphu | Vĩnh Long | 8 |
-| baochinhphu | nhà ở xã hội | 8 |
+| baochinhphu | Giáo dục | 7 |
 | baochinhphu | giáo viên | 6 |
 | baochinhphu | Agribank | 5 |
 | baochinhphu | Bộ Tư Pháp | 5 |
-| baochinhphu | Giáo dục | 5 |
 | baochinhphu | phó thủ tướng thường trực | 5 |
 | baochinhphu | thuế | 5 |
 | baochinhphu | Chỉ đạo | 4 |
@@ -1467,42 +1544,47 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | hải quan | 4 |
 | baochinhphu | khởi tố | 4 |
 | baochinhphu | xăng E10 | 4 |
+| baochinhphu | Bộ Nội vụ | 3 |
 | baochinhphu | EVNNPT | 3 |
 | baochinhphu | Họp báo Chính phủ thường kỳ | 3 |
 | baochinhphu | Kế toán | 3 |
 | baochinhphu | MXV | 3 |
 | baochinhphu | Nghị quyết 57-NQ/TW | 3 |
 | baochinhphu | VPBank | 3 |
+| baochinhphu | Vietcombank | 3 |
 | baochinhphu | Y tế | 3 |
 | baochinhphu | an ninh nhân dân | 3 |
 | baochinhphu | chuyển mục đích sử dụng đất | 3 |
 | baochinhphu | chuyển đổi số | 3 |
 | baochinhphu | cứu hộ | 3 |
 | baochinhphu | giá xăng | 3 |
+| baochinhphu | hội nghị | 3 |
 | baochinhphu | kỷ luật | 3 |
+| baochinhphu | người có công | 3 |
 | baochinhphu | tăng trưởng hai con số | 3 |
 | baochinhphu | Điện hạt nhân | 3 |
+| baochinhphu | đất nông nghiệp | 3 |
 | baochinhphu | ủy ban thường vụ quốc hội | 3 |
 | baochinhphu | BHYT | 2 |
 | baochinhphu | Ban Chỉ đạo | 2 |
 | baochinhphu | Ban Tuyên giáo và Dân vận Trung ương | 2 |
-| baochinhphu | Bộ Nội vụ | 2 |
 | baochinhphu | Cà Mau | 2 |
 | baochinhphu | GDP | 2 |
 | baochinhphu | Huế | 2 |
 | baochinhphu | Hộ kinh doanh | 2 |
 | baochinhphu | Kho bạc | 2 |
 | baochinhphu | Nguyễn Văn Thắng | 2 |
+| baochinhphu | Nội dung số | 2 |
 | baochinhphu | PetroVietnam | 2 |
 | baochinhphu | Phát triển kinh tế | 2 |
 | baochinhphu | Phú Quốc | 2 |
+| baochinhphu | Quảng Trị | 2 |
 | baochinhphu | Quốc hội | 2 |
 | baochinhphu | Sở hữu trí tuệ | 2 |
 | baochinhphu | Thanh Tra | 2 |
 | baochinhphu | Thanh tra Chính phủ | 2 |
 | baochinhphu | Thường trực Ban Bí thư | 2 |
 | baochinhphu | Thủ tục hành chính | 2 |
-| baochinhphu | Vietcombank | 2 |
 | baochinhphu | an ninh mạng | 2 |
 | baochinhphu | bảo hiểm xã hội | 2 |
 | baochinhphu | giá điện | 2 |
@@ -1512,17 +1594,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | khoa học công nghệ | 2 |
 | baochinhphu | kiểm toán nhà nước | 2 |
 | baochinhphu | mộ liệt sĩ | 2 |
-| baochinhphu | người có công | 2 |
 | baochinhphu | nổi bật tuần | 2 |
 | baochinhphu | phụ cấp | 2 |
 | baochinhphu | sử dụng đất | 2 |
 | baochinhphu | tiêu chuẩn | 2 |
 | baochinhphu | truy tố | 2 |
+| baochinhphu | tài sản mã hóa | 2 |
 | baochinhphu | viên chức | 2 |
 | baochinhphu | vòng Chung kết | 2 |
 | baochinhphu | văn bản quy phạm pháp luật | 2 |
 | baochinhphu | đo lường | 2 |
-| baochinhphu | đất nông nghiệp | 2 |
 | baochinhphu | đất đai | 2 |
 | baochinhphu | ACB | 1 |
 | baochinhphu | ACV | 1 |
@@ -1556,6 +1637,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | ESG | 1 |
 | baochinhphu | Esports | 1 |
 | baochinhphu | FDI | 1 |
+| baochinhphu | Gia Lai | 1 |
 | baochinhphu | Giấy chứng nhận quyền sử dụng đất | 1 |
 | baochinhphu | Hiệp định Thương mại tự do | 1 |
 | baochinhphu | Hòn Đá Bạc | 1 |
@@ -1582,18 +1664,17 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | Người cao tuổi | 1 |
 | baochinhphu | Nhà Quốc hội | 1 |
 | baochinhphu | Nông nghiệp tái sinh | 1 |
-| baochinhphu | Nội dung số | 1 |
 | baochinhphu | ODA | 1 |
 | baochinhphu | One Mount | 1 |
 | baochinhphu | Phiên họp Chính phủ thường kỳ | 1 |
 | baochinhphu | Phân Bón Cà Mau | 1 |
 | baochinhphu | Phó Thủ tướng Phạm Thị Thanh Trà | 1 |
 | baochinhphu | Quân khu 5 | 1 |
-| baochinhphu | Quảng Trị | 1 |
 | baochinhphu | Quỹ Phát triển Khoa học và Công nghệ Quốc gia | 1 |
 | baochinhphu | ROX Group | 1 |
 | baochinhphu | Rừng phòng hộ | 1 |
 | baochinhphu | SHB | 1 |
+| baochinhphu | Sunshine | 1 |
 | baochinhphu | Sơ kết 1 năm vận hành chính quyền 3 cấp | 1 |
 | baochinhphu | Sếu đầu đỏ | 1 |
 | baochinhphu | TPHCM | 1 |
@@ -1621,6 +1702,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | Việt Nam - Hàn Quốc | 1 |
 | baochinhphu | Việt Nam - Lào | 1 |
 | baochinhphu | Việt Nam – Hàn Quốc | 1 |
+| baochinhphu | Văn hóa số | 1 |
 | baochinhphu | Văn phòng Chính phủ | 1 |
 | baochinhphu | Văn phòng đại diện | 1 |
 | baochinhphu | Vườn quốc gia Cát Tiên | 1 |
@@ -1647,7 +1729,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | chi phí học tập | 1 |
 | baochinhphu | chip bán dẫn | 1 |
 | baochinhphu | chuyên viên chính | 1 |
+| baochinhphu | chuyển tuyến | 1 |
 | baochinhphu | chìm ca nô | 1 |
+| baochinhphu | chính sách thuế | 1 |
 | baochinhphu | chăm sóc sức khỏe | 1 |
 | baochinhphu | chất độc da cam | 1 |
 | baochinhphu | chỉ đạo | 1 |
@@ -1668,6 +1752,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | dư luận xã hội | 1 |
 | baochinhphu | dịch vụ | 1 |
 | baochinhphu | dịch vụ công lưu động | 1 |
+| baochinhphu | dữ liệu quốc gia | 1 |
 | baochinhphu | dự án trọng điểm | 1 |
 | baochinhphu | giao dịch bảo đảm | 1 |
 | baochinhphu | giao thông | 1 |
@@ -1679,7 +1764,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | hóa đơn điện tử | 1 |
 | baochinhphu | hưu trí | 1 |
 | baochinhphu | học sinh | 1 |
-| baochinhphu | hội nghị | 1 |
 | baochinhphu | hội nghị trực tuyến | 1 |
 | baochinhphu | hội nhập quốc tế | 1 |
 | baochinhphu | hợp thửa | 1 |
@@ -1704,6 +1788,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | lưu trú | 1 |
 | baochinhphu | lễ hội pháo hoa | 1 |
 | baochinhphu | lễ hội văn hóa | 1 |
+| baochinhphu | miễn giảm thuế | 1 |
 | baochinhphu | miễn thuế | 1 |
 | baochinhphu | mua bán người | 1 |
 | baochinhphu | món đặc sản | 1 |
@@ -1735,6 +1820,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | quốc phòng và an ninh | 1 |
 | baochinhphu | quỹ đầu tư | 1 |
 | baochinhphu | sàng lọc trước sinh và sơ sinh | 1 |
+| baochinhphu | sáp nhập | 1 |
 | baochinhphu | sạt lở | 1 |
 | baochinhphu | sản xuất | 1 |
 | baochinhphu | sắp xếp | 1 |
@@ -1742,7 +1828,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | thai sản | 1 |
 | baochinhphu | thi tuyển | 1 |
 | baochinhphu | thi đua - khen thưởng | 1 |
+| baochinhphu | thiết bị trường học | 1 |
 | baochinhphu | thu hút đầu tư | 1 |
+| baochinhphu | thu hồi đất | 1 |
 | baochinhphu | thu ngân sách | 1 |
 | baochinhphu | thuế sử dụng đất | 1 |
 | baochinhphu | thuế đất | 1 |
@@ -1750,6 +1838,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | thành phố | 1 |
 | baochinhphu | thí điểm | 1 |
 | baochinhphu | thăng quân hàm | 1 |
+| baochinhphu | thương binh | 1 |
 | baochinhphu | thương mại và hàng giả | 1 |
 | baochinhphu | thảm họa | 1 |
 | baochinhphu | thế chấp | 1 |
@@ -1765,7 +1854,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | trợ cấp thất nghiệp | 1 |
 | baochinhphu | trợ giúp pháp lý | 1 |
 | baochinhphu | tài sản | 1 |
-| baochinhphu | tài sản mã hóa | 1 |
 | baochinhphu | tín dụng | 1 |
 | baochinhphu | tín dụng xanh | 1 |
 | baochinhphu | tạm trú | 1 |
@@ -1800,10 +1888,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | Đại sứ Việt Nam | 1 |
 | baochinhphu | Đầu tư | 1 |
 | baochinhphu | Đắk Lắk | 1 |
+| baochinhphu | Đề án | 1 |
 | baochinhphu | Đề án 1 triệu ha lúa | 1 |
 | baochinhphu | Động đất | 1 |
 | baochinhphu | đi học | 1 |
 | baochinhphu | điện gió ngoài khơi | 1 |
+| baochinhphu | điện ảnh | 1 |
 | baochinhphu | đuối nước | 1 |
 | baochinhphu | đàm phán | 1 |
 | baochinhphu | đăng ký biện pháp bảo đảm | 1 |
@@ -1815,72 +1905,75 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | baochinhphu | đất ruộng | 1 |
 | baochinhphu | đấu giá | 1 |
 | baochinhphu | Ủy quyền | 1 |
-| cafef | trung quốc | 39 |
-| cafef | bất động sản | 27 |
+| cafef | trung quốc | 42 |
+| cafef | bất động sản | 28 |
 | cafef | ngân hàng | 22 |
+| cafef | (none) | 17 |
 | cafef | việt nam | 17 |
-| cafef | (none) | 16 |
 | cafef | dự án | 15 |
 | cafef | chứng khoán | 14 |
 | cafef | hà nội | 14 |
+| cafef | cổ phiếu | 13 |
 | cafef | công an | 12 |
-| cafef | cổ phiếu | 12 |
 | cafef | lừa đảo | 12 |
+| cafef | nga | 11 |
 | cafef | vàng | 11 |
+| cafef | dn | 10 |
 | cafef | giá vàng | 10 |
-| cafef | nga | 10 |
 | cafef | AI | 9 |
-| cafef | dn | 9 |
 | cafef | lãi suất | 9 |
+| cafef | tiết kiệm | 8 |
 | cafef | Messi | 7 |
 | cafef | Zalo | 7 |
-| cafef | tiết kiệm | 7 |
 | cafef | VNEID | 6 |
 | cafef | iran | 6 |
 | cafef | trái phiếu | 6 |
 | cafef | tài khoản ngân hàng | 6 |
 | cafef | Bắc Ninh | 5 |
 | cafef | Google | 5 |
+| cafef | World Cup | 5 |
 | cafef | cổ tức | 5 |
 | cafef | giao dịch | 5 |
 | cafef | thuế | 5 |
 | cafef | Đông Nam Á | 5 |
-| cafef | World Cup | 4 |
+| cafef | Khởi tố | 4 |
 | cafef | apple | 4 |
+| cafef | bitcoin | 4 |
+| cafef | công nghệ | 4 |
 | cafef | giá điện | 4 |
 | cafef | hàn quốc | 4 |
 | cafef | kim cương | 4 |
 | cafef | lời khuyên | 4 |
 | cafef | mỹ | 4 |
 | cafef | mỹ nhân | 4 |
+| cafef | nhà ở xã hội | 4 |
 | cafef | thành phố hà nội | 4 |
 | cafef | thái lan | 4 |
 | cafef | thị trường | 4 |
 | cafef | tphcm | 4 |
 | cafef | tài khoản | 4 |
+| cafef | tây ban nha | 4 |
 | cafef | FED | 3 |
-| cafef | Khởi tố | 3 |
 | cafef | Lương hưu | 3 |
 | cafef | Thuế thu nhập cá nhân | 3 |
 | cafef | Ukraine | 3 |
-| cafef | bitcoin | 3 |
 | cafef | bạc | 3 |
 | cafef | bảo hiểm nhân thọ | 3 |
 | cafef | bắt tạm giam | 3 |
 | cafef | chung cư | 3 |
 | cafef | chuyển khoản | 3 |
 | cafef | châu Á | 3 |
-| cafef | công nghệ | 3 |
+| cafef | cục thuế | 3 |
 | cafef | dragon capital | 3 |
 | cafef | fpt | 3 |
 | cafef | loại rau | 3 |
 | cafef | miền Tây | 3 |
 | cafef | nhnn | 3 |
 | cafef | nhà ở | 3 |
-| cafef | nhà ở xã hội | 3 |
 | cafef | nắng nóng | 3 |
+| cafef | phụ cấp | 3 |
 | cafef | quy hoạch | 3 |
-| cafef | tây ban nha | 3 |
+| cafef | thu nhập | 3 |
 | cafef | vinfast | 3 |
 | cafef | vinhomes | 3 |
 | cafef | ấn độ | 3 |
@@ -1894,10 +1987,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Công an TP Đà Nẵng | 2 |
 | cafef | Elon Musk | 2 |
 | cafef | Hormuz | 2 |
+| cafef | Hội nghị Trung ương 3 | 2 |
 | cafef | Iran | 2 |
 | cafef | Microsoft | 2 |
 | cafef | Nam sinh | 2 |
 | cafef | Nhà đẹp | 2 |
+| cafef | Novaland | 2 |
 | cafef | Nữ diễn viên | 2 |
 | cafef | PNJ | 2 |
 | cafef | Phạm Nhật Vượng | 2 |
@@ -1910,9 +2005,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | TP.HCM | 2 |
 | cafef | Venezuela | 2 |
 | cafef | Vietnam Airlines | 2 |
+| cafef | Viettel | 2 |
 | cafef | bảo hiểm | 2 |
 | cafef | châu Âu | 2 |
 | cafef | châu âu | 2 |
+| cafef | con giáp | 2 |
 | cafef | cơ quan thuế | 2 |
 | cafef | donald trump | 2 |
 | cafef | dự đoán tỷ số | 2 |
@@ -1927,17 +2024,21 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | món ăn | 2 |
 | cafef | ngành học | 2 |
 | cafef | ngân hàng nhà nước | 2 |
-| cafef | phụ cấp | 2 |
+| cafef | ngôi nhà | 2 |
+| cafef | ngọc trinh | 2 |
+| cafef | phú quốc | 2 |
 | cafef | samsung | 2 |
+| cafef | sun group | 2 |
 | cafef | thi hành lệnh bắt tạm giam | 2 |
-| cafef | thu nhập | 2 |
 | cafef | thuế thu nhập | 2 |
 | cafef | thời tiết | 2 |
 | cafef | thực phẩm | 2 |
 | cafef | tiếng Việt | 2 |
 | cafef | tây ninh | 2 |
 | cafef | tăng thanh hà | 2 |
+| cafef | tử vong | 2 |
 | cafef | vietinbank | 2 |
+| cafef | vingroup | 2 |
 | cafef | vé máy bay | 2 |
 | cafef | vận tải biển | 2 |
 | cafef | xe buýt | 2 |
@@ -1971,6 +2072,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Ban Bí thư Trung ương Đảng | 1 |
 | cafef | Bao Công | 1 |
 | cafef | Bác sĩ ở Bệnh viện Việt Đức | 1 |
+| cafef | Bán vàng | 1 |
 | cafef | Bánh xe | 1 |
 | cafef | Bật chế độ World Cup | 1 |
 | cafef | Bắt Dũng Mắm | 1 |
@@ -1987,6 +2089,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | CMC TS | 1 |
 | cafef | Ca sĩ Mỹ Tâm | 1 |
 | cafef | Ca sĩ Việt được tuyên dương Thanh niên Tiên tiến | 1 |
+| cafef | Chuỗi siêu thị | 1 |
 | cafef | Chế Linh | 1 |
 | cafef | Claude | 1 |
 | cafef | Con gái ông Vũ Văn Tiền | 1 |
@@ -2014,6 +2117,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Every Half Coffee | 1 |
 | cafef | Food App | 1 |
 | cafef | Forbes | 1 |
+| cafef | G-Dragon | 1 |
 | cafef | GS25 | 1 |
 | cafef | Galaxy Cruiser 700 | 1 |
 | cafef | Gia đình Việt có 8 người con đều là Giáo sư | 1 |
@@ -2040,6 +2144,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Jungle Boss | 1 |
 | cafef | Khối ngoại | 1 |
 | cafef | Khởi tố Giám đốc | 1 |
+| cafef | Khởi tố Hoàng Thị Mộng Truyền | 1 |
 | cafef | Kia | 1 |
 | cafef | LDG | 1 |
 | cafef | Liên minh châu Âu | 1 |
@@ -2095,10 +2200,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Phú Mỹ Hưng | 1 |
 | cafef | Phương Oanh | 1 |
 | cafef | Phương Thanh | 1 |
+| cafef | Quốc lộ 1 | 1 |
 | cafef | REE | 1 |
 | cafef | Ra quyết định khởi tố | 1 |
 | cafef | Ronaldo | 1 |
 | cafef | Rắn hổ mang | 1 |
+| cafef | SCB | 1 |
 | cafef | SHB | 1 |
 | cafef | SHS | 1 |
 | cafef | Shopee | 1 |
@@ -2112,8 +2219,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Techcombank | 1 |
 | cafef | Thiếu 0 | 1 |
 | cafef | Thuê nhà | 1 |
+| cafef | Thượng Hải | 1 |
 | cafef | Thịt ngỗng | 1 |
 | cafef | Thống kê đáng chú ý trận Na Uy vs Anh: Haaland đấu Kane | 1 |
+| cafef | Thứ trưởng Thường trực Bộ Dân tộc và Tôn giáo | 1 |
 | cafef | TikTok Shop | 1 |
 | cafef | Tin vui: Từ 1/7 | 1 |
 | cafef | Toyota | 1 |
@@ -2130,6 +2239,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | Trợ lý cảnh sát | 1 |
 | cafef | Tài khoản không sử dụng | 1 |
 | cafef | Tân Hoàng Minh | 1 |
+| cafef | Tây du ký | 1 |
 | cafef | Tăng Thanh Hà | 1 |
 | cafef | Tạm giữ khẩn cấp | 1 |
 | cafef | Tập đoàn FLC | 1 |
@@ -2142,7 +2252,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | VIB | 1 |
 | cafef | VietJet | 1 |
 | cafef | Vietnamobile | 1 |
-| cafef | Viettel | 1 |
 | cafef | Villa | 1 |
 | cafef | Vinhomes | 1 |
 | cafef | Vinhomes phước vĩnh tây | 1 |
@@ -2162,8 +2271,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | anker | 1 |
 | cafef | asus | 1 |
 | cafef | bang New Jersey | 1 |
+| cafef | bctc | 1 |
 | cafef | bidv | 1 |
 | cafef | bizfly | 1 |
+| cafef | boeing | 1 |
 | cafef | buôn lậu | 1 |
 | cafef | buôn lậu kim cương | 1 |
 | cafef | buổi sáng | 1 |
@@ -2177,13 +2288,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | bão số 1 | 1 |
 | cafef | bình an | 1 |
 | cafef | bún bung | 1 |
+| cafef | bún bò huế | 1 |
 | cafef | bđs | 1 |
 | cafef | bản quyền | 1 |
 | cafef | bảo hiểm xã hội | 1 |
 | cafef | bảo hiểm xã hội Việt nam | 1 |
 | cafef | bật điều hòa cả ngày | 1 |
+| cafef | bắt Lê Trung Hiếu | 1 |
 | cafef | bắt cóc | 1 |
 | cafef | bắt giữ | 1 |
+| cafef | bắt tạm giam giáo viên | 1 |
 | cafef | bắt tạm giam Đặng Thị Nga | 1 |
 | cafef | bến xe giáp bát | 1 |
 | cafef | bệnh Viện Đa Khoa Tâm Anh | 1 |
@@ -2192,10 +2306,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | bệnh viện đa khoa | 1 |
 | cafef | bố mẹ | 1 |
 | cafef | bổ nhiệm | 1 |
+| cafef | camera AI | 1 |
 | cafef | canô | 1 |
 | cafef | cao tôc | 1 |
 | cafef | cao tốc | 1 |
 | cafef | cao tốc Bắc - Nam | 1 |
+| cafef | chi tiêu | 1 |
 | cafef | chiếc điện thoại | 1 |
 | cafef | chiến binh ung thư | 1 |
 | cafef | chuyên án lớn | 1 |
@@ -2203,10 +2319,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | chuyển tiền | 1 |
 | cafef | chính sách | 1 |
 | cafef | chính sách mới | 1 |
+| cafef | chảo chống dính | 1 |
 | cafef | chủ khách sạn | 1 |
 | cafef | chủ tịch | 1 |
 | cafef | chủ tịch quốc hội | 1 |
-| cafef | con giáp | 1 |
 | cafef | concert | 1 |
 | cafef | csgt | 1 |
 | cafef | cà phê | 1 |
@@ -2216,6 +2332,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | cán bộ | 1 |
 | cafef | cán bộ ngân hàng | 1 |
 | cafef | cát | 1 |
+| cafef | cây cải vận | 1 |
 | cafef | cây sống đời | 1 |
 | cafef | cô giáo tiểu học | 1 |
 | cafef | công an Hà Nội | 1 |
@@ -2223,6 +2340,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | công bố thông tin | 1 |
 | cafef | công lý | 1 |
 | cafef | công viên | 1 |
+| cafef | căn biệt thự | 1 |
 | cafef | căn bếp | 1 |
 | cafef | căn hộ | 1 |
 | cafef | cơ sở dữ liệu | 1 |
@@ -2238,7 +2356,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | cổ phiếu ngân hàng | 1 |
 | cafef | cổ tức ngân hàng | 1 |
 | cafef | cổ đông lớn | 1 |
-| cafef | cục thuế | 1 |
 | cafef | cửa trượt nhà bếp | 1 |
 | cafef | danh hiệu Nhà giáo Nhân dân năm 2026 | 1 |
 | cafef | diesel truyền thống | 1 |
@@ -2281,6 +2398,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | hàng giả | 1 |
 | cafef | hàng không | 1 |
 | cafef | hàng nghìn con heo chết trong trận lũ lụt | 1 |
+| cafef | hòa phát | 1 |
 | cafef | hóa đơn 16 triệu đồng | 1 |
 | cafef | hưng yên | 1 |
 | cafef | hải sản | 1 |
@@ -2304,6 +2422,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | khám xét | 1 |
 | cafef | khám xét xưởng may | 1 |
 | cafef | không gian sống | 1 |
+| cafef | khởi tố | 1 |
 | cafef | kim loại | 1 |
 | cafef | kinh tế Trung Quốc | 1 |
 | cafef | kiểm soát | 1 |
@@ -2346,12 +2465,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | nguyễn đức hải | 1 |
 | cafef | ngày tận thế | 1 |
 | cafef | ngân hàng\ | 1 |
-| cafef | ngôi nhà | 1 |
 | cafef | người Mỹ | 1 |
 | cafef | người dùng iphone | 1 |
 | cafef | người đàn ông | 1 |
 | cafef | ngắm mây | 1 |
-| cafef | ngọc trinh | 1 |
 | cafef | nhà máy lọc dầu | 1 |
 | cafef | nhà đầu tư | 1 |
 | cafef | nhập viện | 1 |
@@ -2370,7 +2487,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | phòng cấp cứu | 1 |
 | cafef | phó chủ nhiệm Văn phòng Chính phủ | 1 |
 | cafef | phó thủ tướng | 1 |
-| cafef | phú quốc | 1 |
 | cafef | phường Phan Đình Phùng | 1 |
 | cafef | phạm quỳnh anh | 1 |
 | cafef | phạt | 1 |
@@ -2389,13 +2505,14 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | royal park | 1 |
 | cafef | sabeco | 1 |
 | cafef | scex | 1 |
-| cafef | sun group | 1 |
 | cafef | sát hạch lái xe | 1 |
 | cafef | sóc trăng | 1 |
 | cafef | sản xuất ethanol | 1 |
+| cafef | sầu riêng | 1 |
 | cafef | sống lâu | 1 |
 | cafef | sống thọ | 1 |
 | cafef | sổ hồng | 1 |
+| cafef | sổ đỏ | 1 |
 | cafef | sức khỏe | 1 |
 | cafef | taxi bay | 1 |
 | cafef | thi tốt nghiệp THPT | 1 |
@@ -2422,9 +2539,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | toyota camry | 1 |
 | cafef | toàn bộ người dân Việt Nam | 1 |
 | cafef | tp hồ chí minh | 1 |
+| cafef | triệt phá | 1 |
 | cafef | truy thu thuế | 1 |
 | cafef | tràng tiền plaza | 1 |
 | cafef | trào lưu | 1 |
+| cafef | trường cấp 2 đình đám | 1 |
 | cafef | trạm sạc | 1 |
 | cafef | trần duy hưng | 1 |
 | cafef | trẻ mầm non | 1 |
@@ -2440,6 +2559,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | tân tạo | 1 |
 | cafef | tôm hùm | 1 |
 | cafef | tăng trưởng | 1 |
+| cafef | tương lai xanh | 1 |
 | cafef | tấn công mạng | 1 |
 | cafef | tất cả người dân | 1 |
 | cafef | tất cả thí sinh thi tốt nghiệp THPT | 1 |
@@ -2452,13 +2572,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | tỉnh Đắk Lắk | 1 |
 | cafef | tổ dân phố | 1 |
 | cafef | tổng giám đốc | 1 |
-| cafef | tử vong | 1 |
 | cafef | ung thư gan | 1 |
 | cafef | uống 13 lít nước | 1 |
 | cafef | viglacera | 1 |
 | cafef | vinachem | 1 |
 | cafef | vinasoy | 1 |
-| cafef | vingroup | 1 |
 | cafef | virus | 1 |
 | cafef | viên chức | 1 |
 | cafef | vn-index | 1 |
@@ -2476,6 +2594,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | xem TV | 1 |
 | cafef | xiaomi | 1 |
 | cafef | xây dựng | 1 |
+| cafef | xây nhà | 1 |
 | cafef | xưởng bánh dẻo 4 trứng | 1 |
 | cafef | xới cơm | 1 |
 | cafef | xử phạt | 1 |
@@ -2504,7 +2623,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | điện thoại thông minh | 1 |
 | cafef | điện thoại đang bị theo dõi | 1 |
 | cafef | đèn lồng Hội An | 1 |
+| cafef | đèo Cả | 1 |
 | cafef | đèo cả | 1 |
+| cafef | đông trùng hạ thảo | 1 |
 | cafef | đường Lê Lợi | 1 |
 | cafef | đường dây buôn lậu xuyên quốc gia | 1 |
 | cafef | đường dây lừa đảo xuyên quốc gia | 1 |
@@ -2522,54 +2643,54 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | cafef | đổ xăng | 1 |
 | cafef | độc nhất vô nhị | 1 |
 | cafef | Ốc Thanh Vân | 1 |
-| dantri | Thời sự | 742 |
-| dantri | Thể thao | 494 |
-| dantri | Thế giới | 491 |
-| dantri | Kinh doanh | 482 |
-| dantri | Pháp luật | 390 |
-| dantri | Giáo dục | 336 |
-| dantri | Sức khỏe | 277 |
-| dantri | Nội vụ | 255 |
-| dantri | Bất động sản | 199 |
-| dantri | (none) | 181 |
-| dantri | Giải trí | 177 |
-| dantri | Đời sống | 157 |
-| dantri | Ô tô - Xe máy | 152 |
-| dantri | Công nghệ | 110 |
-| dantri | Du lịch | 96 |
-| dantri | Lao động - Việc làm | 79 |
-| dantri | Khoa học | 72 |
-| dantri | Thời tiết | 50 |
-| dantri | Tấm lòng nhân ái | 50 |
-| dantri | Bạn đọc | 42 |
-| dantri | Tình yêu - Giới tính | 32 |
-| dantri | Tâm điểm | 29 |
+| dantri | Thời sự | 776 |
+| dantri | Thể thao | 531 |
+| dantri | Thế giới | 515 |
+| dantri | Kinh doanh | 500 |
+| dantri | Pháp luật | 409 |
+| dantri | Giáo dục | 346 |
+| dantri | Sức khỏe | 285 |
+| dantri | Nội vụ | 267 |
+| dantri | Bất động sản | 206 |
+| dantri | (none) | 187 |
+| dantri | Giải trí | 184 |
+| dantri | Đời sống | 162 |
+| dantri | Ô tô - Xe máy | 155 |
+| dantri | Công nghệ | 116 |
+| dantri | Du lịch | 100 |
+| dantri | Lao động - Việc làm | 81 |
+| dantri | Khoa học | 77 |
+| dantri | Tấm lòng nhân ái | 53 |
+| dantri | Thời tiết | 52 |
+| dantri | Bạn đọc | 45 |
+| dantri | Tình yêu - Giới tính | 34 |
+| dantri | Tâm điểm | 31 |
 | dantri | dantri | 1 |
-| kenh14 | (none) | 86 |
-| kenh14 | World Cup 2026 | 44 |
-| kenh14 | đời sống | 38 |
+| kenh14 | (none) | 91 |
+| kenh14 | World Cup 2026 | 46 |
+| kenh14 | đời sống | 41 |
 | kenh14 | thể thao | 23 |
 | kenh14 | giải trí | 19 |
 | kenh14 | messi | 18 |
 | kenh14 | tranh cãi | 17 |
+| kenh14 | World Cup | 14 |
 | kenh14 | giá vàng hôm nay | 14 |
 | kenh14 | ronaldo | 14 |
-| kenh14 | Kpop | 12 |
-| kenh14 | World Cup | 12 |
-| kenh14 | Tây Ban Nha | 8 |
+| kenh14 | Kpop | 13 |
+| kenh14 | Tây Ban Nha | 11 |
 | kenh14 | học đường | 8 |
 | kenh14 | nắng nóng | 8 |
+| kenh14 | dạy con | 7 |
 | kenh14 | Trung Quốc | 6 |
 | kenh14 | Tuyên Quang | 6 |
+| kenh14 | Zalo | 6 |
 | kenh14 | bellingham | 6 |
 | kenh14 | chuyển khoản | 6 |
 | kenh14 | dân văn phòng | 6 |
-| kenh14 | dạy con | 6 |
+| kenh14 | phim trung quốc | 6 |
 | kenh14 | điện thoại | 6 |
 | kenh14 | Ca sĩ Việt | 5 |
-| kenh14 | Zalo | 5 |
 | kenh14 | phim chiếu rạp | 5 |
-| kenh14 | phim trung quốc | 5 |
 | kenh14 | Hà Nội | 4 |
 | kenh14 | Hàn Quốc | 4 |
 | kenh14 | Nhật Bản | 4 |
@@ -2579,12 +2700,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Anh trai vượt ngàn chông gai | 3 |
 | kenh14 | Dương Mịch | 3 |
 | kenh14 | Pháp | 3 |
+| kenh14 | Taylor Swift | 3 |
 | kenh14 | bạo hành | 3 |
 | kenh14 | cảnh báo | 3 |
 | kenh14 | du lịch | 3 |
 | kenh14 | giá vàng | 3 |
 | kenh14 | giáo dục gia đình | 3 |
+| kenh14 | gửi tiết kiệm | 3 |
 | kenh14 | iPhone 18 Pro Max | 3 |
+| kenh14 | lisa | 3 |
 | kenh14 | ma túy | 3 |
 | kenh14 | ngân hàng | 3 |
 | kenh14 | nộp thuế | 3 |
@@ -2595,7 +2719,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | thuế | 3 |
 | kenh14 | tuyển anh | 3 |
 | kenh14 | tài khoản | 3 |
+| kenh14 | ăn sáng | 3 |
 | kenh14 | Đô thị Thế hệ mới | 3 |
+| kenh14 | điều hòa | 3 |
 | kenh14 | đà nẵng | 3 |
 | kenh14 | Angelababy | 2 |
 | kenh14 | Beckham | 2 |
@@ -2603,12 +2729,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Bác sĩ Bạch Mai cảnh báo | 2 |
 | kenh14 | City Guide | 2 |
 | kenh14 | Công an | 2 |
+| kenh14 | Công việc | 2 |
 | kenh14 | David Beckham | 2 |
 | kenh14 | Elon Musk | 2 |
 | kenh14 | Facebook | 2 |
 | kenh14 | Hoa hậu Hong Kong | 2 |
+| kenh14 | Hoàng Hậu Cuối Cùng | 2 |
 | kenh14 | Hải Phòng | 2 |
 | kenh14 | Khởi tố | 2 |
+| kenh14 | Lamine Yamal | 2 |
 | kenh14 | Long Châu | 2 |
 | kenh14 | Louis Vuitton | 2 |
 | kenh14 | Lật ca nô chở du khách ở Phú Quốc | 2 |
@@ -2617,27 +2746,31 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Máy bay | 2 |
 | kenh14 | Mỹ Tâm | 2 |
 | kenh14 | Na Uy | 2 |
-| kenh14 | Taylor Swift | 2 |
 | kenh14 | Ung thư | 2 |
 | kenh14 | VietJet | 2 |
+| kenh14 | Việt Anh và Quỳnh Nga | 2 |
+| kenh14 | an toàn thực phẩm | 2 |
 | kenh14 | bão | 2 |
 | kenh14 | bão số 1 | 2 |
 | kenh14 | bảo hiểm | 2 |
 | kenh14 | bắt giữ | 2 |
 | kenh14 | bằng lái xe | 2 |
 | kenh14 | cha mẹ | 2 |
+| kenh14 | chiếm đoạt tài sản | 2 |
 | kenh14 | chuyển khoản nhầm | 2 |
+| kenh14 | châu á | 2 |
 | kenh14 | croatia | 2 |
 | kenh14 | công an | 2 |
+| kenh14 | công chúa Leonor | 2 |
 | kenh14 | cơ quan thuế | 2 |
-| kenh14 | gửi tiết kiệm | 2 |
+| kenh14 | hoả hoạn | 2 |
 | kenh14 | hóa đơn | 2 |
 | kenh14 | iPhone | 2 |
 | kenh14 | khối u | 2 |
 | kenh14 | khởi tố | 2 |
 | kenh14 | kim cương | 2 |
-| kenh14 | lisa | 2 |
 | kenh14 | lãi suất ngân hàng | 2 |
+| kenh14 | lương hưu | 2 |
 | kenh14 | lịch sử | 2 |
 | kenh14 | mua vàng | 2 |
 | kenh14 | mỡ máu | 2 |
@@ -2652,12 +2785,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | trends alert | 2 |
 | kenh14 | trái cây | 2 |
 | kenh14 | trốn thuế | 2 |
+| kenh14 | tài khoản ngân hàng | 2 |
 | kenh14 | từ thiện | 2 |
 | kenh14 | tử vong | 2 |
 | kenh14 | ung thư | 2 |
-| kenh14 | ăn sáng | 2 |
 | kenh14 | Địch Lệ Nhiệt Ba | 2 |
-| kenh14 | điều hòa | 2 |
+| kenh14 | Đồng Nai | 2 |
 | kenh14 | đuối nước | 2 |
 | kenh14 | động đất | 2 |
 | kenh14 | đột quỵ | 2 |
@@ -2678,10 +2811,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Bangkok | 1 |
 | kenh14 | Bê bối tuyển sinh | 1 |
 | kenh14 | Bảo Anh | 1 |
+| kenh14 | Bảo Lộc | 1 |
 | kenh14 | Bắc Ninh | 1 |
 | kenh14 | Bộ Giáo dục và Đào tạo | 1 |
 | kenh14 | CHỦ TỊCH TRƯƠNG GIA BÌNH | 1 |
 | kenh14 | CIA | 1 |
+| kenh14 | Canxi | 1 |
 | kenh14 | Cao Bằng | 1 |
 | kenh14 | Carlsberg Việt Nam | 1 |
 | kenh14 | Chung Hân Đồng | 1 |
@@ -2689,8 +2824,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Cháy quán cà phê | 1 |
 | kenh14 | Coca-Cola Việt Nam | 1 |
 | kenh14 | Copenhagen | 1 |
+| kenh14 | Cristiano Ronaldo | 1 |
 | kenh14 | Cristina Sanz | 1 |
-| kenh14 | Công việc | 1 |
 | kenh14 | Cảng hàng không thứ 2 | 1 |
 | kenh14 | Cần Thơ | 1 |
 | kenh14 | Cổng chào | 1 |
@@ -2705,6 +2840,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Gan tổn thương | 1 |
 | kenh14 | Gaokao | 1 |
 | kenh14 | Gen Z | 1 |
+| kenh14 | Getty Images | 1 |
 | kenh14 | Giảm cân | 1 |
 | kenh14 | Giấy phép lái xe | 1 |
 | kenh14 | Goo Hye Sun | 1 |
@@ -2719,7 +2855,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Hong Seok Jun | 1 |
 | kenh14 | Hong Young Ki | 1 |
 | kenh14 | House n Home | 1 |
-| kenh14 | Hoàng Hậu Cuối Cùng | 1 |
 | kenh14 | Hoàng tử George | 1 |
 | kenh14 | Huyền My | 1 |
 | kenh14 | Huỳnh Nhật Hoa | 1 |
@@ -2748,7 +2883,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Kim Tae Hee | 1 |
 | kenh14 | Kỹ sư Việt | 1 |
 | kenh14 | LMHT | 1 |
-| kenh14 | Lamine Yamal | 1 |
 | kenh14 | Lavie | 1 |
 | kenh14 | Lee Si Young | 1 |
 | kenh14 | Lisa | 1 |
@@ -2788,6 +2922,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Ngân hàng thông báo | 1 |
 | kenh14 | Ngô Thanh Vân | 1 |
 | kenh14 | Người Đẹp và Quái Vật | 1 |
+| kenh14 | Ngọc Trinh | 1 |
 | kenh14 | Ngọn nến hoàng cung | 1 |
 | kenh14 | Nichkhun | 1 |
 | kenh14 | Nắng nóng | 1 |
@@ -2795,6 +2930,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Philippines | 1 |
 | kenh14 | Phim Trung Quốc | 1 |
 | kenh14 | Pháo | 1 |
+| kenh14 | Phó tổng thống Mỹ | 1 |
 | kenh14 | Phương Ly | 1 |
 | kenh14 | Phạm Băng Băng | 1 |
 | kenh14 | Phạm Quỳnh Anh | 1 |
@@ -2843,10 +2979,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Triệu Văn Tuyên | 1 |
 | kenh14 | Trump | 1 |
 | kenh14 | Trái đất | 1 |
+| kenh14 | Trương Hinh Dư | 1 |
 | kenh14 | Trương Lăng Hách | 1 |
 | kenh14 | Trương Vệ Kiện | 1 |
 | kenh14 | Trấn Thành | 1 |
 | kenh14 | Trần Linh Lợi | 1 |
+| kenh14 | Trần Tinh Húc | 1 |
 | kenh14 | Tuyết Lê | 1 |
 | kenh14 | Tài khoản ngân hàng | 1 |
 | kenh14 | Tàu Trung Quốc | 1 |
@@ -2854,10 +2992,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Tăng Thanh Hà | 1 |
 | kenh14 | VAR | 1 |
 | kenh14 | Vietlott | 1 |
+| kenh14 | Viking Diet | 1 |
 | kenh14 | Vinamilk | 1 |
 | kenh14 | Vinfast | 1 |
 | kenh14 | Vinhomes | 1 |
-| kenh14 | Việt Anh và Quỳnh Nga | 1 |
 | kenh14 | Việt Nam | 1 |
 | kenh14 | Việt Nam có 1 Hoàng hậu | 1 |
 | kenh14 | Vành đai 1 | 1 |
@@ -2877,8 +3015,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Youtuber | 1 |
 | kenh14 | Yến Chi | 1 |
 | kenh14 | Z Go Global | 1 |
+| kenh14 | adidas | 1 |
 | kenh14 | agent kim reactivated | 1 |
-| kenh14 | an toàn thực phẩm | 1 |
 | kenh14 | axit oxalic | 1 |
 | kenh14 | biển hiệu | 1 |
 | kenh14 | buôn bán hàng giả | 1 |
@@ -2891,6 +3029,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | bão Ba Vì | 1 |
 | kenh14 | bé sơ sinh bị bỏ rơi | 1 |
 | kenh14 | bóng đá | 1 |
+| kenh14 | bảo hiểm xã hội | 1 |
 | kenh14 | bảo hiểm y tế | 1 |
 | kenh14 | bảo ngọc | 1 |
 | kenh14 | bệnh da hiếm gặp | 1 |
@@ -2898,14 +3037,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | bệnh thận | 1 |
 | kenh14 | bệnh tim mạch | 1 |
 | kenh14 | bệnh viện gần 5.000 tỷ đồng | 1 |
+| kenh14 | bồi bổ | 1 |
 | kenh14 | bộ xương người | 1 |
 | kenh14 | bộ y tế | 1 |
 | kenh14 | ca bệnh hiếm gặp | 1 |
 | kenh14 | campus y tế | 1 |
 | kenh14 | card đồ họa | 1 |
 | kenh14 | cha giàu cha nghèo | 1 |
-| kenh14 | chiếm đoạt tài sản | 1 |
 | kenh14 | chiến dịch | 1 |
+| kenh14 | chiến tranh | 1 |
 | kenh14 | cho vay lãi nặng | 1 |
 | kenh14 | choi san | 1 |
 | kenh14 | chung cư | 1 |
@@ -2916,7 +3056,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | chân gà đông lạnh | 1 |
 | kenh14 | chân váy | 1 |
 | kenh14 | châu Âu | 1 |
-| kenh14 | châu á | 1 |
 | kenh14 | chính sách | 1 |
 | kenh14 | chạy bộ | 1 |
 | kenh14 | chấn thương | 1 |
@@ -2928,6 +3067,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | cá dò | 1 |
 | kenh14 | cá hồi của người nghèo | 1 |
 | kenh14 | cá sấu | 1 |
+| kenh14 | cá độ bóng đá | 1 |
 | kenh14 | cán bộ Sở Nông nghiệp và Môi trường | 1 |
 | kenh14 | có như lời đồn | 1 |
 | kenh14 | công trình | 1 |
@@ -2947,6 +3087,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | dĩ ái vi doanh | 1 |
 | kenh14 | dạ dày | 1 |
 | kenh14 | dự báo thời tiết | 1 |
+| kenh14 | eTax Mobile | 1 |
 | kenh14 | esports | 1 |
 | kenh14 | fashion week | 1 |
 | kenh14 | game thủ | 1 |
@@ -2994,10 +3135,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | kho báu | 1 |
 | kenh14 | khách sạn | 1 |
 | kenh14 | khói mù | 1 |
+| kenh14 | không kịp nói yêu em | 1 |
 | kenh14 | kim loại | 1 |
 | kenh14 | kim soo hyun | 1 |
 | kenh14 | kiếm tiền | 1 |
 | kenh14 | kéo dài tuổi thọ | 1 |
+| kenh14 | kỷ luật | 1 |
 | kenh14 | kỷ lục | 1 |
 | kenh14 | lazada | 1 |
 | kenh14 | lg | 1 |
@@ -3014,7 +3157,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | lãi suất thấp | 1 |
 | kenh14 | lăng mộ | 1 |
 | kenh14 | lũ | 1 |
-| kenh14 | lương hưu | 1 |
 | kenh14 | lật ca nô | 1 |
 | kenh14 | lớp 10 | 1 |
 | kenh14 | lừa đảo | 1 |
@@ -3099,8 +3241,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | sốc nhiễm trùng | 1 |
 | kenh14 | sốc phản vệ | 1 |
 | kenh14 | sống thọ | 1 |
+| kenh14 | sống tối giản | 1 |
 | kenh14 | sử dụng ma tuý | 1 |
 | kenh14 | sữa tắm | 1 |
+| kenh14 | tai nạn | 1 |
 | kenh14 | tai nạn giao thông | 1 |
 | kenh14 | teen viet nam | 1 |
 | kenh14 | thai sản | 1 |
@@ -3113,6 +3257,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | thuốc trừ sâu | 1 |
 | kenh14 | thành công | 1 |
 | kenh14 | thái bình niên | 1 |
+| kenh14 | thói quen | 1 |
 | kenh14 | thư báo tử | 1 |
 | kenh14 | thải độc gan | 1 |
 | kenh14 | thắp hương | 1 |
@@ -3123,6 +3268,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | thịt đầu heo | 1 |
 | kenh14 | thời tiết | 1 |
 | kenh14 | thời tiết 13/7 | 1 |
+| kenh14 | tia | 1 |
 | kenh14 | tin tức | 1 |
 | kenh14 | tiêu tiền | 1 |
 | kenh14 | tiếng Việt | 1 |
@@ -3141,7 +3287,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | tuyển bồ đào nha | 1 |
 | kenh14 | tuyển sinh | 1 |
 | kenh14 | tuổi thọ người Nhật | 1 |
-| kenh14 | tài khoản ngân hàng | 1 |
 | kenh14 | tôm khô | 1 |
 | kenh14 | tôm khô Cà Mau | 1 |
 | kenh14 | tăng lương cơ sở | 1 |
@@ -3193,7 +3338,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | Đánh bạc | 1 |
 | kenh14 | Đường sắt mở Đoàn tàu Bạch Mai | 1 |
 | kenh14 | Đặng Triệu Tôn | 1 |
-| kenh14 | Đồng Nai | 1 |
 | kenh14 | Đồng yên Nhật | 1 |
 | kenh14 | đi bộ | 1 |
 | kenh14 | đinh lăng | 1 |
@@ -3211,6 +3355,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | đập gương | 1 |
 | kenh14 | đậu bắp | 1 |
 | kenh14 | đậu xe | 1 |
+| kenh14 | đặng thu thảo | 1 |
 | kenh14 | đề xuất | 1 |
 | kenh14 | đền bù | 1 |
 | kenh14 | đồ uống | 1 |
@@ -3222,38 +3367,38 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | kenh14 | ẩm thực thái lan | 1 |
 | kenh14 | ốc thanh vân | 1 |
 | kenh14 | ứng dụng | 1 |
-| nhandan | Tin chung | 556 |
-| nhandan | Kinh tế | 533 |
-| nhandan | Xã hội | 486 |
-| nhandan | Chính trị | 432 |
-| nhandan | Thể thao | 232 |
-| nhandan | Môi trường | 164 |
-| nhandan | Văn hóa | 163 |
-| nhandan | Đồng bằng sông Hồng | 144 |
-| nhandan | Khoa học - Công nghệ | 102 |
-| nhandan | Y tế | 101 |
+| nhandan | Tin chung | 588 |
+| nhandan | Kinh tế | 546 |
+| nhandan | Xã hội | 504 |
+| nhandan | Chính trị | 448 |
+| nhandan | Thể thao | 241 |
+| nhandan | Môi trường | 174 |
+| nhandan | Văn hóa | 169 |
+| nhandan | Đồng bằng sông Hồng | 147 |
+| nhandan | Khoa học - Công nghệ | 105 |
+| nhandan | Y tế | 105 |
 | nhandan | Duyên hải Nam Trung Bộ và Tây Nguyên | 95 |
+| nhandan | Giáo dục | 95 |
 | nhandan | NHÂN DÂN CUỐI TUẦN | 94 |
 | nhandan | Chuyên trang Hà Nội | 93 |
-| nhandan | Giáo dục | 89 |
-| nhandan | Du lịch | 78 |
-| nhandan | Chuyên trang TP. Hồ Chí Minh | 69 |
-| nhandan | Châu Âu | 66 |
+| nhandan | Du lịch | 80 |
+| nhandan | Chuyên trang TP. Hồ Chí Minh | 71 |
+| nhandan | Châu Âu | 68 |
+| nhandan | Châu Á-TBD | 60 |
 | nhandan | Pháp luật | 60 |
-| nhandan | Châu Á-TBD | 58 |
 | nhandan | Thời Nay | 58 |
-| nhandan | Thế giới | 56 |
+| nhandan | Thế giới | 57 |
 | nhandan | Văn hóa - Văn nghệ | 56 |
-| nhandan | Ảnh | 50 |
-| nhandan | Châu Mỹ | 46 |
-| nhandan | (none) | 42 |
-| nhandan | Trung Đông | 32 |
+| nhandan | Ảnh | 52 |
+| nhandan | Châu Mỹ | 48 |
+| nhandan | (none) | 44 |
+| nhandan | Trung Đông | 34 |
 | nhandan | Bình luận quốc tế | 20 |
-| nhandan | Châu Phi | 19 |
-| nhandan | ASEAN | 18 |
+| nhandan | Châu Phi | 20 |
+| nhandan | ASEAN | 19 |
 | nhandan | Bắc Trung Bộ | 12 |
 | nhandan | Bạn đọc | 10 |
-| nhandan | Bạn cần biết | 8 |
+| nhandan | Bạn cần biết | 9 |
 | nhandan | World Cup 2026 | 8 |
 | nhandan | Bạn có biết? | 6 |
 | nhandan | Chuyển đổi số | 6 |
@@ -3262,15 +3407,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | nhandan | Hội nhập | 6 |
 | nhandan | rND | 6 |
 | nhandan | Theo dòng sự kiện | 5 |
+| nhandan | Thông tin doanh nghiệp | 5 |
 | nhandan | Hành động và thách thức | 4 |
-| nhandan | Thông tin doanh nghiệp | 4 |
 | nhandan | Tin vắn | 4 |
 | nhandan | Tiêu điểm | 4 |
+| nhandan | Tiếng nói từ cơ sở | 4 |
 | nhandan | Xây dựng nông thôn mới | 4 |
 | nhandan | Hành trình đổi mới | 3 |
 | nhandan | Infographic | 3 |
 | nhandan | Mô hình tốt – việc làm hay | 3 |
-| nhandan | Tiếng nói từ cơ sở | 3 |
 | nhandan | Văn hóa làng quê | 3 |
 | nhandan | Xem-Nghe-Ngẫm | 3 |
 | nhandan | Điểm sáng | 3 |
@@ -3286,6 +3431,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | nhandan | BHXH và cuộc sống | 1 |
 | nhandan | Báo chí cách mạng Việt Nam | 1 |
 | nhandan | Chiến tranh đã lùi xa | 1 |
+| nhandan | Chuyện xưa chuyện nay | 1 |
 | nhandan | Kiểm chứng thông tin | 1 |
 | nhandan | Lên sàn | 1 |
 | nhandan | NHÂN DÂN HẰNG THÁNG | 1 |
@@ -3298,126 +3444,135 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | nhandan | Tin tức hoạt động | 1 |
 | nhandan | Trong “Chiến dịch 500 ngày đêm” | 1 |
 | nhandan | tra cứu điểm thi tốt nghiệp THPT năm 2026 | 1 |
-| qdnd | World Cup | 85 |
-| qdnd | liệt sĩ | 44 |
+| qdnd | World Cup | 90 |
+| qdnd | liệt sĩ | 49 |
+| qdnd | World Cup 2026 | 44 |
 | qdnd | Venezuela | 43 |
-| qdnd | World Cup 2026 | 43 |
-| qdnd | TP Hồ Chí Minh | 41 |
-| qdnd | Hà Nội | 38 |
-| qdnd | giá vàng hôm nay | 35 |
-| qdnd | Messi | 34 |
-| qdnd | Tổng Bí thư | 34 |
+| qdnd | TP Hồ Chí Minh | 42 |
+| qdnd | Hà Nội | 39 |
+| qdnd | Messi | 38 |
+| qdnd | Mỹ | 37 |
+| qdnd | giá vàng hôm nay | 37 |
+| qdnd | Tổng Bí thư | 35 |
 | qdnd | Iran | 33 |
-| qdnd | Mỹ | 33 |
-| qdnd | giá dầu | 26 |
-| qdnd | An Giang | 24 |
-| qdnd | tỷ giá USD | 24 |
+| qdnd | giá dầu | 28 |
+| qdnd | An Giang | 25 |
+| qdnd | tỷ giá USD | 25 |
 | qdnd | Argentina | 22 |
 | qdnd | Quảng Ninh | 22 |
+| qdnd | Tây Ban Nha | 22 |
+| qdnd | thời tiết hôm nay | 22 |
 | qdnd | hài cốt liệt sĩ | 21 |
-| qdnd | thời tiết hôm nay | 21 |
 | qdnd | Cảnh sát biển | 19 |
-| qdnd | Tây Ban Nha | 19 |
+| qdnd | bộ đội biên phòng | 19 |
+| qdnd | giá cà phê | 19 |
 | qdnd | Bão số 1 | 18 |
-| qdnd | bộ đội biên phòng | 18 |
-| qdnd | giá cà phê | 18 |
+| qdnd | Trung Quốc | 18 |
 | qdnd | động đất | 18 |
 | qdnd | Thủ tướng Lê Minh Hưng | 17 |
 | qdnd | (none) | 16 |
 | qdnd | Lai Châu | 16 |
 | qdnd | Pháp | 16 |
-| qdnd | Trung Quốc | 16 |
 | qdnd | Đắk Lắk | 16 |
 | qdnd | Bộ Quốc phòng | 15 |
 | qdnd | Điện Biên | 15 |
 | qdnd | Ronaldo | 14 |
+| qdnd | Cà Mau | 13 |
+| qdnd | Cần Thơ | 13 |
 | qdnd | Giá vàng | 13 |
 | qdnd | Khánh Hòa | 13 |
 | qdnd | Quân đoàn 34 | 13 |
 | qdnd | Tin thể thao | 13 |
 | qdnd | Đại tướng Phan Văn Giang | 13 |
-| qdnd | Cà Mau | 12 |
-| qdnd | Cần Thơ | 12 |
+| qdnd | Quân khu 2 | 12 |
 | qdnd | Quân khu 9 | 12 |
+| qdnd | Tuyên Quang | 12 |
 | qdnd | video bàn thắng | 12 |
 | qdnd | Hàn Quốc | 11 |
-| qdnd | Quân khu 2 | 11 |
 | qdnd | Quân đoàn 12 | 11 |
-| qdnd | Tuyên Quang | 11 |
+| qdnd | Tây Ninh | 11 |
 | qdnd | Đại tướng Nguyễn Trọng Nghĩa | 11 |
 | qdnd | đội tuyển Anh | 11 |
 | qdnd | Bão | 10 |
 | qdnd | Học viện Quân y | 10 |
+| qdnd | Quân khu 5 | 10 |
 | qdnd | Thượng tướng Lê Quang Minh | 10 |
 | qdnd | Ukraine | 10 |
 | qdnd | diễn tập | 10 |
 | qdnd | đại học | 10 |
 | qdnd | Gia Lai | 9 |
 | qdnd | Mbappe | 9 |
+| qdnd | Nga | 9 |
 | qdnd | Phú Quốc | 9 |
-| qdnd | Quân khu 5 | 9 |
 | qdnd | Trung Đông | 9 |
-| qdnd | Tây Ninh | 9 |
 | qdnd | pháp luật | 9 |
 | qdnd | văn hóa | 9 |
 | qdnd | Anh | 8 |
+| qdnd | Biên phòng | 8 |
 | qdnd | Brazil | 8 |
 | qdnd | Cape Verde | 8 |
+| qdnd | Chiến dịch 500 ngày đêm | 8 |
 | qdnd | Hậu cần | 8 |
 | qdnd | Lào | 8 |
+| qdnd | Lào Cai | 8 |
 | qdnd | Nhật Bản | 8 |
 | qdnd | Quân khu 4 | 8 |
+| qdnd | Thanh Hóa | 8 |
 | qdnd | Viettel | 8 |
 | qdnd | Vùng Cảnh sát biển 4 | 8 |
 | qdnd | người có công | 8 |
 | qdnd | từ trần | 8 |
 | qdnd | Đà Nẵng | 8 |
-| qdnd | Biên phòng | 7 |
 | qdnd | Bộ tư lệnh 86 | 7 |
-| qdnd | Chiến dịch 500 ngày đêm | 7 |
 | qdnd | HDBank | 7 |
 | qdnd | Haaland | 7 |
 | qdnd | Học viện Chính trị | 7 |
-| qdnd | Lào Cai | 7 |
 | qdnd | NATO | 7 |
-| qdnd | Nga | 7 |
 | qdnd | Quân khu 7 | 7 |
-| qdnd | Thanh Hóa | 7 |
 | qdnd | bảo hiểm xã hội | 7 |
 | qdnd | giao thông | 7 |
 | qdnd | lịch thi đấu World Cup | 7 |
 | qdnd | Binh đoàn 15 | 6 |
 | qdnd | Báo cáo viên | 6 |
+| qdnd | Bắc Ninh | 6 |
 | qdnd | Bệnh viện Bạch Mai | 6 |
 | qdnd | Học viện Quốc phòng | 6 |
 | qdnd | Israel | 6 |
+| qdnd | Lâm Đồng | 6 |
+| qdnd | Lũ quét | 6 |
 | qdnd | Lịch thi đấu | 6 |
 | qdnd | Mưa lớn | 6 |
 | qdnd | Quảng Trị | 6 |
+| qdnd | Sơn La | 6 |
 | qdnd | Thái Nguyên | 6 |
+| qdnd | Tuyển Anh | 6 |
 | qdnd | công nghệ | 6 |
+| qdnd | du lịch | 6 |
 | qdnd | thi tốt nghiệp | 6 |
+| qdnd | xăng dầu | 6 |
 | qdnd | Đồng Nai | 6 |
 | qdnd | đội tuyển Pháp | 6 |
 | qdnd | đội tuyển Việt Nam | 6 |
 | qdnd | Abyei | 5 |
 | qdnd | Binh đoàn 16 | 5 |
 | qdnd | Binh đoàn 20 | 5 |
-| qdnd | Bắc Ninh | 5 |
 | qdnd | Bồ Đào Nha | 5 |
+| qdnd | Campuchia | 5 |
+| qdnd | Cao Bằng | 5 |
 | qdnd | Gia đình | 5 |
 | qdnd | Hà Tĩnh | 5 |
-| qdnd | Lâm Đồng | 5 |
-| qdnd | Lũ quét | 5 |
 | qdnd | Mexico | 5 |
 | qdnd | Morocco | 5 |
 | qdnd | Nghệ An | 5 |
+| qdnd | Quân khu 1 | 5 |
 | qdnd | Quân khu 3 | 5 |
 | qdnd | SHB | 5 |
-| qdnd | Sơn La | 5 |
+| qdnd | Syria | 5 |
 | qdnd | Thượng tướng Nguyễn Văn Hiền | 5 |
 | qdnd | Thụy sĩ | 5 |
 | qdnd | Thủ tướng | 5 |
+| qdnd | Tân Cảng Sài Gòn | 5 |
+| qdnd | Vietnam Airlines | 5 |
 | qdnd | Vùng 3 Hải quân | 5 |
 | qdnd | Vùng Cảnh sát biển 2 | 5 |
 | qdnd | Vùng Cảnh sát biển 3 | 5 |
@@ -3425,23 +3580,22 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | châu Âu | 5 |
 | qdnd | cựu chiến binh | 5 |
 | qdnd | doanh trại | 5 |
-| qdnd | du lịch | 5 |
 | qdnd | giao lưu hữu nghị | 5 |
 | qdnd | ma túy | 5 |
+| qdnd | mưa lũ | 5 |
 | qdnd | quốc phòng | 5 |
-| qdnd | xăng dầu | 5 |
 | qdnd | Đoàn Kinh tế | 5 |
 | qdnd | Đại tướng Nguyễn Tân Cương | 5 |
 | qdnd | đuối nước | 5 |
 | qdnd | Anh hùng | 4 |
 | qdnd | Binh đoàn 12 | 4 |
 | qdnd | Báo chí | 4 |
+| qdnd | Bản tin nông sản hôm nay | 4 |
 | qdnd | Bảo hiểm y tế | 4 |
 | qdnd | Bệnh viện Quân y 87 | 4 |
-| qdnd | Campuchia | 4 |
 | qdnd | Canada | 4 |
-| qdnd | Cao Bằng | 4 |
 | qdnd | Chủ tịch Hồ Chí Minh | 4 |
+| qdnd | Chủ tịch Quốc hội | 4 |
 | qdnd | Cuba | 4 |
 | qdnd | Công viên Lê Thị Riêng | 4 |
 | qdnd | Harry Kane | 4 |
@@ -3452,38 +3606,42 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Lữ đoàn 171 | 4 |
 | qdnd | Neymar | 4 |
 | qdnd | Ngô Thị Tuyển | 4 |
-| qdnd | Quân khu 1 | 4 |
+| qdnd | Quân y | 4 |
+| qdnd | Quảng Ngãi | 4 |
 | qdnd | Quốc hội | 4 |
-| qdnd | Syria | 4 |
 | qdnd | Sơn Vĩ | 4 |
 | qdnd | Thượng tướng Nguyễn Văn Gấu | 4 |
-| qdnd | Tuyển Anh | 4 |
-| qdnd | Tân Cảng Sài Gòn | 4 |
+| qdnd | Trung đoàn 88 | 4 |
+| qdnd | Trường Sĩ quan Lục quân 2 | 4 |
 | qdnd | Tân Hiệp Phát | 4 |
-| qdnd | Vietnam Airlines | 4 |
+| qdnd | UAV | 4 |
 | qdnd | Vinamilk | 4 |
 | qdnd | công binh | 4 |
+| qdnd | dữ liệu | 4 |
 | qdnd | eo biển Hormuz | 4 |
 | qdnd | giáo dục chính trị | 4 |
+| qdnd | mạng xã hội | 4 |
 | qdnd | mẹ Việt Nam Anh hùng | 4 |
 | qdnd | nông sản | 4 |
 | qdnd | sĩ quan trẻ | 4 |
 | qdnd | thanh niên | 4 |
 | qdnd | tuổi trẻ | 4 |
+| qdnd | tên lửa | 4 |
 | qdnd | tập huấn | 4 |
 | qdnd | ung thư | 4 |
 | qdnd | xe điện | 4 |
 | qdnd | áp thấp nhiệt đới | 4 |
 | qdnd | Điều tra | 4 |
 | qdnd | Đoàn TNCS Hồ Chí Minh | 4 |
+| qdnd | Đức | 4 |
 | qdnd | Agribank | 3 |
 | qdnd | An ninh nhân dân | 3 |
 | qdnd | Ancelotti | 3 |
 | qdnd | Australia | 3 |
 | qdnd | Binh chủng Công binh | 3 |
 | qdnd | Binh chủng Đặc Công | 3 |
-| qdnd | Bản tin nông sản hôm nay | 3 |
 | qdnd | Bảng xếp hạng | 3 |
+| qdnd | Bắc Bộ | 3 |
 | qdnd | Bệnh viện Quân y 103 | 3 |
 | qdnd | Bộ Tổng tham mưu | 3 |
 | qdnd | Bộ Xây dựng | 3 |
@@ -3491,7 +3649,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Chung kết World Cup | 3 |
 | qdnd | Chuyển đổi số | 3 |
 | qdnd | Chính phủ | 3 |
-| qdnd | Chủ tịch Quốc hội | 3 |
 | qdnd | Côn Đảo | 3 |
 | qdnd | Công nghiệp quốc phòng | 3 |
 | qdnd | Công ty Hợp tác kinh tế 385 | 3 |
@@ -3511,22 +3668,18 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Mexico và Anh | 3 |
 | qdnd | Na Uy | 3 |
 | qdnd | Pickleball | 3 |
-| qdnd | Quân y | 3 |
-| qdnd | Quảng Ngãi | 3 |
 | qdnd | Sư đoàn 316 | 3 |
 | qdnd | Sư đoàn 375 | 3 |
 | qdnd | Sư đoàn 9 | 3 |
 | qdnd | T&T Group | 3 |
+| qdnd | Thuế | 3 |
 | qdnd | Thượng tướng Trương Thiên Tô | 3 |
 | qdnd | Thời tiết | 3 |
 | qdnd | Tim mạch | 3 |
-| qdnd | Trung đoàn 88 | 3 |
 | qdnd | Trung đoàn 920 | 3 |
-| qdnd | Trường Sĩ quan Lục quân 2 | 3 |
 | qdnd | Tổng cục Công nghiệp Quốc phòng | 3 |
 | qdnd | U13 | 3 |
 | qdnd | UAE | 3 |
-| qdnd | UAV | 3 |
 | qdnd | Vietjet | 3 |
 | qdnd | Vùng 4 Hải quân | 3 |
 | qdnd | Vũ khí | 3 |
@@ -3535,17 +3688,19 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | bão Bavi | 3 |
 | qdnd | cao tốc | 3 |
 | qdnd | chung kết World Cup 2026 | 3 |
+| qdnd | chuyển đổi số | 3 |
 | qdnd | cháy | 3 |
 | qdnd | chính quyền địa phương hai cấp | 3 |
-| qdnd | dữ liệu | 3 |
+| qdnd | cá độ bóng đá | 3 |
 | qdnd | giao lưu | 3 |
 | qdnd | giáo dục | 3 |
 | qdnd | hạnh phúc | 3 |
 | qdnd | hậu cần | 3 |
+| qdnd | không gian mạng | 3 |
 | qdnd | link xem trực tiếp | 3 |
 | qdnd | lừa đảo | 3 |
-| qdnd | mưa lũ | 3 |
-| qdnd | mạng xã hội | 3 |
+| qdnd | mưa | 3 |
+| qdnd | mưa dông | 3 |
 | qdnd | ngân hàng | 3 |
 | qdnd | ngư dân | 3 |
 | qdnd | người cao tuổi | 3 |
@@ -3553,12 +3708,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | nhà ở xã hội | 3 |
 | qdnd | nắng nóng | 3 |
 | qdnd | siêu bão BAVI | 3 |
+| qdnd | thiên tai | 3 |
 | qdnd | thực phẩm | 3 |
-| qdnd | tên lửa | 3 |
 | qdnd | xuất khẩu | 3 |
 | qdnd | Đội tuyển Argentina | 3 |
 | qdnd | Đội tuyển Đức | 3 |
-| qdnd | Đức | 3 |
+| qdnd | Ấn Độ | 3 |
 | qdnd | ADN | 2 |
 | qdnd | AI | 2 |
 | qdnd | APEC 2027 | 2 |
@@ -3566,6 +3721,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Afghanistan | 2 |
 | qdnd | Argentina và Thụy Sĩ | 2 |
 | qdnd | BIM Land | 2 |
+| qdnd | Ban Chấp hành Trung ương Đảng | 2 |
 | qdnd | Bellingham | 2 |
 | qdnd | Boston | 2 |
 | qdnd | Brazil và Nhật Bản | 2 |
@@ -3575,7 +3731,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Bản tin tổng hợp tuần | 2 |
 | qdnd | Bảo hiểm | 2 |
 | qdnd | Bảo tàng Lịch sử Quân sự Việt Nam | 2 |
-| qdnd | Bắc Bộ | 2 |
 | qdnd | Bệnh viện Hữu nghị Việt Đức | 2 |
 | qdnd | Bệnh viện Quân y 105 | 2 |
 | qdnd | Bệnh viện Quân y 175 | 2 |
@@ -3621,21 +3776,23 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Nhà tình nghĩa | 2 |
 | qdnd | Nhật ký World Cup 2026 | 2 |
 | qdnd | Nigeria | 2 |
+| qdnd | Olympic | 2 |
 | qdnd | Philippines | 2 |
 | qdnd | Pháo binh | 2 |
 | qdnd | Pháo hoa | 2 |
 | qdnd | Pháp và Morocco | 2 |
 | qdnd | Phân luồng | 2 |
+| qdnd | Phú Thọ | 2 |
 | qdnd | Quốc phòng | 2 |
 | qdnd | Saibari | 2 |
 | qdnd | SeABank | 2 |
 | qdnd | Sen | 2 |
 | qdnd | Sáng tạo | 2 |
 | qdnd | Sư đoàn 10 | 2 |
+| qdnd | Sư đoàn 377 | 2 |
 | qdnd | THPT | 2 |
 | qdnd | Thi đua | 2 |
 | qdnd | Thomas Tuchel | 2 |
-| qdnd | Thuế | 2 |
 | qdnd | Thông tin | 2 |
 | qdnd | Thường trực Ban Bí thư | 2 |
 | qdnd | Thượng tướng Nguyễn Trường Thắng | 2 |
@@ -3654,7 +3811,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Trường Sĩ quan Thông tin | 2 |
 | qdnd | Trường THPT Chuyên Tuyên Quang | 2 |
 | qdnd | Trại hè Việt Nam | 2 |
+| qdnd | Tây Ban Nha và Argentina | 2 |
 | qdnd | Tây Ban Nha và Áo | 2 |
+| qdnd | Tìm kiếm | 2 |
 | qdnd | Tổng cục Chính trị | 2 |
 | qdnd | Tổng cục Hậu cần | 2 |
 | qdnd | Tổng thống Mỹ | 2 |
@@ -3672,23 +3831,21 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | bảo vệ nền tảng tư tưởng của Đảng | 2 |
 | qdnd | bệnh viện dã chiến | 2 |
 | qdnd | bữa cơm | 2 |
-| qdnd | chuyển đổi số | 2 |
 | qdnd | chính quyền 3 cấp | 2 |
-| qdnd | cá độ bóng đá | 2 |
+| qdnd | cướp tiệm vàng | 2 |
 | qdnd | cấp cứu | 2 |
 | qdnd | cổ động viên | 2 |
 | qdnd | cộng tác viên | 2 |
 | qdnd | di sản | 2 |
 | qdnd | diễn biến hòa bình | 2 |
+| qdnd | doanh nghiệp | 2 |
 | qdnd | dân số | 2 |
 | qdnd | giá xăng | 2 |
 | qdnd | gìn giữ hòa bình | 2 |
 | qdnd | hải quan | 2 |
 | qdnd | khám sức khỏe | 2 |
-| qdnd | không gian mạng | 2 |
+| qdnd | làng nghề | 2 |
 | qdnd | lịch sử | 2 |
-| qdnd | mưa | 2 |
-| qdnd | mưa dông | 2 |
 | qdnd | ngân sách | 2 |
 | qdnd | pháo hoa | 2 |
 | qdnd | phát ngôn | 2 |
@@ -3715,11 +3872,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | video bàn thắng Argentina | 2 |
 | qdnd | video bàn thắng Tây Ban Nha | 2 |
 | qdnd | viên chức | 2 |
+| qdnd | vàng | 2 |
 | qdnd | vé tàu | 2 |
 | qdnd | xe tăng | 2 |
 | qdnd | xuất bản | 2 |
 | qdnd | yêu thương | 2 |
 | qdnd | Đảng | 2 |
+| qdnd | Đồn Biên phòng Cửa khẩu Săm Pun | 2 |
 | qdnd | Đội K51 | 2 |
 | qdnd | Đội tuyển Mỹ | 2 |
 | qdnd | điều tra hình sự | 2 |
@@ -3730,7 +3889,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | đặc công | 2 |
 | qdnd | đổi mới | 2 |
 | qdnd | đội hình tiêu biểu | 2 |
-| qdnd | Ấn Độ | 2 |
 | qdnd | 345 | 1 |
 | qdnd | 500 ngày đêm | 1 |
 | qdnd | ADB | 1 |
@@ -3814,6 +3972,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Bộ trưởng Bộ Quốc phòng | 1 |
 | qdnd | Bộ tài chính | 1 |
 | qdnd | Bộ tư lệnh TP Hồ Chí Minh | 1 |
+| qdnd | Bộ đội | 1 |
 | qdnd | Bộ đội Biên phòng | 1 |
 | qdnd | Bộ đội Biên phòng TP Huế | 1 |
 | qdnd | Bộ đội Biên phòng TP Hải Phòng | 1 |
@@ -3834,6 +3993,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Chế Thục Anh | 1 |
 | qdnd | Chỉ số giá tiêu dùng | 1 |
 | qdnd | Chỉ thị số 07 | 1 |
+| qdnd | Chủ tịch FIFA | 1 |
 | qdnd | Colombia | 1 |
 | qdnd | Cristiano Ronaldo và Lionel Messi | 1 |
 | qdnd | Croatia | 1 |
@@ -3906,6 +4066,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Huấn luyện viên Tuchel | 1 |
 | qdnd | Huế | 1 |
 | qdnd | Hà La | 1 |
+| qdnd | Hành khách quốc tế | 1 |
 | qdnd | Hè về | 1 |
 | qdnd | Hạ Long | 1 |
 | qdnd | Hải quân Nga | 1 |
@@ -3963,6 +4124,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Link xem trực tiếp Pháp và Anh | 1 |
 | qdnd | Link xem trực tiếp Pháp và Tây Ban Nha | 1 |
 | qdnd | Link xem trực tiếp Thổ Nhĩ Kỳ và Mỹ | 1 |
+| qdnd | Link xem trực tiếp Tây Ban Nha và Argentina | 1 |
 | qdnd | Link xem trực tiếp Tây Ban Nha và Bỉ | 1 |
 | qdnd | Link xem trực tiếp Đức và Paraguay | 1 |
 | qdnd | Liên hoan phim | 1 |
@@ -3992,6 +4154,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Lữ đoàn 205 | 1 |
 | qdnd | Lữ đoàn 26 | 1 |
 | qdnd | Lữ đoàn 368 | 1 |
+| qdnd | Lữ đoàn 572 | 1 |
 | qdnd | Lữ đoàn 596 | 1 |
 | qdnd | Lữ đoàn 649 | 1 |
 | qdnd | Lữ đoàn 96 | 1 |
@@ -4030,6 +4193,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Ngai vua triều Nguyễn | 1 |
 | qdnd | Nghị quyết số 10 | 1 |
 | qdnd | Nguyễn Công Trí | 1 |
+| qdnd | Nguyễn Hoàng Minh | 1 |
 | qdnd | Nguyễn Hoàng Ngọc | 1 |
 | qdnd | Nguyễn Sĩ Dũng | 1 |
 | qdnd | Nguyễn Thành Nam | 1 |
@@ -4041,6 +4205,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Nguyễn Văn Minh | 1 |
 | qdnd | Nguyễn Đắc Nông | 1 |
 | qdnd | Ngày mai trong mắt em | 1 |
+| qdnd | Nha Trang | 1 |
+| qdnd | Nhà giáo | 1 |
 | qdnd | Nhà máy Z113 | 1 |
 | qdnd | Nhà máy Z115 | 1 |
 | qdnd | Nhà máy Z121 | 1 |
@@ -4067,7 +4233,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Palestine | 1 |
 | qdnd | Paraguay và Pháp | 1 |
 | qdnd | Patrick Beach | 1 |
+| qdnd | Patriot | 1 |
 | qdnd | Peru | 1 |
+| qdnd | Phong Nha | 1 |
 | qdnd | Phuket | 1 |
 | qdnd | Pháp lam | 1 |
 | qdnd | Pháp và Na Uy | 1 |
@@ -4081,7 +4249,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Phó thủ tướng Nguyễn Văn Thắng | 1 |
 | qdnd | Phó thủ tướng Thường trực | 1 |
 | qdnd | Phù Mỹ Đông | 1 |
-| qdnd | Phú Thọ | 1 |
 | qdnd | Phước Giang | 1 |
 | qdnd | Phường Thanh Xuân | 1 |
 | qdnd | Phạm Ngọc Mùi | 1 |
@@ -4102,14 +4269,19 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Quốc Tử Giám | 1 |
 | qdnd | Quốc khánh | 1 |
 | qdnd | Quốc khánh Pháp | 1 |
+| qdnd | Quốc lộ 12 | 1 |
+| qdnd | Quốc lộ 32 | 1 |
 | qdnd | Quốc lộ 6 | 1 |
 | qdnd | Quốc phòng toàn dân | 1 |
 | qdnd | Quỹ xã hội Phan Anh | 1 |
 | qdnd | Reece James | 1 |
 | qdnd | Robot | 1 |
 | qdnd | Rocket | 1 |
+| qdnd | Rodri | 1 |
+| qdnd | Romania | 1 |
 | qdnd | Rudi Garcia | 1 |
 | qdnd | STEM | 1 |
+| qdnd | Sao vuông | 1 |
 | qdnd | Sarr | 1 |
 | qdnd | Senegal | 1 |
 | qdnd | Singapore | 1 |
@@ -4124,7 +4296,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Sư đoàn 31 | 1 |
 | qdnd | Sư đoàn 320 | 1 |
 | qdnd | Sư đoàn 324 | 1 |
-| qdnd | Sư đoàn 377 | 1 |
 | qdnd | Sư đoàn 5 | 1 |
 | qdnd | Sư đoàn 968 | 1 |
 | qdnd | Sở Y tế Hà Nội | 1 |
@@ -4134,11 +4305,14 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Thanh niên Quân đội | 1 |
 | qdnd | Thanh tra | 1 |
 | qdnd | Thanh tra Bộ Quốc phòng | 1 |
+| qdnd | Thi tốt nghiệp THPT | 1 |
+| qdnd | Thiên tai | 1 |
 | qdnd | Thiếu tá Roãn Thị Hồng Thắm | 1 |
 | qdnd | Thiếu tướng TĂNG VĂN MIÊU | 1 |
 | qdnd | Thu phí tự động không dừng | 1 |
 | qdnd | Thành phố mang tên Bác | 1 |
 | qdnd | Thái Hưng | 1 |
+| qdnd | Thái Lan | 1 |
 | qdnd | Tháng Bảy | 1 |
 | qdnd | Thượng tá NGUYỄN TUẤN ANH từ trần | 1 |
 | qdnd | Thượng tá Đỗ Văn Thế | 1 |
@@ -4161,11 +4335,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Tiền lương | 1 |
 | qdnd | Tiểu đoàn 1 | 1 |
 | qdnd | Tiểu đoàn 703 | 1 |
+| qdnd | Torres | 1 |
 | qdnd | Toán | 1 |
 | qdnd | Tri ân | 1 |
 | qdnd | Trionda | 1 |
 | qdnd | Triều Tiên | 1 |
 | qdnd | Triển lãm Công nghiệp quốc tế | 1 |
+| qdnd | Trung Bộ | 1 |
 | qdnd | Trung tá QNCN Đinh Thị Hà | 1 |
 | qdnd | Trung tâm 386 | 1 |
 | qdnd | Trung tâm Huấn luyện | 1 |
@@ -4180,6 +4356,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Trung đoàn 282 | 1 |
 | qdnd | Trung đoàn 29 | 1 |
 | qdnd | Trung đoàn 43 | 1 |
+| qdnd | Trung đoàn 515 | 1 |
 | qdnd | Trung đoàn 52 | 1 |
 | qdnd | Trung đoàn 66 | 1 |
 | qdnd | Trung đoàn 664 | 1 |
@@ -4223,10 +4400,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Tàu không số | 1 |
 | qdnd | Tàu sân bay | 1 |
 | qdnd | Tân cảng | 1 |
-| qdnd | Tây Ban Nha và Argentina | 1 |
 | qdnd | Tây Hồ | 1 |
 | qdnd | Tìm hiểu kiến thức pháp luật | 1 |
-| qdnd | Tìm kiếm | 1 |
 | qdnd | Tô Văn Đực | 1 |
 | qdnd | Tùy viên Quân sự | 1 |
 | qdnd | Tăng Thiết giáp | 1 |
@@ -4240,6 +4415,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Tổng công ty Sông Thu | 1 |
 | qdnd | Tổng công ty Thái Sơn | 1 |
 | qdnd | Tổng công ty Truyền tải điện quốc gia | 1 |
+| qdnd | Tổng thống Hungary | 1 |
 | qdnd | Tổng điều tra kinh tế | 1 |
 | qdnd | Từ trần | 1 |
 | qdnd | Tự chủ đại học | 1 |
@@ -4301,6 +4477,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Văn phòng Chính phủ | 1 |
 | qdnd | Văn phòng Trung ương Đảng | 1 |
 | qdnd | Vũ Văn Phố | 1 |
+| qdnd | Vạn Phúc | 1 |
 | qdnd | WHO | 1 |
 | qdnd | Wonderwall | 1 |
 | qdnd | X20 | 1 |
@@ -4319,6 +4496,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | bao dung | 1 |
 | qdnd | bay treo cấp cứu | 1 |
 | qdnd | biết nhiều việc | 1 |
+| qdnd | bà Nguyễn Thị Lệ | 1 |
 | qdnd | bàn thắng Anh và CHDC Congo | 1 |
 | qdnd | bán dẫn | 1 |
 | qdnd | bán kết | 1 |
@@ -4348,6 +4526,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | cháy rừng | 1 |
 | qdnd | chính quyền | 1 |
 | qdnd | chính sách mới | 1 |
+| qdnd | chó nghiệp vụ | 1 |
 | qdnd | chăn nuôi | 1 |
 | qdnd | chất độc da cam | 1 |
 | qdnd | chế biến | 1 |
@@ -4357,6 +4536,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | cuộc thi | 1 |
 | qdnd | cuộc thi trực tuyến | 1 |
 | qdnd | cà phê Việt | 1 |
+| qdnd | cà phê sáng | 1 |
 | qdnd | cán bộ người dân tộc thiểu số | 1 |
 | qdnd | công dân số | 1 |
 | qdnd | công lập | 1 |
@@ -4367,7 +4547,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | cơ khí | 1 |
 | qdnd | cơ quan Đảng Trung ương | 1 |
 | qdnd | cơ quan điều tra | 1 |
-| qdnd | cướp tiệm vàng | 1 |
 | qdnd | cảnh giác | 1 |
 | qdnd | cảnh sát biển | 1 |
 | qdnd | cấm hút thuốc lá | 1 |
@@ -4377,17 +4556,18 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | cống hiến | 1 |
 | qdnd | cộng đồng người Việt | 1 |
 | qdnd | cờ vua | 1 |
+| qdnd | cứu hỏa | 1 |
 | qdnd | cứu hộ | 1 |
 | qdnd | cứu nước | 1 |
 | qdnd | cửa khẩu | 1 |
 | qdnd | da cam | 1 |
 | qdnd | di truyền | 1 |
 | qdnd | dinh dưỡng | 1 |
-| qdnd | doanh nghiệp | 1 |
 | qdnd | doanh nghiệp nhỏ và vừa | 1 |
 | qdnd | du lịch Halal | 1 |
 | qdnd | du lịch đường thủy | 1 |
 | qdnd | dân chủ ở cơ sở | 1 |
+| qdnd | dân tộc thiểu số | 1 |
 | qdnd | dân vận | 1 |
 | qdnd | dược bệnh viện | 1 |
 | qdnd | dạy bơi | 1 |
@@ -4410,9 +4590,11 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | gấu ngựa | 1 |
 | qdnd | gốm | 1 |
 | qdnd | gốm Kim Lan | 1 |
+| qdnd | hiếm muộn | 1 |
 | qdnd | hiến máu | 1 |
 | qdnd | hiến tặng mô | 1 |
 | qdnd | hoàn trả | 1 |
+| qdnd | hoạt hình | 1 |
 | qdnd | huy chương đồng | 1 |
 | qdnd | hài cốt | 1 |
 | qdnd | hàng không Mỹ | 1 |
@@ -4449,6 +4631,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | kiểm toán | 1 |
 | qdnd | kiểm tra bắn đạn thật | 1 |
 | qdnd | kép phụ | 1 |
+| qdnd | kỳ thi | 1 |
 | qdnd | kỷ nguyên | 1 |
 | qdnd | kỹ năng nghề | 1 |
 | qdnd | kỹ sư | 1 |
@@ -4460,14 +4643,15 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | link xem trực tiếp Nhật Bản | 1 |
 | qdnd | link xem trực tiếp Thụy Sĩ và Colombia | 1 |
 | qdnd | livestream bán hàng | 1 |
+| qdnd | liệt sĩ Trần Quý Thi | 1 |
 | qdnd | liệt sĩ Trần Văn Tụ | 1 |
 | qdnd | luyện rèn | 1 |
 | qdnd | luân lưu | 1 |
 | qdnd | luật | 1 |
-| qdnd | làng nghề | 1 |
 | qdnd | lãng phí | 1 |
 | qdnd | lương hưu | 1 |
 | qdnd | lượng tử | 1 |
+| qdnd | lịch sử quân sự | 1 |
 | qdnd | lịch thi đấu World Cup 2026 | 1 |
 | qdnd | lịch thi đấu bán kết | 1 |
 | qdnd | lọc nước | 1 |
@@ -4530,6 +4714,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | phường Tây Hồ | 1 |
 | qdnd | phường xã hội chủ nghĩa | 1 |
 | qdnd | phục hồi chức năng | 1 |
+| qdnd | quy chế thi | 1 |
 | qdnd | quyền sử dụng đất | 1 |
 | qdnd | quân chính | 1 |
 | qdnd | quân nhu | 1 |
@@ -4561,13 +4746,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | sĩ quan | 1 |
 | qdnd | sơ cấp cứu chiến trường | 1 |
 | qdnd | sư phạm | 1 |
+| qdnd | sạt lở đất | 1 |
 | qdnd | sản phẩm công nghiệp | 1 |
 | qdnd | sản xuất | 1 |
 | qdnd | sức khỏe | 1 |
 | qdnd | t&t | 1 |
 | qdnd | thao trường | 1 |
 | qdnd | thi hành án dân sự | 1 |
-| qdnd | thiên tai | 1 |
 | qdnd | thu nhập | 1 |
 | qdnd | thuê bao | 1 |
 | qdnd | thuế dịch vụ số | 1 |
@@ -4619,10 +4804,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | trực tiếp Tunisia và Hà Lan | 1 |
 | qdnd | trực tiếp bóng đá | 1 |
 | qdnd | trực tiếp bóng đá Mỹ và Bỉ | 1 |
+| qdnd | trực tiếp chung kết World Cup 2026 | 1 |
 | qdnd | tuyên truyền | 1 |
 | qdnd | tuyến đường | 1 |
 | qdnd | tuyển Pháp | 1 |
 | qdnd | tuyển Tây Ban Nha | 1 |
+| qdnd | tuyển Việt Nam | 1 |
 | qdnd | tuyển thẳng | 1 |
 | qdnd | tuần dương hạm | 1 |
 | qdnd | tuần tra liên hợp | 1 |
@@ -4637,12 +4824,14 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | tình trạng khẩn cấp | 1 |
 | qdnd | tôi yêu Tổ quốc tôi | 1 |
 | qdnd | tăng trưởng | 1 |
+| qdnd | tăng trưởng 2 con số | 1 |
 | qdnd | tăng trưởng hai con số | 1 |
 | qdnd | tư liệu sống | 1 |
 | qdnd | tư tưởng Hồ Chí Minh | 1 |
 | qdnd | tập trận | 1 |
 | qdnd | tế bào gốc | 1 |
 | qdnd | tỉnh Gia Lai | 1 |
+| qdnd | tỉnh Lai Châu | 1 |
 | qdnd | tỉnh Ninh Bình | 1 |
 | qdnd | tỉnh Điện Biên | 1 |
 | qdnd | tố tụng | 1 |
@@ -4657,10 +4846,10 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | video bàn thắng Mỹ | 1 |
 | qdnd | video bàn thắng Pháp và Morocco | 1 |
 | qdnd | video bàn thắng Pháp và Thụy Điển | 1 |
+| qdnd | video bàn thắng chung kết World Cup 2026 | 1 |
 | qdnd | viêm màng não | 1 |
 | qdnd | viêm tụy cấp | 1 |
 | qdnd | việc làm | 1 |
-| qdnd | vàng | 1 |
 | qdnd | vàng SJC | 1 |
 | qdnd | vì hòa bình | 1 |
 | qdnd | vòng 32 đội World Cup | 1 |
@@ -4730,6 +4919,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Đảng Cộng sản | 1 |
 | qdnd | Đất Nước Thiên Hùng Ca | 1 |
 | qdnd | Đất đai | 1 |
+| qdnd | Đậu Sỹ Hùng | 1 |
 | qdnd | ĐẶNG VĂN TAM | 1 |
 | qdnd | Đặc khu Phú Quốc | 1 |
 | qdnd | Đặc khu Vân Đồn | 1 |
@@ -4738,7 +4928,6 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | Đề án 1371 | 1 |
 | qdnd | Đề án 57 | 1 |
 | qdnd | Đồn Biên phòng Chiềng On | 1 |
-| qdnd | Đồn Biên phòng Cửa khẩu Săm Pun | 1 |
 | qdnd | Đồn Biên phòng Lũng Cú | 1 |
 | qdnd | Đồn Biên phòng Triệu Vân | 1 |
 | qdnd | Đồn Long Khốt | 1 |
@@ -4786,57 +4975,60 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | qdnd | đổi mới công nghệ | 1 |
 | qdnd | đội tuyển Ai Cập | 1 |
 | qdnd | đội tuyển Nhật Bản | 1 |
+| qdnd | đội tuyển Tây Ban Nha | 1 |
 | qdnd | đội tuyển hàn quốc | 1 |
 | qdnd | đội tuyển Đức | 1 |
 | qdnd | đứng trong hàng ngũ của Đảng | 1 |
 | qdnd | Ẩm thực | 1 |
 | qdnd | Ủy ban Kiểm tra | 1 |
 | qdnd | Ủy ban Kiểm tra Trung ương | 1 |
-| saostar | Phim ảnh | 779 |
-| saostar | Sao | 391 |
-| saostar | Sao Sport | 280 |
-| saostar | Âm nhạc | 259 |
-| saostar | Vòng quanh thế giới | 121 |
-| saostar | Cận cảnh cuộc sống | 107 |
-| saostar | Người mẫu - Hoa hậu | 95 |
-| saostar | Du lịch - Khám phá | 92 |
-| saostar | BĐS - Tài chính | 42 |
-| saostar | Công nghệ | 34 |
-| saostar | Ăn - Chơi | 30 |
-| saostar | Fashion - Beauty | 25 |
-| saostar | Học đường | 11 |
-| saostar | Sức khỏe | 9 |
+| saostar | Phim ảnh | 823 |
+| saostar | Sao | 423 |
+| saostar | Sao Sport | 297 |
+| saostar | Âm nhạc | 274 |
+| saostar | Vòng quanh thế giới | 134 |
+| saostar | Cận cảnh cuộc sống | 113 |
+| saostar | Người mẫu - Hoa hậu | 103 |
+| saostar | Du lịch - Khám phá | 96 |
+| saostar | BĐS - Tài chính | 46 |
+| saostar | Công nghệ | 35 |
+| saostar | Ăn - Chơi | 31 |
+| saostar | Fashion - Beauty | 27 |
+| saostar | Học đường | 12 |
+| saostar | Sức khỏe | 11 |
 | saostar | Gương mặt thương hiệu | 2 |
-| soha | (none) | 289 |
-| soha | World Cup | 61 |
-| soha | sao Việt | 57 |
-| soha | Trung Quốc | 28 |
-| soha | Tin nóng trong ngày | 19 |
-| soha | báo công an | 19 |
-| soha | world cup 2026 | 14 |
+| soha | (none) | 303 |
+| soha | World Cup | 63 |
+| soha | sao Việt | 60 |
+| soha | Trung Quốc | 29 |
+| soha | Tin nóng trong ngày | 22 |
+| soha | báo công an | 20 |
+| soha | world cup 2026 | 16 |
 | soha | Mỹ | 11 |
 | soha | con giáp | 11 |
 | soha | Nga | 9 |
 | soha | Ukraine | 9 |
+| soha | Messi | 7 |
 | soha | Việt Nam | 7 |
 | soha | châu âu | 7 |
-| soha | Messi | 6 |
 | soha | hà nội | 6 |
 | soha | Phú Quốc | 5 |
 | soha | an ninh thế giới | 5 |
 | soha | bộ công an | 5 |
+| soha | sao hoa ngữ | 5 |
+| soha | Tây Ban Nha | 4 |
 | soha | VINFAST | 4 |
 | soha | giá vàng | 4 |
 | soha | iran | 4 |
+| soha | nga | 4 |
 | soha | đội tuyển Việt Nam | 4 |
 | soha | Campuchia | 3 |
+| soha | Iran | 3 |
 | soha | Lisa | 3 |
-| soha | Tây Ban Nha | 3 |
 | soha | kim cương | 3 |
-| soha | nga | 3 |
+| soha | lừa đảo | 3 |
 | soha | nhật bản | 3 |
 | soha | nắng nóng | 3 |
-| soha | sao hoa ngữ | 3 |
 | soha | sao hàn | 3 |
 | soha | thi tốt nghiệp | 3 |
 | soha | tiết kiệm | 3 |
@@ -4848,13 +5040,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | David Beckham | 2 |
 | soha | Haaland | 2 |
 | soha | Hàn Quốc | 2 |
-| soha | Iran | 2 |
 | soha | Lục Thị Hồng Liên | 2 |
 | soha | Mexico | 2 |
 | soha | Nhật Bản | 2 |
 | soha | Ronaldo | 2 |
 | soha | TP. HCM | 2 |
 | soha | TikToker | 2 |
+| soha | Tin ngắn | 2 |
 | soha | Toyota | 2 |
 | soha | VNEID | 2 |
 | soha | bánh ram ít | 2 |
@@ -4865,11 +5057,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | cây | 2 |
 | soha | công an TP Hà Nội | 2 |
 | soha | doanh nghiệp | 2 |
+| soha | eTax Mobile | 2 |
+| soha | giá vàng hôm nay | 2 |
 | soha | giá điện | 2 |
 | soha | kinh tế Việt Nam | 2 |
 | soha | làm mát | 2 |
 | soha | làm vườn | 2 |
-| soha | lừa đảo | 2 |
 | soha | mỹ | 2 |
 | soha | mỹ nhân | 2 |
 | soha | phạt nguội | 2 |
@@ -4882,6 +5075,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | ô tô | 2 |
 | soha | đuối nước | 2 |
 | soha | Ấn Độ | 2 |
+| soha | 1 thiên gạch ống | 1 |
 | soha | 5g | 1 |
 | soha | AMEE | 1 |
 | soha | Apple | 1 |
@@ -4901,6 +5095,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | CEO | 1 |
 | soha | Canada | 1 |
 | soha | ChatGPT và sức khỏe | 1 |
+| soha | Chung kết | 1 |
 | soha | Chân giò | 1 |
 | soha | Châu Tinh Trì | 1 |
 | soha | Chủ tịch Quốc hội | 1 |
@@ -4936,6 +5131,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | Khoai lang | 1 |
 | soha | Khám sức khoẻ miễn phí | 1 |
 | soha | Không quân Triều Tiên | 1 |
+| soha | Kia Carnival | 1 |
 | soha | Kim Jong-un | 1 |
 | soha | Kiều Tiên | 1 |
 | soha | LG | 1 |
@@ -4949,11 +5145,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | Lạng Sơn | 1 |
 | soha | Mark Zuckerberg | 1 |
 | soha | Mbappe | 1 |
+| soha | Minh Thái Tổ | 1 |
 | soha | Monaco | 1 |
 | soha | Mùa nào bệnh nấy | 1 |
 | soha | Nguyễn Thanh Liêm | 1 |
 | soha | Nguyễn Thanh Sơn | 1 |
 | soha | Nguyễn Thị Anh | 1 |
+| soha | Nguyễn Thị Thanh Thảo | 1 |
 | soha | Nguyễn Đình Lâm | 1 |
 | soha | Nobita cứu thế giới | 1 |
 | soha | Nội Bài | 1 |
@@ -4961,11 +5159,13 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | Pakistan tấn công Taliban | 1 |
 | soha | Phân bón | 1 |
 | soha | Phòng Văn hoá - Xã hội | 1 |
+| soha | Phạm Nhật Vượng | 1 |
 | soha | Putin thừa nhận thiếu hụt nhiên liệu | 1 |
 | soha | Qisheng | 1 |
 | soha | Quang Linh Vlogs | 1 |
 | soha | Quyền Linh | 1 |
 | soha | Quảng Ngãi | 1 |
+| soha | Quảng Trị | 1 |
 | soha | REE | 1 |
 | soha | RPG-75M | 1 |
 | soha | SIM chính chủ | 1 |
@@ -4984,14 +5184,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | Taylor Swift | 1 |
 | soha | Techcombank cảnh báo | 1 |
 | soha | Thiên Kim | 1 |
+| soha | Thiên Ân | 1 |
 | soha | Thái Lan | 1 |
-| soha | Tin ngắn | 1 |
 | soha | Tiền lương | 1 |
 | soha | Tiểu Vy | 1 |
+| soha | Trung Đông | 1 |
 | soha | Trương Kiểu | 1 |
 | soha | Trưởng thôn | 1 |
 | soha | Trần Anh Tiến | 1 |
 | soha | Trần Nghiên Hy | 1 |
+| soha | Trần Thúy Cúc | 1 |
 | soha | Trọng tài | 1 |
 | soha | Tuyên Quang | 1 |
 | soha | Tàu chiến | 1 |
@@ -5002,6 +5204,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | UAV đánh chặn | 1 |
 | soha | Ukraine 2030 | 1 |
 | soha | Ung thư da | 1 |
+| soha | Việt Anh | 1 |
 | soha | Volkswange | 1 |
 | soha | Võ Thị Hằng | 1 |
 | soha | Văn Anh Quốc | 1 |
@@ -5012,6 +5215,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | ai | 1 |
 | soha | australia | 1 |
 | soha | biên bản ghi nhớ Mỹ-Iran | 1 |
+| soha | biến đổi khí hậu | 1 |
 | soha | biển lý sơn | 1 |
 | soha | biệt thự thông minh | 1 |
 | soha | buôn lậu kim cương | 1 |
@@ -5091,13 +5295,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | dọn dẹp | 1 |
 | soha | dự báo thời tiết 15/7 | 1 |
 | soha | dự án điện khí Bạc Liêu | 1 |
-| soha | eTax Mobile | 1 |
 | soha | em chồng | 1 |
 | soha | eo biển Hormuz | 1 |
 | soha | ga Hà Nội | 1 |
 | soha | gan | 1 |
+| soha | gian lận | 1 |
 | soha | giá vàng giảm | 1 |
-| soha | giá vàng hôm nay | 1 |
 | soha | giá vàng miếng SJC | 1 |
 | soha | giáo dục cảm xúc | 1 |
 | soha | giáo sư nguyễn đình hối | 1 |
@@ -5130,6 +5333,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | khởi tố giám đốc | 1 |
 | soha | khởi tố giám đốc vi phạm | 1 |
 | soha | kim loại | 1 |
+| soha | kết hôn | 1 |
 | soha | làm giả hồ sơ | 1 |
 | soha | làm sạch dép Crocs | 1 |
 | soha | lái xe an toàn | 1 |
@@ -5155,6 +5359,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | mưa Hà Nội | 1 |
 | soha | mướp đắng | 1 |
 | soha | mẹ chồng bị đánh | 1 |
+| soha | mẹo bếp | 1 |
 | soha | mệnh Kim tháng 7 | 1 |
 | soha | mừng cưới | 1 |
 | soha | nam diễn viên | 1 |
@@ -5165,13 +5370,16 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | ngành học cho người giỏi toán | 1 |
 | soha | ngập nước | 1 |
 | soha | nhà hát hồ gươm | 1 |
+| soha | nhà máy | 1 |
 | soha | nhà máy địa nhiệt | 1 |
 | soha | như chưa hề có cuộc chia ly | 1 |
 | soha | nhảy cầu | 1 |
 | soha | nhận lại tiền chuyển nhầm | 1 |
+| soha | nước súc miệng | 1 |
 | soha | nắng nóng ở Paris | 1 |
 | soha | nồi chiên không dầu | 1 |
 | soha | nữ nhân viên cứu hỏa tự sát | 1 |
+| soha | perovskite | 1 |
 | soha | phe vé concert | 1 |
 | soha | phi công nhảy khỏi máy bay | 1 |
 | soha | phun thuốc diệt cỏ | 1 |
@@ -5186,7 +5394,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | quy định mới giấy phép lái xe | 1 |
 | soha | quy định ngân hàng 2025 | 1 |
 | soha | quy định nộp phạt | 1 |
+| soha | quy định phạt lao động | 1 |
 | soha | quán cà phê cháy TPHCM | 1 |
+| soha | quần áo bạc màu | 1 |
 | soha | quốc gia | 1 |
 | soha | quỳnh kool | 1 |
 | soha | rapper | 1 |
@@ -5260,7 +5470,9 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | tàu vũ trụ Soyuz | 1 |
 | soha | tên lửa Atlas V | 1 |
 | soha | tên lửa BrahMos | 1 |
+| soha | tên lửa Iran | 1 |
 | soha | tên lửa Tayfun | 1 |
+| soha | tìm kiếm hài cốt liệt sỹ | 1 |
 | soha | tôm thẻ chân trắng | 1 |
 | soha | tượng Nữ thần Khai phóng | 1 |
 | soha | tượng messi | 1 |
@@ -5284,6 +5496,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | vé máy bay hè | 1 |
 | soha | vùng áp thấp Biển Đông | 1 |
 | soha | vũ khí Nhật Bản | 1 |
+| soha | vận trình 12 con giáp | 1 |
 | soha | vợ chồng | 1 |
 | soha | vụ cào xước xe Mercedes | 1 |
 | soha | vụ án bé gái Thái Lan | 1 |
@@ -5291,6 +5504,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | vụ đuối nước Lâm Đồng | 1 |
 | soha | xe bus Belarus | 1 |
 | soha | xe cảnh sát | 1 |
+| soha | xe tăng MGCS | 1 |
 | soha | xe tăng T-72BM2 | 1 |
 | soha | xe tăng T-80 | 1 |
 | soha | xe điện | 1 |
@@ -5341,44 +5555,44 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | soha | ấm siêu tốc | 1 |
 | soha | ẩm thực Việt Nam | 1 |
 | soha | ủy quyền nhận lương hưu | 1 |
-| thanhnien | Thời sự | 138 |
-| thanhnien | World Cup 2026 | 118 |
-| thanhnien | Giáo dục | 87 |
-| thanhnien | Thế giới | 84 |
-| thanhnien | Giới trẻ | 47 |
-| thanhnien | Sức khỏe | 45 |
-| thanhnien | Dân sinh | 42 |
-| thanhnien | Kinh tế | 38 |
+| thanhnien | Thời sự | 149 |
+| thanhnien | World Cup 2026 | 125 |
+| thanhnien | Giáo dục | 91 |
+| thanhnien | Thế giới | 87 |
+| thanhnien | Giới trẻ | 50 |
+| thanhnien | Dân sinh | 46 |
+| thanhnien | Sức khỏe | 46 |
+| thanhnien | Kinh tế | 40 |
 | thanhnien | Văn hóa | 38 |
+| thanhnien | Cộng đồng | 29 |
 | thanhnien | Đời sống | 28 |
-| thanhnien | Cộng đồng | 27 |
 | thanhnien | Tin tức công nghệ | 27 |
 | thanhnien | Chính sách - Phát triển | 24 |
-| thanhnien | Ngân hàng | 22 |
+| thanhnien | Ngân hàng | 24 |
 | thanhnien | Pháp luật | 22 |
-| thanhnien | Bạn cần biết | 19 |
+| thanhnien | Bạn cần biết | 20 |
+| thanhnien | Đời nghệ sĩ | 20 |
 | thanhnien | Thị trường | 19 |
-| thanhnien | Thời trang 24/7 | 18 |
-| thanhnien | Đời nghệ sĩ | 17 |
+| thanhnien | Thời trang 24/7 | 19 |
+| thanhnien | Bóng đá Việt Nam | 16 |
 | thanhnien | Mới- Mới- Mới | 15 |
 | thanhnien | Địa ốc | 15 |
-| thanhnien | Bóng đá Việt Nam | 13 |
-| thanhnien | Giải trí | 13 |
-| thanhnien | Chính trị | 12 |
+| thanhnien | Chính trị | 14 |
+| thanhnien | Giải trí | 14 |
+| thanhnien | Sản phẩm | 13 |
 | thanhnien | Doanh nghiệp | 12 |
-| thanhnien | Sản phẩm | 12 |
-| thanhnien | Khám phá | 9 |
-| thanhnien | Phim | 9 |
+| thanhnien | Phim | 11 |
+| thanhnien | Khám phá | 10 |
+| thanhnien | Thủ thuật | 9 |
+| thanhnien | Tin tức - Sự kiện | 9 |
 | thanhnien | Sống đẹp | 8 |
-| thanhnien | Thủ thuật | 8 |
-| thanhnien | Tin tức - Sự kiện | 8 |
 | thanhnien | Làm đẹp | 7 |
 | thanhnien | Ẩm thực | 7 |
+| thanhnien | Các môn khác | 6 |
 | thanhnien | Câu chuyện văn hóa | 6 |
+| thanhnien | Kinh tế xanh | 6 |
 | thanhnien | Truyền hình | 6 |
 | thanhnien | Chuyện lạ | 5 |
-| thanhnien | Các môn khác | 5 |
-| thanhnien | Kinh tế xanh | 5 |
 | thanhnien | Quân sự | 5 |
 | thanhnien | Xe - Giao thông | 5 |
 | thanhnien | Blockchain | 4 |
@@ -5399,6 +5613,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | thanhnien | Sống - Yêu - Ăn - Chơi | 2 |
 | thanhnien | Tư vấn | 2 |
 | thanhnien | Tận hưởng | 2 |
+| thanhnien | Xe | 2 |
 | thanhnien | (none) | 1 |
 | thanhnien | Blog phóng viên | 1 |
 | thanhnien | Bạn đọc viết | 1 |
@@ -5407,6 +5622,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | thanhnien | Góc người tiêu dùng | 1 |
 | thanhnien | Khát vọng Việt Nam | 1 |
 | thanhnien | Người sống quanh ta | 1 |
+| thanhnien | Nhà trường | 1 |
 | thanhnien | Thẩm mỹ an toàn | 1 |
 | thanhnien | Thời trang trẻ | 1 |
 | thanhnien | Tin hay y tế | 1 |
@@ -5415,64 +5631,63 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | thanhnien | Tuyển sinh | 1 |
 | thanhnien | Tấm lòng vàng | 1 |
 | thanhnien | Video | 1 |
-| thanhnien | Xe | 1 |
 | thanhnien | Xem - Nghe | 1 |
 | thanhnien | Xu hướng - Chuyển đổi số | 1 |
-| tienphong | Xã hội | 651 |
-| tienphong | Bóng đá | 481 |
-| tienphong | Pháp luật | 335 |
-| tienphong | Tin tức | 334 |
-| tienphong | Thế giới | 306 |
-| tienphong | Kinh tế | 161 |
-| tienphong | Giáo dục | 138 |
-| tienphong | Xe | 124 |
-| tienphong | Hậu trường sao | 121 |
-| tienphong | Giải trí | 114 |
+| tienphong | Xã hội | 678 |
+| tienphong | Bóng đá | 513 |
+| tienphong | Pháp luật | 349 |
+| tienphong | Tin tức | 344 |
+| tienphong | Thế giới | 320 |
+| tienphong | Kinh tế | 171 |
+| tienphong | Giáo dục | 143 |
+| tienphong | Xe | 130 |
+| tienphong | Hậu trường sao | 126 |
+| tienphong | Giải trí | 122 |
+| tienphong | Nhịp sống | 92 |
 | tienphong | Sinh viên Việt Nam | 91 |
-| tienphong | Nhịp sống | 89 |
 | tienphong | Hoa học trò | 88 |
-| tienphong | Video | 81 |
-| tienphong | Sức khỏe | 76 |
-| tienphong | Thị trường | 71 |
-| tienphong | Âm nhạc | 71 |
-| tienphong | Tuyển sinh | 66 |
+| tienphong | Video | 83 |
+| tienphong | Sức khỏe | 80 |
+| tienphong | Thị trường | 75 |
+| tienphong | Âm nhạc | 74 |
+| tienphong | Tuyển sinh | 68 |
+| tienphong | Địa ốc | 67 |
+| tienphong | (none) | 66 |
 | tienphong | Hậu trường SHOWBIZ | 65 |
-| tienphong | Địa ốc | 61 |
-| tienphong | (none) | 59 |
 | tienphong | Hành trình | 56 |
-| tienphong | Nhịp sống phương Nam | 54 |
+| tienphong | Nhịp sống phương Nam | 55 |
+| tienphong | Giới trẻ | 50 |
 | tienphong | Sóng xanh | 50 |
-| tienphong | Giới trẻ | 48 |
-| tienphong | Ảnh | 48 |
-| tienphong | Tài chính - Chứng khoán | 45 |
-| tienphong | Nhịp sống Thủ đô | 44 |
-| tienphong | Diễn đàn | 39 |
-| tienphong | Chuyển động văn hóa | 38 |
-| tienphong | Khoa học | 37 |
-| tienphong | Phim ảnh | 25 |
+| tienphong | Tài chính - Chứng khoán | 50 |
+| tienphong | Ảnh | 50 |
+| tienphong | Nhịp sống Thủ đô | 46 |
+| tienphong | Diễn đàn | 41 |
+| tienphong | Khoa học | 40 |
+| tienphong | Chuyển động văn hóa | 39 |
+| tienphong | Đô thị - Dự án | 29 |
+| tienphong | Phim ảnh | 27 |
+| tienphong | Media Địa ốc | 25 |
+| tienphong | Podcast | 24 |
 | tienphong | Thể thao | 24 |
-| tienphong | Đô thị - Dự án | 24 |
 | tienphong | Bạn đọc | 23 |
-| tienphong | Media Địa ốc | 23 |
-| tienphong | Podcast | 22 |
+| tienphong | Văn hóa | 22 |
 | tienphong | Y khoa | 21 |
-| tienphong | Văn hóa | 20 |
 | tienphong | Đẹp hơn mỗi ngày | 20 |
-| tienphong | Chuyên gia - Tư vấn | 15 |
-| tienphong | Cổng trường | 14 |
+| tienphong | Chuyên gia - Tư vấn | 17 |
+| tienphong | Cổng trường | 15 |
 | tienphong | Hoa hậu Việt Nam | 14 |
-| tienphong | Hàng không - Du lịch | 13 |
+| tienphong | Hàng không - Du lịch | 14 |
+| tienphong | Multimedia | 13 |
+| tienphong | World Cup 2026 | 13 |
 | tienphong | Ảnh-Clip hay | 13 |
-| tienphong | Multimedia | 12 |
 | tienphong | Gương mặt sinh viên | 11 |
-| tienphong | World Cup 2026 | 11 |
 | tienphong | Người lính | 10 |
+| tienphong | Hoa hậu | 9 |
 | tienphong | Golf | 8 |
-| tienphong | Hoa hậu | 8 |
 | tienphong | Hồi âm | 8 |
+| tienphong | Mở vali | 8 |
+| tienphong | Quốc tế | 8 |
 | tienphong | Horoscope | 7 |
-| tienphong | Mở vali | 7 |
-| tienphong | Quốc tế | 7 |
 | tienphong | Vivu | 7 |
 | tienphong | Phòng chống ung thư | 6 |
 | tienphong | Điều tra | 5 |
@@ -5480,7 +5695,7 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | tienphong | Kết nối Hoa Học Trò | 4 |
 | tienphong | Tôi nghĩ | 4 |
 | tienphong | Cộng đồng mạng | 3 |
-| tienphong | Góc nhìn | 2 |
+| tienphong | Góc nhìn | 3 |
 | tienphong | Yêu | 2 |
 | tienphong | Đầu tư | 2 |
 | tienphong | Doanh nghiệp | 1 |
@@ -5493,12 +5708,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | tienphong | Thuốc tốt | 1 |
 | tienphong | Đính chính | 1 |
 | tienphong | Đối thoại | 1 |
-| tuoitre | thoi-su | 749 |
-| tuoitre | the-gioi | 633 |
-| tuoitre | kinh-doanh | 527 |
-| tuoitre | giao-duc | 383 |
-| tuoitre | phap-luat | 377 |
-| tuoitre | suc-khoe | 254 |
+| tuoitre | thoi-su | 787 |
+| tuoitre | the-gioi | 658 |
+| tuoitre | kinh-doanh | 544 |
+| tuoitre | giao-duc | 394 |
+| tuoitre | phap-luat | 391 |
+| tuoitre | suc-khoe | 269 |
 | tuoitre | tin mới nhất | 129 |
 | tuoitre | (none) | 44 |
 | tuoitre | Tuổi Trẻ Cười: Báo biếm họa | 13 |
@@ -5560,80 +5775,80 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | tuoitre | yêu | 1 |
 | tuoitre | Đời Cười - Truyện cười trào phúng & châm biếm | 1 |
 | tuoitre | đường dây nóng | 1 |
-| vietnamnet | World Cup | 487 |
-| vietnamnet | Thị trường | 254 |
-| vietnamnet | Tuyển sinh | 215 |
-| vietnamnet | Thế giới | 213 |
-| vietnamnet | Thể thao | 209 |
-| vietnamnet | Tin tức | 200 |
-| vietnamnet | Tài chính | 188 |
-| vietnamnet | Dân sinh | 166 |
-| vietnamnet | Pháp luật | 158 |
-| vietnamnet | Ô tô - Xe máy | 143 |
-| vietnamnet | Chính trị | 119 |
-| vietnamnet | Tin nóng | 114 |
-| vietnamnet | Thế giới sao | 106 |
-| vietnamnet | Công nghệ | 98 |
-| vietnamnet | Văn hóa - Giải trí | 97 |
-| vietnamnet | Bản tin thời sự | 79 |
-| vietnamnet | Giao thông | 77 |
-| vietnamnet | Gia đình | 73 |
-| vietnamnet | Thời sự | 70 |
-| vietnamnet | Dân tộc và Tôn giáo | 69 |
+| vietnamnet | World Cup | 517 |
+| vietnamnet | Thị trường | 263 |
+| vietnamnet | Thế giới | 226 |
+| vietnamnet | Tuyển sinh | 218 |
+| vietnamnet | Thể thao | 215 |
+| vietnamnet | Tin tức | 210 |
+| vietnamnet | Tài chính | 194 |
+| vietnamnet | Dân sinh | 172 |
+| vietnamnet | Pháp luật | 163 |
+| vietnamnet | Ô tô - Xe máy | 150 |
+| vietnamnet | Chính trị | 125 |
+| vietnamnet | Tin nóng | 120 |
+| vietnamnet | Thế giới sao | 114 |
+| vietnamnet | Công nghệ | 102 |
+| vietnamnet | Văn hóa - Giải trí | 102 |
+| vietnamnet | Bản tin thời sự | 84 |
+| vietnamnet | Giao thông | 79 |
+| vietnamnet | Gia đình | 77 |
+| vietnamnet | Thời sự | 75 |
+| vietnamnet | Dân tộc và Tôn giáo | 72 |
+| vietnamnet | Tư vấn sức khỏe | 58 |
+| vietnamnet | Phim - Truyền hình | 55 |
 | vietnamnet | Nội dung chuyên đề | 54 |
-| vietnamnet | Tư vấn sức khỏe | 54 |
-| vietnamnet | Phim - Truyền hình | 52 |
-| vietnamnet | Dự án | 42 |
-| vietnamnet | Quân sự | 39 |
+| vietnamnet | Dự án | 43 |
+| vietnamnet | Quân sự | 41 |
+| vietnamnet | Video | 38 |
 | vietnamnet | Đầu tư | 37 |
-| vietnamnet | Video | 36 |
-| vietnamnet | Nhà trường | 34 |
+| vietnamnet | Nhà trường | 35 |
 | vietnamnet | Sản phẩm | 32 |
-| vietnamnet | Đi đâu chơi đi | 29 |
-| vietnamnet | Chân dung | 28 |
-| vietnamnet | Giáo dục | 28 |
-| vietnamnet | Chia sẻ | 26 |
+| vietnamnet | Đi đâu chơi đi | 32 |
+| vietnamnet | Giáo dục | 31 |
+| vietnamnet | Chân dung | 30 |
+| vietnamnet | AI | 27 |
+| vietnamnet | Chia sẻ | 27 |
+| vietnamnet | Thế giới đó đây | 27 |
+| vietnamnet | Xây dựng Đảng | 27 |
 | vietnamnet | Du lịch | 26 |
 | vietnamnet | Đối ngoại | 26 |
-| vietnamnet | AI | 25 |
-| vietnamnet | Thế giới đó đây | 25 |
-| vietnamnet | Xây dựng Đảng | 25 |
+| vietnamnet | Tư vấn | 24 |
 | vietnamnet | Quốc phòng | 23 |
-| vietnamnet | Tư vấn | 23 |
+| vietnamnet | Chuyện lạ | 22 |
 | vietnamnet | Khám phá | 22 |
-| vietnamnet | Chuyện lạ | 21 |
-| vietnamnet | Tâm sự | 20 |
+| vietnamnet | Tâm sự | 21 |
+| vietnamnet | Nhạc | 20 |
+| vietnamnet | Trắc nghiệm | 20 |
+| vietnamnet | Ẩm thực | 20 |
 | vietnamnet | Giới trẻ | 19 |
-| vietnamnet | Trắc nghiệm | 19 |
-| vietnamnet | Nhạc | 18 |
-| vietnamnet | Ẩm thực | 18 |
-| vietnamnet | Tuần Việt Nam | 16 |
-| vietnamnet | Sự kiện | 15 |
+| vietnamnet | Tuần Việt Nam | 18 |
+| vietnamnet | Sự kiện | 16 |
+| vietnamnet | An ninh mạng | 14 |
 | vietnamnet | Bàn luận | 14 |
 | vietnamnet | Kinh doanh | 14 |
-| vietnamnet | An ninh mạng | 13 |
-| vietnamnet | Bất động sản | 12 |
+| vietnamnet | Bất động sản | 13 |
+| vietnamnet | Quốc hội | 13 |
+| vietnamnet | Đô thị | 13 |
+| vietnamnet | Ngày mai tươi sáng | 12 |
 | vietnamnet | Sắc màu 54 | 12 |
 | vietnamnet | Tư vấn tài chính | 12 |
-| vietnamnet | Đô thị | 12 |
-| vietnamnet | Ngày mai tươi sáng | 11 |
-| vietnamnet | Quốc hội | 11 |
+| vietnamnet | Ăn Ăn Uống Uống | 11 |
+| vietnamnet | ASEAN Cup | 10 |
 | vietnamnet | Net Zero | 10 |
-| vietnamnet | Ăn Ăn Uống Uống | 10 |
+| vietnamnet | Đời sống | 10 |
 | vietnamnet | AI CONTEST | 9 |
+| vietnamnet | Doanh nhân | 9 |
 | vietnamnet | Chuyển đổi số | 8 |
-| vietnamnet | Doanh nhân | 8 |
+| vietnamnet | Hạ tầng số | 8 |
 | vietnamnet | Mỹ thuật - Sân khấu | 8 |
 | vietnamnet | Sức khỏe | 8 |
-| vietnamnet | ASEAN Cup | 7 |
-| vietnamnet | Hạ tầng số | 7 |
-| vietnamnet | Đời sống | 7 |
 | vietnamnet | Ngủ Ngủ Nghỉ Nghỉ | 6 |
+| vietnamnet | (none) | 5 |
+| vietnamnet | Bình luận quốc tế | 5 |
 | vietnamnet | Du học | 5 |
 | vietnamnet | Hồ sơ | 5 |
 | vietnamnet | Đời sống tôn giáo | 5 |
-| vietnamnet | (none) | 4 |
-| vietnamnet | Bình luận quốc tế | 4 |
 | vietnamnet | Di sản | 4 |
 | vietnamnet | Hậu trường | 4 |
 | vietnamnet | Làm đẹp | 4 |
@@ -5669,6 +5884,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | vietnamnet | bộ công thương | 1 |
 | vietnamnet | châu âu | 1 |
 | vietnamnet | chỉ số giá tiêu dùng | 1 |
+| vietnamnet | doanh nghiệp | 1 |
+| vietnamnet | giáo viên | 1 |
 | vietnamnet | hà nội | 1 |
 | vietnamnet | học sinh | 1 |
 | vietnamnet | miễn giảm học phí | 1 |
@@ -5694,32 +5911,32 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | vietnamnet | điều chỉnh giá điện | 1 |
 | vietnamnet | điện | 1 |
 | vietnamnet | điện thoại | 1 |
-| vietnamplus | Xã hội | 1350 |
-| vietnamplus | Thế giới | 616 |
-| vietnamplus | Đời sống | 355 |
-| vietnamplus | Chính trị | 309 |
-| vietnamplus | Bóng đá | 249 |
-| vietnamplus | Multimedia | 215 |
-| vietnamplus | Kinh doanh | 171 |
-| vietnamplus | Châu Á-TBD | 147 |
-| vietnamplus | Thị trường | 139 |
-| vietnamplus | Kinh tế | 126 |
-| vietnamplus | Công nghệ | 95 |
-| vietnamplus | Văn hóa | 68 |
-| vietnamplus | Doanh nghiệp | 66 |
-| vietnamplus | Chứng khoán | 54 |
-| vietnamplus | Du lịch | 54 |
-| vietnamplus | Điểm đến | 47 |
+| vietnamplus | Xã hội | 1408 |
+| vietnamplus | Thế giới | 632 |
+| vietnamplus | Đời sống | 373 |
+| vietnamplus | Chính trị | 320 |
+| vietnamplus | Bóng đá | 259 |
+| vietnamplus | Multimedia | 233 |
+| vietnamplus | Kinh doanh | 175 |
+| vietnamplus | Châu Á-TBD | 149 |
+| vietnamplus | Thị trường | 148 |
+| vietnamplus | Kinh tế | 131 |
+| vietnamplus | Công nghệ | 98 |
+| vietnamplus | Văn hóa | 74 |
+| vietnamplus | Doanh nghiệp | 69 |
+| vietnamplus | Du lịch | 56 |
+| vietnamplus | Chứng khoán | 55 |
+| vietnamplus | Điểm đến | 50 |
 | vietnamplus | Bất động sản | 21 |
-| vietnamplus | Môi trường | 14 |
-| vietnamplus | Âm nhạc | 14 |
-| vietnamplus | Điện ảnh | 14 |
-| vietnamplus | Khoa học | 13 |
+| vietnamplus | Khoa học | 15 |
+| vietnamplus | Môi trường | 15 |
+| vietnamplus | Âm nhạc | 15 |
+| vietnamplus | Điện ảnh | 15 |
 | vietnamplus | Ôtô-Xe máy | 13 |
-| vietnamplus | Sản phẩm mới | 9 |
+| vietnamplus | Sản phẩm mới | 11 |
 | vietnamplus | Giao thông | 8 |
-| vietnamplus | Khoa học ứng dụng | 5 |
-| vietnamplus | Mega Story | 5 |
+| vietnamplus | Khoa học ứng dụng | 6 |
+| vietnamplus | Mega Story | 6 |
 | vietnamplus | Thể thao | 5 |
 | vietnamplus | Điểm Nhạc-Phim-Sách | 4 |
 | vietnamplus | (none) | 3 |
@@ -5732,36 +5949,36 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | vietnamplus | Pháp luật | 1 |
 | vietnamplus | Tín dụng nông thôn | 1 |
 | vietnamplus | Y tế | 1 |
-| vneconomy | Thế giới | 224 |
-| vneconomy | Chứng khoán | 169 |
-| vneconomy | Thị trường | 139 |
-| vneconomy | Dân sinh | 138 |
-| vneconomy | Bất động sản | 115 |
-| vneconomy | Kinh tế số | 114 |
-| vneconomy | Tài chính | 111 |
-| vneconomy | Đầu tư | 98 |
+| vneconomy | Thế giới | 231 |
+| vneconomy | Chứng khoán | 179 |
+| vneconomy | Thị trường | 143 |
+| vneconomy | Dân sinh | 142 |
+| vneconomy | Bất động sản | 121 |
+| vneconomy | Kinh tế số | 120 |
+| vneconomy | Tài chính | 112 |
+| vneconomy | Đầu tư | 99 |
 | vneconomy | Tiêu điểm | 91 |
-| vneconomy | Kinh tế xanh | 76 |
-| vneconomy | Du lịch | 62 |
-| vneconomy | Doanh nghiệp | 43 |
-| vneconomy | Địa phương | 33 |
+| vneconomy | Kinh tế xanh | 78 |
+| vneconomy | Du lịch | 65 |
+| vneconomy | Doanh nghiệp | 44 |
+| vneconomy | Địa phương | 35 |
+| vneconomy | Sức khỏe | 24 |
 | vneconomy | eMagazine | 24 |
-| vneconomy | Sức khỏe | 23 |
 | vneconomy | Đẹp + | 22 |
-| vneconomy | Video | 19 |
+| vneconomy | Video | 20 |
 | vneconomy | Giải trí | 18 |
+| vneconomy | Dự án | 13 |
 | vneconomy | Doanh nghiệp niêm yết | 12 |
-| vneconomy | Dự án | 12 |
-| vneconomy | Hạ tầng | 8 |
+| vneconomy | Hạ tầng | 9 |
 | vneconomy | Nhà đầu tư | 8 |
 | vneconomy | Tiêu & Dùng | 7 |
 | vneconomy | Bảo hiểm | 5 |
 | vneconomy | Nhà | 5 |
 | vneconomy | Sản phẩm - Thị trường | 4 |
+| vneconomy | Ấn phẩm | 4 |
+| vneconomy | Ẩm thực | 4 |
 | vneconomy | Chuyển động xanh | 3 |
 | vneconomy | Khung pháp lý | 3 |
-| vneconomy | Ấn phẩm | 3 |
-| vneconomy | Ẩm thực | 3 |
 | vneconomy | An sinh | 2 |
 | vneconomy | Công nghiệp | 2 |
 | vneconomy | Nhân lực | 2 |
@@ -5774,12 +5991,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | vneconomy | Ngân hàng | 1 |
 | vneconomy | Thế | 1 |
 | vneconomy | Đối thoại | 1 |
-| vnexpress | suc-khoe | 833 |
-| vnexpress | the-gioi | 615 |
-| vnexpress | thoi-su | 484 |
-| vnexpress | kinh-doanh | 427 |
-| vnexpress | phap-luat | 354 |
-| vnexpress | giao-duc | 312 |
+| vnexpress | suc-khoe | 876 |
+| vnexpress | the-gioi | 637 |
+| vnexpress | thoi-su | 503 |
+| vnexpress | kinh-doanh | 438 |
+| vnexpress | phap-luat | 368 |
+| vnexpress | giao-duc | 320 |
 
 ![Articles per section](figures/articles_per_section.png)
 
@@ -5814,11 +6031,12 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 | 2026-07-12 | 1156 |
 | 2026-07-13 | 1858 |
 | 2026-07-14 | 1739 |
-| 2026-07-15 | 1991 |
-| 2026-07-16 | 1832 |
-| 2026-07-17 | 1354 |
-| 2026-07-18 | 1353 |
-| 2026-07-19 | 341 |
+| 2026-07-15 | 1987 |
+| 2026-07-16 | 1828 |
+| 2026-07-17 | 1345 |
+| 2026-07-18 | 1319 |
+| 2026-07-19 | 1414 |
+| 2026-07-20 | 877 |
 
 ![Articles per day](figures/articles_per_day.png)
 
@@ -5827,44 +6045,44 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 
 | outlet | n | %miss_body | %miss_section | %miss_publish_datetime | %miss_author |
 | --- | --- | --- | --- | --- | --- |
-| 24h | 2189 | 0.1 | 0.4 | 0.0 | 0.1 |
-| baochinhphu | 785 | 0.0 | 25.2 | 0.0 | 0.0 |
-| cafef | 1161 | 0.1 | 1.4 | 0.0 | 0.1 |
-| dantri | 4894 | 3.7 | 3.7 | 0.0 | 3.1 |
-| kenh14 | 1159 | 0.2 | 7.4 | 0.0 | 0.2 |
-| nhandan | 4164 | 0.5 | 1.0 | 0.0 | 1.1 |
-| qdnd | 3454 | 0.2 | 0.5 | 0.0 | 0.2 |
-| saostar | 2277 | 0.0 | 0.0 | 0.0 | 0.0 |
-| soha | 1162 | 0.1 | 24.9 | 0.0 | 0.1 |
-| thanhnien | 1112 | 0.1 | 0.1 | 0.0 | 0.1 |
-| tienphong | 4451 | 0.9 | 1.3 | 0.0 | 1.3 |
-| tuoitre | 3190 | 0.7 | 1.4 | 0.0 | 0.6 |
-| vietnamnet | 4274 | 0.1 | 0.1 | 0.0 | 0.1 |
-| vietnamplus | 4204 | 0.0 | 0.1 | 0.0 | 19.0 |
-| vneconomy | 1609 | 0.0 | 0.0 | 0.0 | 0.0 |
-| vnexpress | 3025 | 0.0 | 0.0 | 0.0 | 98.1 |
-| ALL | 43110 | 0.7 | 2.2 | 0.0 | 9.4 |
+| 24h | 2339 | 0.1 | 0.4 | 0.0 | 0.1 |
+| baochinhphu | 820 | 0.0 | 25.2 | 0.0 | 0.0 |
+| cafef | 1221 | 0.1 | 1.4 | 0.0 | 0.1 |
+| dantri | 5113 | 3.7 | 3.7 | 0.0 | 3.0 |
+| kenh14 | 1219 | 0.2 | 7.5 | 0.0 | 0.2 |
+| nhandan | 4307 | 0.5 | 1.0 | 0.0 | 1.1 |
+| qdnd | 3595 | 0.2 | 0.4 | 0.0 | 0.2 |
+| saostar | 2427 | 0.0 | 0.0 | 0.0 | 0.0 |
+| soha | 1222 | 0.1 | 24.8 | 0.0 | 0.1 |
+| thanhnien | 1172 | 0.1 | 0.1 | 0.0 | 0.1 |
+| tienphong | 4655 | 1.0 | 1.4 | 0.0 | 1.4 |
+| tuoitre | 3310 | 0.6 | 1.3 | 0.0 | 0.6 |
+| vietnamnet | 4475 | 0.1 | 0.1 | 0.0 | 0.1 |
+| vietnamplus | 4382 | 0.0 | 0.1 | 0.0 | 19.1 |
+| vneconomy | 1662 | 0.0 | 0.0 | 0.0 | 0.0 |
+| vnexpress | 3142 | 0.0 | 0.0 | 0.0 | 98.2 |
+| ALL | 45061 | 0.7 | 2.2 | 0.0 | 9.4 |
 
 ## 5. Article length (Vietnamese word tokens)
 
 | outlet | n_with_body | mean | median |
 | --- | --- | --- | --- |
-| 24h | 2186 | 593.8 | 541.0 |
-| baochinhphu | 785 | 951.9 | 717.0 |
-| cafef | 1160 | 709.6 | 645.5 |
-| dantri | 4713 | 661.1 | 601.0 |
-| kenh14 | 1157 | 723.8 | 672.0 |
-| nhandan | 4143 | 645.0 | 559.0 |
-| qdnd | 3447 | 561.4 | 461.0 |
-| saostar | 2277 | 532.6 | 510.0 |
-| soha | 1161 | 607.9 | 548.0 |
-| thanhnien | 1111 | 521.2 | 465.0 |
-| tienphong | 4410 | 536.2 | 439.5 |
-| tuoitre | 3169 | 492.1 | 441.0 |
-| vietnamnet | 4270 | 518.5 | 457.0 |
-| vietnamplus | 4202 | 618.2 | 517.0 |
-| vneconomy | 1609 | 1160.3 | 1095.0 |
-| vnexpress | 3025 | 569.2 | 501.0 |
+| 24h | 2336 | 592.3 | 539.0 |
+| baochinhphu | 820 | 949.5 | 712.5 |
+| cafef | 1220 | 711.3 | 647.0 |
+| dantri | 4926 | 661.7 | 600.0 |
+| kenh14 | 1217 | 720.1 | 671.0 |
+| nhandan | 4285 | 643.8 | 557.0 |
+| qdnd | 3588 | 561.6 | 461.0 |
+| saostar | 2427 | 532.7 | 510.0 |
+| soha | 1221 | 610.7 | 550.0 |
+| thanhnien | 1171 | 522.1 | 469.0 |
+| tienphong | 4608 | 537.0 | 440.0 |
+| tuoitre | 3289 | 492.7 | 439.0 |
+| vietnamnet | 4470 | 518.1 | 456.0 |
+| vietnamplus | 4380 | 618.5 | 515.0 |
+| vneconomy | 1662 | 1157.5 | 1091.0 |
+| vnexpress | 3142 | 568.9 | 501.0 |
 
 ![Mean length per outlet](figures/mean_length_per_outlet.png)
 
@@ -5873,8 +6091,8 @@ _Section provenance differs by outlet, which is itself a measurement-validity ob
 
 | lang | articles |
 | --- | --- |
-| vi | 42823 |
-|  | 285 |
+| vi | 44760 |
+|  | 299 |
 | id | 1 |
 | es | 1 |
 
@@ -5883,11 +6101,11 @@ _Non-`vi` (flagged): 2._
 
 ## 7. Duplication
 
-- Articles with extractable body: **42825**
-- Exact-duplicate copies (verbatim body, after first): **343**
+- Articles with extractable body: **44762**
+- Exact-duplicate copies (verbatim body, after first): **358**
 - Exact-duplicate rate: **0.8%**
-- Distinct content clusters: **42482**
-- Cross-outlet verbatim clusters (syndication signal): **113** (226 articles)
+- Distinct content clusters: **44404**
+- Cross-outlet verbatim clusters (syndication signal): **120** (240 articles)
 
 - Near-duplicate (same-story) copies: **52** (3.7%), in **41** multi-article clusters
 - **Cross-outlet** same-story clusters: **36** (74 articles) — the syndication/overlap signal that exact-hash misses
