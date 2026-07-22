@@ -9,9 +9,17 @@ data/raw/
 
 # --- processed artifacts: keep the schema'd corpus out of git; release via Zenodo ---
 data/processed/*.parquet
+# cached sentence embeddings (regenerated from the corpus by src.dedupe.near_dup)
+data/processed/*.npz
 
 # --- generated report figures (regenerated from the corpus) ---
 reports/figures/*.png
+
+# --- calibration working files that embed article text (regenerable: fixed
+#     seed + the corpus). The labels themselves carry no article text and are
+#     the artefact worth releasing, so they stay tracked.
+reports/calibration/pairs_sample*.csv
+reports/calibration/label*.html
 
 # --- OS / editor ---
 .DS_Store

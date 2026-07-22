@@ -12,6 +12,24 @@ window:
   start: null
   end: null
 
+analysis:
+  # The window METRICS are computed on — deliberately separate from `window`
+  # above, which is a *collection* setting. Collection ran 2026-06-24 → 07-22;
+  # the analysis window drops 07-22 because it is truncated at 12:00, leaving
+  # exactly 4 calendar weeks. Whole weeks matter: weekend news mix skews lighter
+  # and away from politics, so a window that is not a multiple of 7 biases any
+  # topic-composition metric.
+  start: 2026-06-24
+  end: 2026-07-21
+  # Days retained but flagged for robustness checks, not dropped:
+  #   06-24 — first collection run; the only day the short-retention feeds were
+  #           harvested before rolling over, so 24h/cafef/kenh14/soha/thanhnien
+  #           show ~2x their median. It is the least incomplete day for them,
+  #           not a corrupt one.
+  #   06-25 — that day's run largely failed; 8 of 16 outlets short.
+  # See reports/quality_report.md §4 for the coverage evidence.
+  flag_days: [2026-06-24, 2026-06-25]
+
 http:
   user_agent: "VNDiversityResearchBot/0.1 (+mailto:tritin.pho@gmail.com)"
   timeout_seconds: 30
@@ -32,7 +50,25 @@ dedupe:
   # over-merges same-TOPIC articles (gold-price, World Cup) into cross-outlet
   # blobs; >=0.94 isolates genuine same-STORY syndication (near-identical text).
   near_dup_threshold: 0.94          # cosine
-  embed_body_chars: 600             # headline + leading body chars (model truncates)
+  # MEASURED 2026-07-22 against 208 human-labelled pairs: 600 and 1200 give
+  # byte-identical similarities, so this knob is already INERT above ~600 —
+  # MiniLM truncates at 128 tokens and Vietnamese subword-splits heavily, so
+  # the body consumes the whole budget and the headline barely contributes.
+  # Two pairs with byte-identical headlines score only 0.78 / 0.81 here; under
+  # a headline-only representation they score 1.0000. Body text is actively
+  # diluting the syndication signal. See reports/calibration/.
+  embed_body_chars: 600
+  # Threshold alone does NOT prevent over-merging: recurring templated genres
+  # (daily gold/petrol price columns, match-fixture lists) are >=0.94 similar to
+  # the SAME column published the next day, so single-linkage connected
+  # components chain a month of them into one cluster (observed: 189 articles /
+  # 14 outlets). Only link articles published within this many hours of each
+  # other. Must sit BELOW the recurrence period of those columns (24h) — the
+  # constraint bounds chaining but does not abolish it, so at >=24h consecutive
+  # editions still link pairwise and re-chain the whole month. 12h breaks the
+  # daily chain while comfortably covering real syndication, which republishes
+  # within hours and at worst straddles midnight. Null/0 = no constraint.
+  near_dup_max_hours: 12
 
 collect:
   # Cap per outlet for trial passes; set to null for the full window.
@@ -49,6 +85,8 @@ paths:
   robots_cache: data/raw/robots
   processed: data/processed
   articles_parquet: data/processed/articles.parquet
+  # Sentence embeddings, cached so threshold/time-window sweeps do not re-embed.
+  embeddings_cache: data/processed/embeddings.npz
   reports_dir: reports
   figures_dir: reports/figures
 

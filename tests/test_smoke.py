@@ -119,6 +119,22 @@ def test_cluster_near_dups():
     assert tight[0] == tight[1] and tight[3] != tight[0]   # only the exact pair merges
 
 
+def test_cluster_near_dups_time_window():
+    """The time constraint bounds chaining; it does not abolish it."""
+    v = np.array([[1.0, 0.0]] * 3, dtype="float32")        # three identical vectors
+    far = np.array([0, 3600, 100 * 3600], dtype="int64")   # 0h, 1h, 100h
+    assert len(set(cluster_near_dups(v, 0.95))) == 1       # unconstrained -> one blob
+    lab = cluster_near_dups(v, 0.95, timestamps=far, max_hours=24)
+    assert lab[0] == lab[1] and lab[2] != lab[0]           # 100h-late row cannot link
+
+    # Transitivity still applies *inside* the window: 0h-20h-40h chains via the
+    # middle row even though the ends are 40h apart. This is why max_hours must
+    # sit below the recurrence period of templated daily columns (24h), not above.
+    near = np.array([0, 20 * 3600, 40 * 3600], dtype="int64")
+    assert len(set(cluster_near_dups(v, 0.95, timestamps=near, max_hours=24))) == 1
+    assert len(set(cluster_near_dups(v, 0.95, timestamps=near, max_hours=12))) == 3
+
+
 def test_exact_dedupe():
     df = pd.DataFrame({
         "outlet": ["a", "b", "a"],

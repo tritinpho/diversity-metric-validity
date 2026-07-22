@@ -153,14 +153,22 @@ headline. Recommendation: corpus = enabling infrastructure, validity = headline.
 
 **Scoping choices to lock:**
 
-- **DECIDED 2026-07-13:** snapshot window fixed at **2026-06-24 → 2026-07-21**
-  (28 days / 4 calendar weeks). Dense day-to-day collection actually began
-  2026-06-24 (the first full-volume day; 2026-06-19 → 2026-06-23 has only a
-  handful of stray backfilled articles from deep sitemap sweeps and should be
-  treated as pre-window noise, not part of the reported snapshot). Collection
-  continues on the existing daily/topup cadence through 2026-07-21, then stops;
-  report that contiguous range as *the* snapshot regardless of what
-  `config.yaml`'s rolling `days_back` has accumulated beyond it.
+- **DECIDED 2026-07-13, REVISED 2026-07-22:** snapshot window fixed at
+  **2026-06-24 → 2026-07-22** (29 days). Dense day-to-day collection actually
+  began 2026-06-24 (the first full-volume day; 2026-06-19 → 2026-06-23 has only
+  a handful of stray backfilled articles from deep sitemap sweeps and should be
+  treated as pre-window noise, not part of the reported snapshot). Originally
+  fixed at 2026-07-21 (28 days / 4 calendar weeks); extended by one day when
+  the Jul 21 noon collection run was found to have silently failed entirely
+  (scheduled-task phantom-skip) and had to be recovered via a Jul 22 manual
+  catch-up — rather than close the window on a day that only existed via
+  next-day recovery, the cutoff moved to Jul 22, the day collection actually
+  ran to completion. Collection ran on the existing daily/topup cadence through
+  2026-07-22, then stopped for good: the `news-diversity-daily-collect`
+  scheduled task was permanently disabled the same day after a persistent
+  phantom-skip failure pattern, and no further manual topups follow. Report
+  that contiguous range as *the* snapshot regardless of what `config.yaml`'s
+  rolling `days_back` has accumulated beyond it.
 - `[DECIDE: final outlet set. 16 outlets across all 5 structural types are
   collected; Lao Động is deferred (bot-gated, needs a JS renderer) and Baomoi is
   excluded as an aggregator. Confirm the released set and whether to invest in
