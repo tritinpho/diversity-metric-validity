@@ -3,36 +3,48 @@
     "band_lo": 0.55,
     "band_hi": 0.6,
     "population": 237638,
-    "sampled": 15
+    "sampled": 15,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   },
   {
     "band_lo": 0.6,
     "band_hi": 0.65,
     "population": 134125,
-    "sampled": 15
+    "sampled": 15,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   },
   {
     "band_lo": 0.65,
     "band_hi": 0.7,
     "population": 76608,
-    "sampled": 18
+    "sampled": 18,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   },
   {
     "band_lo": 0.7,
     "band_hi": 0.75,
     "population": 45131,
-    "sampled": 18
+    "sampled": 18,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   },
   {
     "band_lo": 0.75,
     "band_hi": 0.8,
     "population": 27387,
-    "sampled": 14
+    "sampled": 14,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   },
   {
     "band_lo": 0.8,
     "band_hi": 0.85,
     "population": 16933,
-    "sampled": 12
+    "sampled": 12,
+    "retired": true,
+    "retired_reason": "drawn 2026-07-22 on the dense baseline bands; that representation was superseded 2026-08-04 (weighted AP 0.581 vs 0.864). Never labelled and will not be: labelling effort goes to round 3, drawn on the adopted representation own bands. Retained as a record of the draw."
   }
 ]

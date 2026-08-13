@@ -349,6 +349,22 @@ def main() -> None:
     cfg = load_config()
     setup_logging(cfg["logging"]["level"])
     dd = cfg["dedupe"]
+    # This pass implements the dense-embedding representation only. The config
+    # has already adopted syllable TF-IDF, but re-clustering under it is blocked
+    # on an operating threshold that the round-3 labels have not yet fixed.
+    # Failing here is the point: a silent fall-through would write cluster ids
+    # under one representation while the config, the docs and the paper all
+    # claim another.
+    rep = dd.get("near_dup_representation", "emb_hl_body600")
+    if rep != "emb_hl_body600":
+        raise SystemExit(
+            f"config adopts near_dup_representation='{rep}', but this pass "
+            f"implements the dense encoder (emb_hl_body600). Re-clustering under "
+            f"the adopted representation needs a calibrated threshold: label "
+            f"reports/calibration/label_r3.html, then\n"
+            f"  python -m src.dedupe.calibrate score --design {rep}\n"
+            f"To reproduce the Phase-1 dense columns instead, set "
+            f"near_dup_representation: emb_hl_body600.")
     threshold = args.threshold if args.threshold is not None else float(dd["near_dup_threshold"])
     raw_hours = args.max_hours if args.max_hours is not None else dd.get("near_dup_max_hours")
     max_hours = None if raw_hours in (None, 0) else float(raw_hours)

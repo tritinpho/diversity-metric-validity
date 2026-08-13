@@ -182,6 +182,237 @@ def test_merge_corpus():
     assert len(merge_corpus(None, new)) == 2                     # empty existing
 
 
+def test_build_texts_matches_production_construction():
+    from src.dedupe.represent import build_texts
+
+    h, b = ["Giá vàng hôm nay"], ["Sáng nay giá vàng tăng mạnh."]
+    # Body window construction must stay byte-identical to the one in
+    # near_dup.assign_near_duplicates, or recomputed baseline similarities stop
+    # reproducing the stored calibration sample.
+    assert build_texts(h, b, 600) == ["Giá vàng hôm nay. Sáng nay giá vàng tăng mạnh."]
+    assert build_texts(h, b, 10) == ["Giá vàng hôm nay. Sáng nay g"]
+    assert build_texts(h, b, 0) == ["Giá vàng hôm nay"]          # headline only
+    assert build_texts([None], [None], 600) == ["."]             # nulls survive
+
+
+def test_jaccard_shingle_similarity():
+    from src.dedupe.represent import SPECS, _sim_jaccard
+
+    spec = dict(SPECS["jaccard_syl5_body3000"])
+    spec["shingle"] = 2
+    texts = ["a b c d", "a b c d", "x y z w"]
+    pairs = np.array([[0, 1], [0, 2]])
+    sim = _sim_jaccard(spec, texts, pairs)
+    assert sim[0] == 1.0            # identical shingle sets
+    assert sim[1] == 0.0            # disjoint
+    # Documents shorter than the shingle length have no shingles at all; the
+    # union is then empty and the score must be 0, not a ZeroDivisionError.
+    assert _sim_jaccard(spec, ["a", "a"], np.array([[0, 1]]))[0] == 0.0
+
+
+def test_pair_similarity_row_subsetting_is_invariant():
+    """Restricting to the rows a pair touches must not change the score."""
+    from src.dedupe.represent import _sim_jaccard, SPECS
+
+    spec = dict(SPECS["jaccard_syl5_body3000"])
+    spec["shingle"] = 2
+    full = ["p q r s", "zz yy", "p q r s", "aa bb cc"]
+    # Same two documents, once at indices 0/2 of a longer list and once alone.
+    assert (_sim_jaccard(spec, full, np.array([[0, 2]]))[0]
+            == _sim_jaccard(spec, [full[0], full[2]], np.array([[0, 1]]))[0])
+
+
+def test_calibration_weights_are_horvitz_thompson():
+    from src.dedupe.calibrate import _weights
+
+    lab = pd.DataFrame({"band_lo": [0.7, 0.7, 0.9], "band_hi": [0.8, 0.8, 1.0],
+                        "label": [1, 0, 1]})
+    strata = [{"band_lo": 0.7, "band_hi": 0.8, "population": 1000},
+              {"band_lo": 0.9, "band_hi": 1.0, "population": 50}]
+    w = _weights(lab, strata)
+    assert list(w) == [500.0, 500.0, 50.0]        # population / labels in band
+    # A band that was sampled but never labelled must be dropped, not counted as
+    # containing zero true pairs — that would inflate precision silently.
+    w2 = _weights(lab, strata + [{"band_lo": 0.5, "band_hi": 0.6, "population": 9}])
+    assert list(w2) == [500.0, 500.0, 50.0]
+
+
+def test_weighted_precision_recall_curve():
+    from src.dedupe.calibrate import _curve
+
+    sim = np.array([0.9, 0.8, 0.7])
+    y = np.array([1, 0, 1])
+    w = np.array([10.0, 10.0, 100.0])
+    c = _curve(sim, y, w).set_index("threshold")
+    # At 0.9: retrieves 10 weighted pairs, all true, of 110 true overall.
+    assert c.loc[0.9, "precision"] == 1.0
+    assert round(c.loc[0.9, "recall_in_pool"], 4) == round(10 / 110, 4)
+    # At 0.7 everything is retrieved: recall 1, precision 110/120.
+    assert c.loc[0.7, "recall_in_pool"] == 1.0
+    assert round(c.loc[0.7, "precision"], 4) == round(110 / 120, 4)
+
+
+def _toy_sparse_pool(n=120, seed=3):
+    """A small normalized sparse matrix plus sorted timestamps, for scan tests."""
+    from scipy import sparse
+
+    rng = np.random.default_rng(seed)
+    d = np.abs(rng.normal(size=(n, 24)))
+    d[d < 1.0] = 0.0
+    d[:, 0] = 0.4                      # a term every document shares
+    X = sparse.csr_matrix(d / np.linalg.norm(d, axis=1, keepdims=True)).astype("float32")
+    secs = np.sort(rng.integers(0, 3 * 86400, size=n)).astype("int64")
+    return X, secs
+
+
+def test_sparse_scan_histogram_is_exact_and_windowed():
+    """Band populations are Horvitz-Thompson denominators, so they must be counts."""
+    from src.dedupe.calibrate import (SCAN_BINS, band_populations, sparse_pair_scan)
+
+    X, secs = _toy_sparse_pool()
+    bands = [(0.10, 0.30, 3), (0.30, 1.01, 3)]
+    full = (X @ X.T).toarray()
+    ref = np.array([full[i, j] for i in range(len(secs))
+                    for j in range(i + 1, len(secs))
+                    if secs[j] - secs[i] <= 12 * 3600])
+
+    hist, _, _, _ = sparse_pair_scan(X, secs, 12.0, bands, block=16)
+    assert hist.sum() == len(ref)                    # j > i triangle, 12h window
+    assert np.array_equal(
+        hist, np.bincount(np.clip((ref * SCAN_BINS).astype("int32"), 0, SCAN_BINS),
+                          minlength=SCAN_BINS + 1))
+    pops = band_populations(hist, bands)
+    for lo, hi, _ in bands:
+        assert pops[(lo, hi)] == int(((ref >= lo) & (ref < hi)).sum())
+
+
+def test_sparse_scan_sample_is_block_size_invariant():
+    """The draw keys off pair identity, not arrival order, so it must not move."""
+    from src.dedupe.calibrate import sparse_pair_scan
+
+    X, secs = _toy_sparse_pool()
+    bands = [(0.10, 0.30, 3), (0.30, 1.01, 3)]
+    key = lambda I, J: sorted(zip(I.tolist(), J.tolist()))  # noqa: E731
+    _, I1, J1, _ = sparse_pair_scan(X, secs, 12.0, bands, seed=5, block=16, capacity=6)
+    _, I2, J2, _ = sparse_pair_scan(X, secs, 12.0, bands, seed=5, block=97, capacity=6)
+    assert key(I1, J1) == key(I2, J2)
+    # ...and a different seed must give a different sample, or it is not random.
+    _, I3, J3, _ = sparse_pair_scan(X, secs, 12.0, bands, seed=6, block=16, capacity=6)
+    assert key(I1, J1) != key(I3, J3)
+
+
+def test_sparse_scan_excludes_pairs_without_shrinking_the_population():
+    """Earlier rounds leave the band population alone — only the sample shrinks."""
+    from src.dedupe.calibrate import sparse_pair_scan
+
+    X, secs = _toy_sparse_pool()
+    bands = [(0.10, 1.01, 8)]
+    h0, I0, J0, _ = sparse_pair_scan(X, secs, 12.0, bands, seed=5, capacity=8)
+    drop = (I0[:3].astype("uint64") * np.uint64(len(secs)) + J0[:3].astype("uint64"))
+    h1, I1, J1, _ = sparse_pair_scan(X, secs, 12.0, bands, exclude_keys=drop,
+                                     seed=5, capacity=8)
+    assert np.array_equal(h0, h1)
+    got = set((I1.astype("uint64") * np.uint64(len(secs)) + J1.astype("uint64")).tolist())
+    assert not got & set(drop.tolist())
+
+
+def test_band_populations_reject_off_grid_edges():
+    """An edge inside a histogram bin would make the population an interpolation."""
+    from src.dedupe.calibrate import SCAN_BINS, band_populations
+
+    hist = np.ones(SCAN_BINS + 1, dtype="int64")
+    assert band_populations(hist, [(0.10, 0.125, 1)])[(0.10, 0.125)] == 5
+    try:
+        band_populations(hist, [(0.101, 0.125, 1)])
+    except ValueError:
+        return
+    raise AssertionError("off-grid band edge was silently accepted")
+
+
+def test_strata_and_labels_never_pool_across_designs(tmp_path=None):
+    """Band edges mean different things on different similarity scales."""
+    import json
+    from pathlib import Path
+    from tempfile import mkdtemp
+
+    from src.dedupe.calibrate import LEGACY_DESIGN, _merge_strata
+
+    d = Path(tmp_path or mkdtemp())
+    # Legacy file carries no representation field and must read as the baseline.
+    (d / "strata.json").write_text(json.dumps(
+        [{"band_lo": 0.7, "band_hi": 0.8, "population": 100, "sampled": 5}]))
+    (d / "strata_r3.json").write_text(json.dumps(
+        [{"band_lo": 0.7, "band_hi": 0.8, "population": 999, "sampled": 5,
+          "representation": "tfidf_syl12_hl_body1200"}]))
+    assert _merge_strata(d, LEGACY_DESIGN)[0]["population"] == 100
+    assert _merge_strata(d, "tfidf_syl12_hl_body1200")[0]["population"] == 999
+    # The two share a band key while describing different scales, so an
+    # unqualified merge must refuse rather than pick one.
+    try:
+        _merge_strata(d)
+    except SystemExit:
+        return
+    raise AssertionError("strata from two designs were pooled")
+
+
+def test_operating_point_is_lowest_threshold_meeting_precision():
+    """Pre-registered rule: buy recall subject to a precision floor."""
+    from src.dedupe.calibrate import operating_point
+
+    tbl = pd.DataFrame({"threshold": [0.1, 0.2, 0.3, 0.4],
+                        "precision": [0.50, 0.91, 0.88, 0.97],
+                        "recall_in_pool": [1.0, 0.7, 0.5, 0.2]})
+    # 0.2 qualifies and 0.4 qualifies; the rule takes the lower, keeping recall.
+    # It must not stop at the first dip back below the floor (0.3) either.
+    assert operating_point(tbl, 0.90)["threshold"] == 0.2
+    assert operating_point(tbl, 0.95)["threshold"] == 0.4
+    assert operating_point(tbl, 0.99) is None       # unreachable floor, not a crash
+
+
+def test_retired_strata_are_dropped_from_the_pool():
+    import json
+    from pathlib import Path
+    from tempfile import mkdtemp
+
+    from src.dedupe.calibrate import _merge_strata
+
+    d = Path(mkdtemp())
+    (d / "strata.json").write_text(json.dumps(
+        [{"band_lo": 0.9, "band_hi": 1.0, "population": 10, "sampled": 5}]))
+    (d / "strata_r2.json").write_text(json.dumps(
+        [{"band_lo": 0.5, "band_hi": 0.6, "population": 999, "sampled": 5,
+          "retired": True}]))
+    bands = _merge_strata(d)
+    assert [(b["band_lo"], b["band_hi"]) for b in bands] == [(0.9, 1.0)]
+
+
+def test_agreement_on_binary_labels():
+    from src.dedupe.calibrate import agreement
+
+    ids = [f"p{i}" for i in range(10)]
+    a = pd.DataFrame({"pair_id": ids, "label": [1] * 5 + [0] * 5})
+    assert agreement(a, a.copy())["observed_agreement"] == 1.0
+    assert agreement(a, a.copy())["cohen_kappa"] == 1.0
+
+    b = a.copy()
+    b.loc[0, "label"] = 0                       # one disagreement in ten
+    st = agreement(a, b)
+    assert st["n"] == 10 and st["disagreements"] == 1
+    assert round(st["observed_agreement"], 3) == 0.9
+    # Hand-computed from the coincidence matrix: with 10 pairs there are N=20
+    # values, o_01 = o_10 = 1, marginals n_0 = 11 and n_1 = 9, so
+    # D_o = 2/20 = 0.1 and D_e = 2*11*9/(20*19) = 0.5210, giving 0.8081.
+    # Kappa uses each coder's own marginal instead and gives 0.80 — the two are
+    # close but not equal, and neither should silently become the other.
+    assert round(st["krippendorff_alpha"], 4) == 0.8081
+    assert round(st["cohen_kappa"], 4) == 0.8000
+    # Skipped pairs come back from the sheet as "" and must be dropped, not
+    # counted as agreement — the export writes '' for a deliberate skip.
+    c = a.astype({"label": object})
+    c.loc[9, "label"] = ""
+    assert agreement(a, c)["n"] == 9
+
+
 def _run_all():
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0

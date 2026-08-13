@@ -47,10 +47,52 @@ its own right, so each is parameterised and later varied in
    Any LLM-based layer must be validated task-by-task against human labels (see
    RELATED_WORK cluster (b), recent/SOTA). Recommendation: induced + imposed (d),
    with any LLM layer as a separately-validated optional arm.]`
-3. **Near-duplicate / same-story clusters.** Already computed
-   (`near_dup_cluster_id`) via multilingual sentence embeddings + connected
-   components at a calibrated cosine threshold (0.94). Used directly by the
-   syndication metrics and by the deduplicated unit of analysis.
+3. **Near-duplicate / same-story clusters.** Computed (`near_dup_cluster_id`)
+   via connected components over a pair-similarity graph, restricted to pairs
+   published within `dedupe.near_dup_max_hours` of each other (the time
+   constraint is what stops recurring templated columns — daily gold-price,
+   petrol-price, fixture lists — from chaining a month into one cluster).
+   Used directly by the syndication metrics and by the deduplicated unit of
+   analysis.
+
+   **The pair representation is itself a measurement decision, and the first
+   one tested failed.** The Phase-1 pass used multilingual MiniLM over
+   `headline + body[:600]` at cosine 0.94. Calibration against human labels
+   (`reports/calibration/`) shows that representation is the weakest of eight
+   candidates tested on the same labels: weighted average precision 0.581,
+   against 0.864 for TF-IDF over Vietnamese syllable 1–2 grams (paired
+   bootstrap gain +0.257, 95% CI [+0.064, +0.396]). The cause is
+   truncation — MiniLM cuts at 128 word-pieces and Vietnamese sub-word-splits
+   heavily, so a 600-character body exhausts the budget and the headline
+   barely contributes. The ordering of the dense variants confirms it:
+   AP rises monotonically as body text is *removed* (600 → 0.581,
+   200 → 0.639, headline-only → 0.713).
+
+   This is a result for §5.3, not just an implementation detail: it is a case
+   where an off-the-shelf multilingual encoder, the default choice in this
+   literature, is actively worse than a bag-of-n-grams for the construct being
+   measured, because the phenomenon (near-verbatim wire republication) is
+   lexical rather than semantic.
+   **DECIDED 2026-08-11: syllable-TF-IDF (`tfidf_syl12_hl_body1200`) is the
+   production pair representation**, with the dense encoder retained as an RQ3
+   sensitivity arm (`config.yaml: dedupe.near_dup_representation`). The
+   representation choice is well identified even though the threshold is not —
+   the paired bootstrap puts the gain at +0.257 with a 95% CI excluding zero and
+   P(gain>0)=0.994, because both representations are scored on the same
+   resampled labels. Re-clustering is **deferred**: it needs an operating
+   threshold, which needs the round-3 labels. Until then `articles.parquet`
+   keeps its Phase-1 dense `near_dup_cluster_id`, and `near_dup.py` refuses to
+   run rather than silently clustering under a representation the config no
+   longer names.
+
+   **Bands belong to a representation.** Because a representation change moves
+   the entire similarity scale, a stratified sample is tied to the
+   representation its bands were cut on. Rounds 1–2 were stratified on MiniLM
+   cosine; round 3 is stratified on syllable-TF-IDF. The two cannot be pooled —
+   a shared `[0.70, 0.75)` key would multiply one design's population by the
+   other's label count — so every strata and sample file records its design and
+   the calibration tooling refuses to merge across them
+   (`calibrate score --design <slug>`).
 4. **Section harmonisation.** Raw `section` is not portable across outlets
    (controlled slugs vs. editorial categories vs. article-level tags vs. none —
    documented in the [Phase-1 report](../reports/quality_report.md)). Any
@@ -361,10 +403,91 @@ much each metric and the **outlet ranking** move:
   upgrade the primary to a SOTA multilingual embedder? If upgrading, re-calibrate
   the near-dup threshold — the 0.94 cosine cutoff is model-specific and does not
   transfer across encoders.]`
-- **Near-dup threshold** (sweep around the calibrated 0.94; the Phase-1 note
-  shows < 0.92 over-merges same-*topic* articles into cross-outlet blobs while
-  ≥ 0.94 isolates same-*story* — i.e. the metric is threshold-sensitive in a
-  documentable way).
+- **Near-dup pair representation** — the strongest sensitivity result so far,
+  and the one that reframes the others: swapping the dense encoder for
+  syllable-level TF-IDF raises weighted AP from 0.581 to 0.864 on the same
+  labels (§0.3). Because a representation change moves the *entire* similarity
+  scale, the threshold sweep below is only interpretable within a fixed
+  representation; the two cannot be varied independently and reported as one
+  grid.
+- **Near-dup threshold** (sweep within the chosen representation; the headline
+  operating point is the pre-registered precision ≥ 0.90 rule above, and this
+  sweep is the sensitivity arm around it). Note the
+  earlier justification for 0.94 — that < 0.92 over-merged same-*topic*
+  articles while ≥ 0.94 isolated same-*story* — was an artefact of the dense
+  representation's poor separation, not a property of the phenomenon. Under
+  human labels 0.94 has weighted recall ≈ 0.06 inside the ≥ 0.70 pool.
+  **The operating point is not yet identified under any representation:** the
+  labelled sample concentrates in high-similarity bands, so 62% of the
+  estimated true pairs rest on 6 positive labels spread over three bands, and
+  a stratified bootstrap puts the pool's true-pair total at 30,500 with a 95%
+  CI of [16,000, 47,000]. Fixing this needs a labelling round drawn under the
+  adopted representation's own similarity bands, weighted toward the decision
+  region. Until then the threshold is a declared sensitivity parameter, not a
+  calibrated constant.
+
+  **Round 3 (drawn, awaiting labels)** is that round:
+  `reports/calibration/pairs_sample_r3.csv`, 179 pairs stratified on
+  syllable-TF-IDF computed at corpus scale — sparse cosine over all 46,408
+  body-bearing rows in the analysis window, restricted to the same 12h linkage
+  window as the clusterer, giving 40,753,361 candidate pairs of which 448,833
+  reach the 0.10 floor.
+
+  - *Floor.* 0.10, justified by the round-1 labels re-scored under this
+    representation: none of the 150 confirmed same-story pairs scored below
+    0.1344, in a sample already enriched for true pairs. Recall from this round
+    will therefore read "within the ≥ 0.10 syllable-TF-IDF pool".
+  - *What is deliberately not measured.* Below the floor sit 3.06M pairs in
+    [0.05, 0.10) and 19.4M in [0.025, 0.05). No feasible number of labels
+    bounds a positive rate over populations that size, so that tail is declared
+    out of scope rather than probed with a sample too small to speak — a
+    handful of labels there would produce a weighted contribution that swamps
+    the estimate while resting on nothing, which is the round-1 failure mode.
+  - *Allocation.* Neyman (`n_h ∝ N_h·√(p_h(1−p_h))`) under a prior taken from
+    the round-1 labels re-scored under this representation and deflated for
+    their enrichment, with a floor of 8 labels per band. This is what sends a
+    third of the budget into [0.10, 0.15): those two bands hold 62% of the
+    pool, and pool-level variance lives where the *population* is, not where
+    the positives are. Round 1 allocated by intuition and put 28 of 208 labels
+    into the bands holding 85% of its pool — the recorded defect this schedule
+    corrects.
+
+  Reproduce with `python -m src.dedupe.calibrate sample --round 3`; the run
+  verifies its corpus-scale matrix against the stored per-pair scores from the
+  representation comparison (max |Δ| = 1.1e-07) before drawing, so the bands
+  are provably cut on the same quantity that scored AP 0.864.
+
+  **Pre-registered operating rule (fixed 2026-08-11, before any round-3 label
+  was seen).** The operating threshold is the *lowest* one whose
+  stratum-weighted precision reaches **0.90**
+  (`config.yaml: dedupe.near_dup_min_precision`; reported by
+  `calibrate score`). Fixing the rule in advance is what separates the
+  round-3 operating point from the `best_f1` figures elsewhere in this
+  document, which are selected on the same labels that score them and are
+  therefore upper bounds. Two reasons for precision-first over max-F1:
+
+  - The errors are not symmetric in their effect on the conclusion. A false
+    merge collapses two distinct stories into one and *lowers* measured
+    diversity; a missed copy inflates it. A precision floor therefore keeps the
+    story-unit diversity estimate conservative against a "diversity is low"
+    reading — the direction this project's framing requires it to be
+    conservative in.
+  - The full precision/recall curve is still reported as the sensitivity arm
+    below, so nothing is hidden by fixing a headline point.
+
+  Applied to the *dense* design as a check, the rule selects 0.940 — exactly
+  the shipped Phase-1 threshold — at recall 0.060. The original cutoff was
+  defensible under this criterion; what the criterion exposes is that the dense
+  representation cannot buy recall at that precision at all.
+
+  **Reliability.** A random 50 of the 179 round-3 pairs
+  (`reports/calibration/reliability_r3.html`) are double-labelled by a second
+  coder working blind, and Krippendorff's α, Cohen's κ and raw agreement are
+  reported (`calibrate reliability --round 3`). The subset is a simple random
+  subsample rather than a stratified one so that α describes agreement over the
+  round's own label population. Note the expected marginal skew — most pairs in
+  the pool are negatives — which makes the chance-corrected coefficients
+  unstable; raw agreement is reported alongside them for that reason.
 - **Segmenter** (underthesea vs. alternative).
 
 Report stability as rank correlation (Spearman) of outlet orderings across

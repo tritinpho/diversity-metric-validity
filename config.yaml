@@ -45,10 +45,46 @@ http:
 dedupe:
   # Near-duplicate (same-story, incl. across outlets) clustering — a separate
   # on-demand pass (`python -m src.dedupe.near_dup`), not run on every collect.
+  #
+  # ADOPTED 2026-08-11 as the production pair representation, replacing the
+  # multilingual MiniLM embedding below. Measured against 208 human labels it
+  # beats the dense encoder by a wide and well-identified margin: weighted AP
+  # 0.864 vs 0.581, paired bootstrap gain +0.257 (95% CI [+0.064, +0.396],
+  # P(gain>0)=0.994). The phenomenon is near-verbatim wire republication, which
+  # is lexical; MiniLM truncates at 128 word-pieces and Vietnamese
+  # sub-word-splits heavily, so the body exhausts its budget. See
+  # docs/METHODOLOGY.md §0.3 and reports/calibration/.
+  #
+  # NOT YET IN EFFECT. near_dup.py still implements the dense pass and will
+  # refuse to run if this key names anything else — re-clustering is blocked on
+  # an operating threshold, which needs the round-3 labels
+  # (reports/calibration/label_r3.html). Until then articles.parquet keeps its
+  # Phase-1 dense cluster columns. To reproduce those, set this back to
+  # emb_hl_body600.
+  near_dup_representation: tfidf_syl12_hl_body1200
+  # PRE-REGISTERED 2026-08-11, before any round-3 label was seen: the operating
+  # threshold is the LOWEST one whose stratum-weighted precision reaches this
+  # floor. Fixed in advance so the operating point is not selected on the same
+  # labels that score it — the defect that makes the existing 'best F1' figures
+  # upper bounds rather than estimates.
+  #
+  # Why precision-first rather than max-F1: a false merge collapses two distinct
+  # stories into one and *lowers* measured diversity, so a precision floor keeps
+  # the story-unit diversity estimate conservative against a "diversity is low"
+  # reading. The full precision/recall curve is still reported as the §5.3
+  # sensitivity arm; this only fixes the headline operating point.
+  near_dup_min_precision: 0.90
   embedding_model: sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
-  # Calibrated on the 16-outlet snapshot: below ~0.92 the multilingual encoder
-  # over-merges same-TOPIC articles (gold-price, World Cup) into cross-outlet
-  # blobs; >=0.94 isolates genuine same-STORY syndication (near-identical text).
+  # SUPERSEDED 2026-08-04 — kept only so the Phase-1 columns in articles.parquet
+  # stay reproducible. The original justification (below ~0.92 the encoder
+  # over-merges same-TOPIC articles into cross-outlet blobs; >=0.94 isolates
+  # same-STORY syndication) described the dense encoder's poor separation, not
+  # the phenomenon: against 208 human labels this setting has weighted recall
+  # ~0.06 inside the >=0.70 pool. The representation, not the threshold, is the
+  # binding constraint — syllable TF-IDF scores weighted AP 0.864 vs 0.581 here
+  # (paired bootstrap gain +0.257, 95% CI [+0.064, +0.396]). Do not treat this
+  # number as calibrated. See reports/calibration/representation_comparison.csv
+  # and docs/METHODOLOGY.md §0.3.
   near_dup_threshold: 0.94          # cosine
   # MEASURED 2026-07-22 against 208 human-labelled pairs: 600 and 1200 give
   # byte-identical similarities, so this knob is already INERT above ~600 —

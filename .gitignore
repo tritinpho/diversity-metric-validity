@@ -20,6 +20,10 @@ reports/figures/*.png
 #     the artefact worth releasing, so they stay tracked.
 reports/calibration/pairs_sample*.csv
 reports/calibration/label*.html
+# Same rule for the second-coder sheet. Its *labels* (reliability_labelled*.csv)
+# and the agreement figures (reliability*.json) are human output and stay tracked.
+reports/calibration/reliability_sample*.csv
+reports/calibration/reliability*.html
 
 # --- OS / editor ---
 .DS_Store
